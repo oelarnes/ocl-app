@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-
+import {STRINGS} from "../config";
 import App from "../app";
+import Axios from "axios";
 
 const PlayersPanel = () => (
   <fieldset className='fieldset'>
@@ -30,18 +31,26 @@ const PlayerTableHeader = () => (
     <th key="3">Drafter</th>
     <th key="4" className={columnVisibility("packs")}>Packs</th>
     <th key="5" className={columnVisibility("timer")}>Timer</th>
-    <th key="6" className={columnVisibility("trice")}>Trice</th>
-    <th key="7" className={columnVisibility("mws")}>MWS</th>
+    {/* <th key="6" className={columnVisibility("trice")}>Trice</th>
+    <th key="7" className={columnVisibility("mws")}>MWS</th> */}
   </tr>
 );
 
 class PlayerEntries extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {nameOptions: []};
+  }
   decrement() {
     for (let p of App.state.players)
       if (p.time)
         p.time--; this.forceUpdate();
   }
   componentDidMount() {
+    Axios.post("/api/data", {"query": "{players{discordHandle}}"}).then(({ data }) => {
+      const handles = [ ... new Set(data.data.players.map((player) => player.discordHandle))];
+      this.setState({nameOptions: [STRINGS.BRANDING.DEFAULT_USERNAME].concat(handles.sort((a,b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1))});
+    });
     this.timer = window.setInterval(this.decrement.bind(this), 1e3);
   }
   componentWillUnmount() {
@@ -49,7 +58,7 @@ class PlayerEntries extends Component {
   }
   render() {
     return (
-      App.state.players.map((p,i) => <PlayerEntry key ={i} player={p} index={i} />)
+      App.state.players.map((p,i) => <PlayerEntry key ={i} player={p} index={i} nameOptions={this.state.nameOptions} />)
     );
   }
 }
@@ -90,9 +99,9 @@ const columnVisibility = (columnName) => {
   }
 };
 
-const PlayerEntry = ({player, index}) => {
+const PlayerEntry = ({player, index, nameOptions}) => {
   const {players, self, didGameStart, isHost} = App.state;
-  const {isBot, name, packs, time, hash} = player;
+  const {isBot, name, packs, time} = player;
   const {length} = players;
 
   const opp
@@ -114,11 +123,11 @@ const PlayerEntry = ({player, index}) => {
   const columns = [
     <td key={0}>{index + 1}</td>,
     <td key={1}>{connectionStatusIndicator}</td>,
-    <td key={2}>{index === self ? <SelfName name={App.state.name} /> : name}</td>,
+    <td key={2}>{index === self ? <SelfName name={App.state.name} nameOptions={nameOptions} /> : name}</td>,
     <td key={3} className={columnVisibility("packs")} >{packs}</td>,
     <td key={4} id={className==="self" ? "self-time":""} className={columnVisibility("timer")}>{time}</td>,
-    <td key={5} className={columnVisibility("trice")}>{hash && hash.cock}</td>,
-    <td key={6} className={columnVisibility("mws")}>{hash && hash.mws}</td>
+    // <td key={5} className={columnVisibility("trice")}>{hash && hash.cock}</td>,
+    // <td key={6} className={columnVisibility("mws")}>{hash && hash.mws}</td>
   ];
 
   const selfTimeFixed = document.getElementById("self-time-fixed-time");
@@ -157,26 +166,30 @@ const PlayerEntry = ({player, index}) => {
 
 PlayerEntry.propTypes = {
   player: PropTypes.object.isRequired,
+  nameOptions: PropTypes.arrayOf.string.isRequired,
   index: PropTypes.number.isRequired
 };
 
-const SelfName = ({ name }) => (
-  <input
+const SelfName = ({ name, nameOptions }) => (
+  <select
     style={{ width: "150px" }}
     type='text'
     maxLength={15}
     value={name}
     onChange={(e) => {
       App.save("name", e.currentTarget.value);
+      App.updateFilename();
     }}
     onBlur={(e) => {
       App.send("name", e.currentTarget.value);
     }}
-  />
+  >{nameOptions.map((x,i) => <option key={i}>{x}</option>)}
+  </select>
 );
 
 SelfName.propTypes = {
   name: PropTypes.string.isRequired,
+  nameOptions: PropTypes.arrayOf.string.isRequired,
 };
 
 export default PlayersPanel;

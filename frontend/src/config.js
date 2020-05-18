@@ -2,9 +2,9 @@ import React from "react";
 
 export const STRINGS = {
   BRANDING: {
-    SITE_TITLE: ["dr4ft", "info"].join("."),
-    SITE_NAME: <span>DR<img src='4.png' alt='4'/>FT</span>,
-    DEFAULT_USERNAME: "dr4fter",
+    SITE_TITLE: ["OCL"].join("."),
+    SITE_NAME: <span><img src="ocl-384x384.png"></img> Online Cube League</span>,
+    DEFAULT_USERNAME: "Mulldrifter",
     PAYPAL: "",
   },
 
@@ -13,7 +13,7 @@ export const STRINGS = {
 
     FOOTER:
       <div>
-        <strong>dr4ft</strong> is a fork of
+        <strong>ocl-site</strong> is a fork of <strong>dr4ft</strong> is a fork of
         the <code>drafts.ninja</code> arxanas fork of
         the <code >draft</code> project by aeosynth.
         Contributions welcome! &nbsp;

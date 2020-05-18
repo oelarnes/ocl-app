@@ -55,7 +55,7 @@ const Sets = ({ sets, type }) => (
 const CubeDraft = () => (
   <div>
     <CubeList />
-    <CubeOptions />
+    {/* <CubeOptions /> */}
   </div>
 );
 

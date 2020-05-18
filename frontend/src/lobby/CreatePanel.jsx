@@ -2,10 +2,11 @@ import React from "react";
 
 import _ from "utils/utils";
 import App from "../app";
-import {Checkbox} from "../utils";
-
+import {Checkbox, eventIdOptions} from "../utils";
+import axios from 'axios'
 import GameTypes from "./GameTypes";
 import GameOptions from "./GameOptions";
+
 
 const CreatePanel = () => {
   const {title, seats} = App.state;
@@ -17,25 +18,35 @@ const CreatePanel = () => {
       </legend>
       <div>
         <label>
-          Game title:{" "}
-          <input type='text'
-            value={title}
-            onChange={(e) => {App.save("title", e.currentTarget.value);}}
-          />
+          Event Id:{" "}
+          <select value={title}
+            onChange={async (e) => {
+              App.save("title", e.currentTarget.value);
+              const ctParam = e.currentTarget.value.includes('-powered-') ? 'Powered' : e.currentTarget.value.includes('-interactive-') ? 'Interactive' : null
+              if (ctParam) {
+                const {data} = await axios.post("/api/data", {query: `{cubeByType(cubeType: ${ctParam}){cardNames}}`});
+                App.save("list", data.data.cubeByType.cardNames.join('\n'))
+              }
+              
+            }}>
+              {eventIdOptions().map((x,i) => <option key={i}>{x}</option>)}
+          </select>
         </label>
       </div>
-      <div>
-        Number of players:{" "}
-        <select value={seats} onChange={(e) => {App.save("seats", e.currentTarget.value);}}>
-          {_.seq(100, 1).map((x, i) =>
-            <option key={i}>{x}</option>)}
-        </select>
-      </div>
-      <div>
+      {title.includes('casual-') ? 
+        <div>
+          Number of players:{" "}
+          <select value={seats} onChange={(e) => {App.save("seats", e.currentTarget.value);}}>
+            {_.seq(100, 1).map((x, i) =>
+              <option key={i}>{x}</option>)}
+          </select>
+        </div> : '' 
+      }
+      {/* <div>
         <Checkbox link='isPrivate' text='Make room private: ' side='right'/>
-      </div>
-      <GameTypes/>
-      <GameOptions/>
+      </div> */}
+      {/* <GameTypes/> */}
+      {title.includes('casual-other-') ? <GameOptions/> : ''}
       <p>
         <button onClick={App._emit("create")}>
           Create room

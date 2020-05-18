@@ -1,6 +1,7 @@
 const fs = require("fs");
 const readFile = (path) => JSON.parse(fs.readFileSync(path, "UTF-8"));
 const {  keyCardsByName, groupCardsByName } = require("./import/keyCards");
+const { writeDraftStats, oclMongo } = require("ocl-data");
 
 let cards, cubableCardsByName, sets;
 let playableSets, latestSet;
@@ -58,8 +59,15 @@ const getCubableCardByName = (cardName) => {
   return cubableCardsByName[cardName];
 };
 
-const writeCards = (newCards) => {
-  fs.writeFileSync("data/cards.json", JSON.stringify(newCards, undefined, 4));
+const writeCards = async (newCards) => {
+  const mongo = await oclMongo();
+  await mongo.collection("all_cards").insertMany(Object.values(newCards).reduce(
+    (prev, curr) => prev.concat(curr), []
+  ));
+  await mongo.collection("all_cards").createIndex("uuid");
+  await mongo.collection("all_cards").createIndex("name");
+  await mongo.collection("all_cards").createIndex("mtgoId");
+
   cards = newCards;
 };
 
@@ -201,15 +209,6 @@ const isReleasedExpansionOrCoreSet = (type, releaseDate) => (
   Date.parse(releaseDate) <= new Date()
 );
 
-function saveDraftStats(id, stats) {
-  if (!fs.existsSync("data/draftStats")) {
-    fs.mkdirSync("data/draftStats");
-  }
-
-  const file = `data/draftStats/${id}.json`;
-  fs.writeFileSync(file, JSON.stringify(stats, undefined, 4));
-}
-
 module.exports = {
   getCards,
   getSets,
@@ -221,7 +220,6 @@ module.exports = {
   getExansionOrCoreSets,
   saveSetAndCards,
   saveSetsAndCards,
-  saveDraftStats,
   mergeCardsTogether,
   getCardByUuid,
   getCardByName: getCubableCardByName

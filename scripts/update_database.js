@@ -3,6 +3,7 @@ const logger = require("../backend/logger");
 const { saveSetsAndCards } = require("../backend/data");
 const doSet = require("../backend/import/doSet");
 
+
 const updateDatabase = () => {
   let allCards = {};
   const allSets = {};

@@ -3,6 +3,8 @@ import EventEmitter from "events";
 import {STRINGS} from "./config";
 import eio from "engine.io-client";
 import {times, constant} from "lodash";
+import {eventIdOptions} from "./utils";
+import axios from "axios";
 
 function message(msg) {
   let args = JSON.parse(msg);
@@ -23,14 +25,15 @@ let App = {
     roomInfo: [],
 
     seats: 8,
-    title: "",
-    isPrivate: true,
+    lobbyTitle: "",
+    gameTitle: "",
+    isPrivate: false,
     modernOnly: false,
     totalChaos: false,
     chaosDraftPacksNumber: 3,
     chaosSealedPacksNumber: 6,
     gametype: "draft",
-    gamesubtype: "regular",
+    gamesubtype: "cube",
     sets: [],
     setsDraft: [],
     setsSealed: [],
@@ -38,25 +41,25 @@ let App = {
     list: "",
     cards: 15,
     packs: 3,
-    cubePoolSize: 90,
+    cubePoolSize: 450,
 
     addBots: true,
     shufflePlayers: true,
     useTimer: true,
-    timerLength: "Moderate", // Fast Moderate or Slow
+    timerLength: "Slow", // Fast Moderate or Slow
 
     beep: true,
     notify: false,
     notificationGranted: false,
-    chat: false,
-    cols: false,
+    chat: true,
+    cols: true,
     hidepicks: false,
     deckSize: 40,
     filename: "filename",
     filetype: "txt",
     side: false,
-    sort: "rarity",
-    log: {},
+    sort: "cmc",
+    log: "",
     cardSize: "normal",
     cardLang: "en",
     game: {},
@@ -67,6 +70,8 @@ let App = {
     messages: [],
     pickNumber: 0,
     packSize: 15,
+    nameOptions: [],
+    roomId: null,
 
     get didGameStart() {
       // both round === 0 and round is undefined
@@ -188,14 +193,16 @@ let App = {
     return { requestChange, value };
   },
   updateGameInfos({type, sets, packsInfo}) {
-    const savename = type === "draft" ? sets[0] + "-draft" : type;
-    const date = new Date();
-    const currentTime = date.toISOString().slice(0, 10).replace("T", " ") + "-" + date.getTime().toString().slice(-8, -3);
-    const filename = `${savename.replace(/\W/, "-")}-${currentTime}`;
-
     App.set({
-      filename,
       game: {type, sets, packsInfo}
+    });
+  },
+  updateFilename() {
+    const date = new Date();
+    const currentTime = date.toISOString().slice(0, 10);
+    const filename = `${this.state.name}-${this.state.title}-${currentTime}`;
+    App.set({
+      filename
     });
   }
 };

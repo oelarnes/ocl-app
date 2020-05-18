@@ -124,11 +124,11 @@ let events = {
     App.state.log = draftLog;
   },
   getLog() {
-    const { id, log, players, self, sets, gamesubtype, filename } = App.state;
+    const { title, log, players, self, sets, gamesubtype, filename } = App.state;
     const isCube = /cube/.test(gamesubtype);
     const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
     let data = [
-      `Event #: ${id}`,
+      `Event #: ${title}`,
       `Time: ${date}`,
       "Players:"
     ];

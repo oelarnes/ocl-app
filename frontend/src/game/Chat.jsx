@@ -6,6 +6,16 @@ import App from "../app";
 
 import "vanilla-toast/vanilla-toast.css";
 
+const chatClassMap = {
+  cmustewart: 'fod',
+  magicflea: 'dw',
+  jrp: 'sc',
+  lasersloths: 'sower',
+  lipingpong: 'cop',
+  steamedfish: 'cop',
+  Mort: 'cop'
+}
+
 export default class Chat extends Component {
   constructor(props) {
     super(props);
@@ -80,42 +90,10 @@ const Entry = () => {
     if (!text)
       return;
 
-    if (text[0] === "/")
-      command(text.slice(1));
-    else
-      App.send("say", text);
+    App.send("say", text);
   };
 
-  const command = (raw) => {
-    let [, command, arg] = raw.match(/(\w*)\s*(.*)/);
-    arg = arg.trim();
-    let text, name;
-
-    switch(command) {
-    case "name":
-    case "nick":
-      name = arg.slice(0, 15);
-
-      if (!name) {
-        text = "enter a name";
-        break;
-      }
-
-      text = `hello, ${name}`;
-      App.save("name", name);
-      App.send("name", name);
-      break;
-    default:
-      text = `unsupported command: ${command}`;
-    }
-
-    App.emit("command", { text,
-      time: Date.now(),
-      name: ""
-    });
-  };
-
-  return <input id='chat-input' autoFocus className='chat-input' type='text' onKeyDown={onKeyDown} placeholder='/nick name' />;
+  return <input id='chat-input' autoFocus className='chat-input' type='text' onKeyDown={onKeyDown} />;
 };
 
 const MessagesHeader = ({date}) => (
@@ -127,6 +105,7 @@ MessagesHeader.propTypes = {
 };
 
 const Message = ({time, name, text}) => {
+  const chatClass = chatClassMap[name] || 'qb';
   const date = new Date(time);
   const hours   = _.pad(2, "0", date.getHours());
   const minutes = _.pad(2, "0", date.getMinutes());
@@ -136,7 +115,7 @@ const Message = ({time, name, text}) => {
     <div>
       <time>{timestamp}</time>
       {" "}
-      <span className='name'>{name}</span>
+      <span className={"name " + chatClass}>{name}</span>
       {" "}
       {text}
     </div>

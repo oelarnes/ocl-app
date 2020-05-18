@@ -9,7 +9,8 @@ const Room = require("./room");
 const Rooms = require("./rooms");
 const logger = require("./logger");
 const Sock = require("./sock");
-const {saveDraftStats} = require("./data");
+const {writeDraftStats, dataSync} = require("ocl-data");
+const fs = require("fs");
 
 module.exports = class Game extends Room {
   constructor({ hostId, title, seats, type, sets, cube, isPrivate, modernOnly, totalChaos, chaosPacksNumber }) {
@@ -228,17 +229,15 @@ module.exports = class Game extends Room {
       isHost: h.isHost,
       round: this.round,
       self: this.players.indexOf(h),
-      sets: this.sets
+      sets: this.sets,
+      roomId: this.id,
+      title: this.title
     });
     h.send("gameInfos", {
       type: this.type,
       packsInfo: this.packsInfo,
       sets: this.sets
     });
-
-    if (this.isGameFinished) {
-      h.send("log", h.draftLog.round);
-    }
   }
 
   exit(sock) {
@@ -278,26 +277,56 @@ module.exports = class Game extends Room {
     this.emit("kill");
   }
 
-  uploadDraftStats() {
+  async uploadDraftStats() {
     const draftStats = this.cube
       ? { list: this.cube.list }
       : { sets: this.sets };
     draftStats.id = this.id;
+    draftStats.title = this.title;
     draftStats.draft = {};
 
     this.players.forEach((p) => {
       if (!p.isBot) {
-        draftStats.draft[p.id] = p.draftStats;
+        draftStats.draft[p.name] = p.draftStats;
       }
     });
 
-    saveDraftStats(this.id, draftStats);
+    if (!fs.existsSync(`data/events/${draftStats.title}`)) {
+      fs.mkdirSync(`data/events/${draftStats.title}`);
+    }
+
+    await writeDraftStats(draftStats);
+    return dataSync();
   }
 
-  end() {
-    this.players.forEach((p) => {
+  async end() {
+    this.players.forEach(async (p) => {
       if (!p.isBot) {
-        p.send("log", p.draftLog.round);
+        const { type, title, players, sets } = this;
+        const { draftLog, self } = p;
+        const isCube = /cube/.test(type);
+        const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
+        let data = [
+          `Event #: ${title}`,
+          `Time: ${date}`,
+          "Players:"
+        ];
+  
+        players.forEach((player, i) =>
+          data.push(i === self ? `--> ${player.name}` : `    ${player.name}`)
+        );
+  
+        Object.values(draftLog.round).forEach((round, index) => {
+          data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
+          round.forEach(function (pick, i) {
+            data.push("", `Pack ${index} pick ${i + 1}:`);
+            data = data.concat(pick);
+          });
+        });
+  
+        p.logFile = data.join("\n");
+        p.send("log", p.logFile);
+        await fs.promises.writeFile(`data/events/${title}/${name}-${date}-log.txt`, p.logFile);
       }
     });
     const cubeHash = /cube/.test(this.type)
@@ -328,9 +357,6 @@ module.exports = class Game extends Room {
     this.renew();
     this.round = -1;
     this.meta({ round: -1 });
-    if (["cube draft", "draft"].includes(this.type)) {
-      this.uploadDraftStats();
-    }
   }
 
   pass(p, pack) {

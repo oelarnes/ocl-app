@@ -11,10 +11,12 @@ const router = require("./backend/router");
 const apiRouter = require("./backend/api/");
 const allSets = require("./scripts/download_allsets");
 const {app: config, version} = require("./config");
+const { dataSyncLoop } = require('ocl-data');
+
 const app = express();
 
-
-//Middlewares
+dataSyncLoop(1000 * 60 * 30)
+// Middlewares
 app.use(helmet());
 app.use(bodyParser.json()); // for parsing application/json
 app.use(cors());
@@ -23,6 +25,7 @@ app.use(fileUpload());
 //routing
 app.use(express.static("built"));
 app.use("/api", apiRouter);
+
 
 // Download Allsets.json if there's a new one and make the card DB
 allSets.download();

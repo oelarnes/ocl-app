@@ -30,6 +30,7 @@ class Player extends EventEmitter {
         round : {},
         pack: []
       },
+      logFile: "",
       draftStats: [],
       pickNumber: 0,
       packSize: 15,

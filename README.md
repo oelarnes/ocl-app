@@ -1,15 +1,6 @@
-<p align="center">
-  dr<img src="https://raw.githubusercontent.com/dr4fters/dr4ft/master/frontend/4.png" alt="4" height="14">ft
-</p>
+# ocl-site
 
-<p align='center'>
-  <a href="https://travis-ci.com/dr4fters/dr4ft"><img src=https://travis-ci.com/dr4fters/dr4ft.svg?branch=master></a>
-  <a href="https://david-dm.org/dr4fters/dr4ft"><img src=https://david-dm.org/dr4fters/dr4ft.svg></a>
-  <a href="https://david-dm.org/dr4fters/dr4ft?type=dev"><img src=https://david-dm.org/dr4fters/dr4ft/dev-status.svg></a>
-</p>
-
-
-
+*ocl-site* is a branch of the *dr4ft* project, described below, for the purposes of the Online Cube League.
 <br>
 
 # dr4ft [![Chat](https://badges.gitter.im/dr4fters/dr4ft.svg)](https://gitter.im/dr4fters/dr4ft)

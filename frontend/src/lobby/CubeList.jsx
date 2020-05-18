@@ -22,6 +22,7 @@ const CubeList = () => {
   });
 
   const handleChange = (e) => {
+    
     e.preventDefault();
     selectCube(e.target.value);
     App.set( {
@@ -41,7 +42,7 @@ const CubeList = () => {
       <div>Preset Cubes:</div>
       <select onChange={handleChange}>
         <option value='none' key='none'>None</option>
-        <optgroup label="Cube Tutor">
+        <optgroup label="OCL Cubes">
           {cubeOptions}
         </optgroup>
       </select>

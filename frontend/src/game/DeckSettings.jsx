@@ -103,7 +103,7 @@ const DownloadPanel = () => (
 );
 
 const Download = () => {
-  const filetypes = ["cod", "json", "mwdeck", "txt"];
+  const filetypes = ["dek", "txt"];
   const select = <Select link='filetype' opts={filetypes}/>;
 
   return (

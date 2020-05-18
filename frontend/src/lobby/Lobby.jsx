@@ -26,7 +26,7 @@ export default class Lobby extends Component {
           <Header/>
           <CreatePanel/>
           <JoinPanel roomInfo={roomInfo}/>
-          <FileUpload />
+          {/* <FileUpload /> */}
           <NewsPanel motd={STRINGS.PAGE_SECTIONS.MOTD}/>
           {STRINGS.BRANDING.PAYPAL}
           {STRINGS.PAGE_SECTIONS.FOOTER}

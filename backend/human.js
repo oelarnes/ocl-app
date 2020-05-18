@@ -108,6 +108,32 @@ module.exports = class extends Player {
     let namePool = pool.map(card => card.name);
     this.draftStats.push( { picked, notPicked, pool: namePool } );
   }
+  genLog(game) {
+    const { type, title, players, sets } = game;
+    const { draftLog, self } = this;
+    const isCube = /cube/.test(type);
+    const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
+    let data = [
+      `Event #: ${title}`,
+      `Time: ${date}`,
+      "Players:"
+    ];
+
+    players.forEach((player, i) =>
+      data.push(i === self ? `--> ${player.name}` : `    ${player.name}`)
+    );
+
+    Object.values(draftLog.round).forEach((round, index) => {
+      data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
+      round.forEach(function (pick, i) {
+        data.push("", `Pack ${index} pick ${i + 1}:`);
+        data = data.concat(pick);
+      });
+    });
+
+    this.logFile = data.join("\n");
+    this.send("log", this.logFile);
+  }
   pick(index) {
     const pack = this.packs.shift();
     const card = pack.splice(index, 1)[0];

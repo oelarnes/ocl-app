@@ -44,6 +44,7 @@ export default class Game extends Component {
       <div className='container'>
         <audio id='beep' src='/media/beep.wav'/>
         <div className='game'>
+          <div><h1>{App.state.title}</h1></div>
           <div className='game-controls'>
             <div className='game-status'>
               <PlayersPanel/>
