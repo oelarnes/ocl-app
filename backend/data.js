@@ -2,10 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const readFile = (path) => JSON.parse(fs.readFileSync(path, "UTF-8"));
 const { keyCardsUuidByName, groupCardsByName } = require("./import/keyCards");
-const { writeDraftStats, oclMongo } = require("ocl-data");
+const { oclMongo } = require("ocl-data");
 
 const DATA_DIR = "data";
-const DRAFT_STATS_DIR = "draftStats";
 const CARDS_PATH = "cards.json";
 const CUBABLE_CARDS_PATH = "cubable_cards_by_name.json";
 const SETS_PATH = "sets.json";
@@ -101,7 +100,7 @@ const persistCardsToMongo = async (newCards) => {
   await mongo.collection("all_cards").createIndex("uuid");
   await mongo.collection("all_cards").createIndex("name");
   await mongo.collection("all_cards").createIndex("mtgoId");
-}
+};
 
 const sortByPriority = allSets => (card1, card2) => {
   const set1 = allSets[card1.setCode];

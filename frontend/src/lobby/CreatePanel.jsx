@@ -9,7 +9,6 @@ import GameOptions from "./GameOptions";
 
 const CreatePanel = () => {
   const {title, seats} = App.state;
-  console.log(`title: ${title}`)
 
   return (
     <fieldset className='fieldset'>
@@ -27,9 +26,8 @@ const CreatePanel = () => {
                 const {data} = await axios.post("/api/data", {query: `{cubeByType(cubeType: ${ctParam}){cardNames}}`});
                 App.save("list", data.data.cubeByType.cardNames.join('\n'))
               }
-              
             }}>
-              {eventIdOptions().map((x,i) => <option key={i}>{x}</option>)}
+            {eventIdOptions().map((x,i) => <option key={i}>{x}</option>)}
           </select>
         </label>
       </div>
