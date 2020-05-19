@@ -5,6 +5,7 @@ import eio from "engine.io-client";
 import {times, constant} from "lodash";
 import {eventIdOptions} from "./utils";
 import axios from "axios";
+import GameState from "./gamestate";
 
 function message(msg) {
   let args = JSON.parse(msg);
@@ -25,9 +26,9 @@ let App = {
     roomInfo: [],
 
     seats: 8,
-    lobbyTitle: "",
-    gameTitle: "",
-    isPrivate: false,
+    title: "",
+    gameId: "",
+    isPrivate: true,
     modernOnly: false,
     totalChaos: false,
     chaosDraftPacksNumber: 3,
@@ -37,6 +38,7 @@ let App = {
     sets: [],
     setsDraft: [],
     setsSealed: [],
+    setsDecadentDraft: [],
     availableSets: {},
     list: "",
     cards: 15,
@@ -70,8 +72,9 @@ let App = {
     messages: [],
     pickNumber: 0,
     packSize: 15,
-    nameOptions: [],
-    roomId: null,
+    gameSeats: 8, // seats of the game being played
+    gameState: null, // records the current state of cards is a GameState
+    gameStates: {}, // Object representation of the gameState
 
     get didGameStart() {
       // both round === 0 and round is undefined
@@ -82,6 +85,9 @@ let App = {
     },
     get isGameFinished() {
       return App.state.round === -1;
+    },
+    get isDecadentDraft() {
+      return /decadent draft/.test(App.state.game.type);
     },
 
     get notificationBlocked() {
@@ -137,6 +143,20 @@ let App = {
     let msg = JSON.stringify(args);
     this.ws.send(msg);
   },
+  initGameState(id) {
+    const { gameStates } = App.state;
+    if (!gameStates[id]) {
+      App.state.gameState = new GameState();
+    } else {
+      App.state.gameState = new GameState(gameStates[id]);
+    }
+    App.state.gameState.on("updateGameState", (gameState) => {
+      App.save("gameStates", {
+        // ...App.state.gameStates,
+        [id]: gameState
+      });
+    });
+  },
   error(err) {
     App.err = err;
     App.route("");
@@ -154,12 +174,18 @@ let App = {
   },
   set(state) {
     Object.assign(App.state, state);
-    // Set default sets
-    if ( App.state.setsSealed.length === 0 && App.state.latestSet) {
-      App.state.setsSealed = times(6, constant(App.state.latestSet.code));
-    }
-    if ( App.state.setsDraft.length === 0 && App.state.latestSet) {
-      App.state.setsDraft = times(3, constant(App.state.latestSet.code));
+    if (App.state.latestSet) {
+      // Default sets to the latest set.
+      const defaultSetCode = App.state.latestSet.code;
+      const replicateDefaultSet = (desiredLength) => times(desiredLength, constant(defaultSetCode));
+      const initializeIfEmpty = (sets, desiredLength) => {
+        if (sets.length === 0) {
+          sets = replicateDefaultSet(desiredLength);
+        }
+      };
+      initializeIfEmpty(App.state.setsSealed, 6);
+      initializeIfEmpty(App.state.setsDraft, 3);
+      initializeIfEmpty(App.state.setsDecadentDraft, 36);
     }
     App.update();
   },
@@ -204,7 +230,14 @@ let App = {
     App.set({
       filename
     });
-  }
+  },
+  getZone(zoneName){
+    return App.state.gameState.get(zoneName);
+  },
+  getSortedZone(zoneName) {
+
+    return App.state.gameState.getSortedZone(zoneName, App.state.sort);
+  } 
 };
 
 export default App;

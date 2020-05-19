@@ -2,9 +2,8 @@ import React from "react";
 
 import _ from "utils/utils";
 import App from "../app";
-import {Checkbox, eventIdOptions} from "../utils";
-import axios from 'axios'
-import GameTypes from "./GameTypes";
+import {eventIdOptions} from "../utils";
+import axios from "axios";
 import GameOptions from "./GameOptions";
 
 
@@ -42,14 +41,10 @@ const CreatePanel = () => {
           </select>
         </div> : '' 
       }
-      {/* <div>
-        <Checkbox link='isPrivate' text='Make room private: ' side='right'/>
-      </div> */}
-      {/* <GameTypes/> */}
       {title.includes('casual-other-') ? <GameOptions/> : ''}
       <p>
         <button onClick={App._emit("create")}>
-          Create room
+          Create Room
         </button>
       </p>
     </fieldset>

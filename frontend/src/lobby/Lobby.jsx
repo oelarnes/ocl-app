@@ -18,7 +18,7 @@ export default class Lobby extends Component {
   }
   render() {
     document.title = STRINGS.BRANDING.SITE_TITLE;
-    const { roomInfo, serverVersion, mtgJsonVersion } = App.state;
+    const { roomInfo, serverVersion, mtgJsonVersion, boosterRulesVersion } = App.state;
 
     return (
       <div className="container">
@@ -26,11 +26,10 @@ export default class Lobby extends Component {
           <Header/>
           <CreatePanel/>
           <JoinPanel roomInfo={roomInfo}/>
-          {/* <FileUpload /> */}
           <NewsPanel motd={STRINGS.PAGE_SECTIONS.MOTD}/>
           {STRINGS.BRANDING.PAYPAL}
           {STRINGS.PAGE_SECTIONS.FOOTER}
-          <Version version={serverVersion} MTGJSONVersion={mtgJsonVersion}/>
+          <Version version={serverVersion} MTGJSONVersion={mtgJsonVersion} boosterRulesVersion={boosterRulesVersion}/>
         </div>
       </div>
     );

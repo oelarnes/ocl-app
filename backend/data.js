@@ -1,28 +1,59 @@
 const fs = require("fs");
+const path = require("path");
 const readFile = (path) => JSON.parse(fs.readFileSync(path, "UTF-8"));
-const {  keyCardsByName, groupCardsByName } = require("./import/keyCards");
+const { keyCardsUuidByName, groupCardsByName } = require("./import/keyCards");
 const { writeDraftStats, oclMongo } = require("ocl-data");
 
-let cards, cubableCardsByName, sets;
-let playableSets, latestSet;
+const DATA_DIR = "data";
+const DRAFT_STATS_DIR = "draftStats";
+const CARDS_PATH = "cards.json";
+const CUBABLE_CARDS_PATH = "cubable_cards_by_name.json";
+const SETS_PATH = "sets.json";
+const BOOSTER_RULES_PATH = "boosterRules.json";
+
+let cards, cubableCardsByName, sets, playableSets, latestSet, boosterRules;
+
+const getDataDir = () => {
+  const repoRoot = process.cwd();
+  const dataDir = path.join(repoRoot, DATA_DIR);
+  return dataDir;
+};
+
+const reloadData = (filename) => {
+  switch (filename) {
+  case CARDS_PATH: {
+    cards = null;
+    break;
+  }
+  case CUBABLE_CARDS_PATH: {
+    cubableCardsByName = null;
+    break;
+  }
+  case SETS_PATH: {
+    sets = null;
+    playableSets = null;
+    latestSet = null;
+    break;
+  }
+  case BOOSTER_RULES_PATH: {
+    boosterRules = null;
+    break;
+  }
+  }
+};
 
 const getSets = () => {
   if (!sets) {
-    sets = readFile("data/sets.json");
+    sets = readFile(`${getDataDir()}/${SETS_PATH}`);
   }
   return sets;
 };
 
-const getSet = (setCode) => {
-  if (!sets) {
-    sets = readFile("data/sets.json");
-  }
-  return sets[setCode];
-};
+const getSet = (setCode) => getSets()[setCode];
 
 const getCards = () => {
   if (!cards) {
-    cards = readFile("data/cards.json");
+    cards = readFile(`${getDataDir()}/${CARDS_PATH}`);
   }
   return cards;
 };
@@ -44,8 +75,6 @@ const saveSetsAndCards = (allSets, allCards) => {
   writeSets(allSets);
   writeCards(allCards);
   writeCubeCards(allSets, allCards);
-  // Do not put here -> circular reference >_<
-  // Sock.broadcast("set", { availableSets: getPlayableSets(), latestSet: getLatestReleasedSet() });
 };
 
 const getCardByUuid = (uuid) => {
@@ -54,9 +83,9 @@ const getCardByUuid = (uuid) => {
 
 const getCubableCardByName = (cardName) => {
   if (!cubableCardsByName) {
-    cubableCardsByName = readFile("data/cubable_cards_by_name.json");
+    cubableCardsByName = readFile(`${getDataDir()}/${CUBABLE_CARDS_PATH}`);
   }
-  return cubableCardsByName[cardName];
+  return getCardByUuid(cubableCardsByName[cardName]);
 };
 
 const writeCards = async (newCards) => {
@@ -106,14 +135,12 @@ const writeCubeCards = (allSets, allCards) => {
         name
       })));
     });
-  cubableCardsByName = keyCardsByName(cubableCards);
-  fs.writeFileSync("data/cubable_cards_by_name.json", JSON.stringify(cubableCardsByName, undefined, 4));
+  cubableCardsByName = keyCardsUuidByName(cubableCards);
+  fs.writeFileSync(`${getDataDir()}/${CUBABLE_CARDS_PATH}`, JSON.stringify(cubableCardsByName, undefined, 4));
 };
 
 const writeSets = (newSets) => {
-  fs.writeFileSync("data/sets.json", JSON.stringify(newSets, undefined, 4));
-  sets = newSets;
-  playableSets = null;
+  fs.writeFileSync(`${getDataDir()}/${SETS_PATH}`, JSON.stringify(newSets, undefined, 4));
 };
 
 const getPlayableSets = () => {
@@ -209,7 +236,30 @@ const isReleasedExpansionOrCoreSet = (type, releaseDate) => (
   Date.parse(releaseDate) <= new Date()
 );
 
+const getBoosterRules = (setCode) => {
+  if (!boosterRules) {
+    boosterRules = readFile(`${getDataDir()}/${BOOSTER_RULES_PATH}`);
+  }
+  return boosterRules[setCode];
+};
+
+const getBoosterRulesVersion = () => {
+  if (!boosterRules) {
+    try {
+      boosterRules = readFile(`${getDataDir()}/${BOOSTER_RULES_PATH}`);
+    } catch(error) {
+      return "";
+    }
+  }
+  return boosterRules.repoHash.substring(0,7);
+};
+
+const saveBoosterRules = (boosterRules) => {
+  fs.writeFileSync(`${getDataDir()}/${BOOSTER_RULES_PATH}`, JSON.stringify(boosterRules, undefined, 4));
+};
+
 module.exports = {
+  getDataDir,
   getCards,
   getSets,
   getSet,
@@ -222,5 +272,9 @@ module.exports = {
   saveSetsAndCards,
   mergeCardsTogether,
   getCardByUuid,
-  getCardByName: getCubableCardByName
+  getCardByName: getCubableCardByName,
+  reloadData,
+  getBoosterRules,
+  getBoosterRulesVersion,
+  saveBoosterRules
 };

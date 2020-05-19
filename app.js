@@ -6,12 +6,13 @@ const helmet = require("helmet");
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const {spawn} = require("child_process");
 const logger = require("./backend/logger");
 const router = require("./backend/router");
 const apiRouter = require("./backend/api/");
-const allSets = require("./scripts/download_allsets");
 const {app: config, version} = require("./config");
 const { dataSyncLoop } = require('ocl-data');
+require("./backend/data-watch");
 
 const app = express();
 
@@ -28,11 +29,13 @@ app.use("/api", apiRouter);
 
 
 // Download Allsets.json if there's a new one and make the card DB
-allSets.download();
+spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
+spawn("node", ["scripts/download_booster_rules.js"], { stdio: "inherit" });
 
-// Schedule check of a new AllSets.json every hour
+// Schedule check of a new sets and new boosterRules every hour
 schedule.scheduleJob("0 * * * *", () => {
-  allSets.download();
+  spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
+  spawn("node", ["scripts/download_booster_rules.js"], { stdio: "inherit" });
 });
 
 // Create server
@@ -42,4 +45,3 @@ io.on("connection", router);
 
 server.listen(config.PORT);
 logger.info(`Started up on port ${config.PORT} with version ${version}`);
-
