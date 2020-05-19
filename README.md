@@ -1,6 +1,6 @@
-# ocl-site
+# ocl-app
 
-*ocl-site* is a branch of the *dr4ft* project, described below, for the purposes of the Online Cube League.
+*ocl-app* is a fork of the *dr4ft* project, described below, for the purposes of the Online Cube League.
 <br>
 
 # dr4ft [![Chat](https://badges.gitter.im/dr4fters/dr4ft.svg)](https://gitter.im/dr4fters/dr4ft)
