@@ -2,6 +2,7 @@
 
 *ocl-app* is a fork of the *dr4ft* project, described below, for the purposes of the Online Cube League.
 <br>
+*ocl-app* depends on *ocl-data*, and requires a file `ocl.ini` in the config directory which will specify database environments and sheets links, as well as a google-auth folder containing credentials to pull/push from sheets. Contact Joel to discuss this access or building ocl-app without it.
 
 # dr4ft [![Chat](https://badges.gitter.im/dr4fters/dr4ft.svg)](https://gitter.im/dr4fters/dr4ft)
 

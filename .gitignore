@@ -18,3 +18,4 @@ coverage/
 *.log
 
 google-auth
+config/ocl.ini
