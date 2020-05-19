@@ -9,9 +9,10 @@ const Room = require("./room");
 const Rooms = require("./rooms");
 const logger = require("./logger");
 const Sock = require("./sock");
-const {writeDraftStats, dataSync} = require("ocl-data");
+const {dataSync} = require("ocl-data");
 const {getDataDir} = require("./data");
 const path = require("path");
+const fs = require("fs");
 
 module.exports = class Game extends Room {
   constructor({ hostId, title, seats, type, sets, cube, isPrivate, modernOnly, totalChaos, chaosPacksNumber }) {
@@ -362,11 +363,6 @@ module.exports = class Game extends Room {
       }
     });
 
-    if (!fs.existsSync(`data/events/${draftStats.title}`)) {
-      fs.mkdirSync(`data/events/${draftStats.title}`);
-    }
-
-    await writeDraftStats(draftStats);
     return dataSync();
   }
 
@@ -374,7 +370,7 @@ module.exports = class Game extends Room {
     this.players.forEach(async (p) => {
       if (!p.isBot) {
         const { type, title, players, sets } = this;
-        const { draftLog, self } = p;
+        const { draftLog, self, name } = p;
         const isCube = /cube/.test(type);
         const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
         let data = [
@@ -384,7 +380,7 @@ module.exports = class Game extends Room {
         ];
   
         players.forEach((player, i) =>
-          data.push(i === self ? `--> ${player.name}` : `    ${player.name}`)
+          data.push(i === self ? `--> ${player.oclId}` : `    ${player.oclId}`)
         );
   
         Object.values(draftLog.round).forEach((round, index) => {
@@ -397,9 +393,12 @@ module.exports = class Game extends Room {
   
         p.logFile = data.join("\n");
         p.send("log", p.logFile);
-        await fs.promises.writeFile(`data/events/${title}/${name}-${date}-log.txt`, p.logFile);
+        if (fs.existsSync(`data/events/${title}`)) {
+          await fs.promises.writeFile(`data/events/${title}/${name}-${title}-draftlog.txt`, p.logFile);
+        }
       }
     });
+
     const cubeHash = /cube/.test(this.type)
       ? crypto.createHash("SHA512").update(this.cube.list.join("")).digest("hex")
       : "";

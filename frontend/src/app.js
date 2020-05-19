@@ -17,6 +17,7 @@ let App = {
 
   state: {
     id: null,
+    oclId: "",
     name: STRINGS.BRANDING.DEFAULT_USERNAME,
 
     serverVersion: null,
@@ -224,18 +225,16 @@ let App = {
     });
   },
   updateFilename() {
-    const date = new Date();
-    const currentTime = date.toISOString().slice(0, 10);
-    const filename = `${this.state.name}-${this.state.title}-${currentTime}`;
-    App.set({
+    const filename = `${App.state.name}-${App.state.title}`;
+    App.save({
       filename
     });
+    App.update()
   },
   getZone(zoneName){
     return App.state.gameState.get(zoneName);
   },
   getSortedZone(zoneName) {
-
     return App.state.gameState.getSortedZone(zoneName, App.state.sort);
   } 
 };

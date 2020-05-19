@@ -4,6 +4,7 @@ import {vanillaToast} from "vanilla-toast";
 import DOMPurify from "dompurify";
 import {range, times, constant, countBy, findIndex} from "lodash";
 import {ZONE_JUNK, ZONE_MAIN, ZONE_PACK, ZONE_SIDEBOARD} from "./zones";
+import Axios from "axios";
 
 /**
  * @desc this is the list of all the events that can be triggered by the App
@@ -41,9 +42,9 @@ const events = {
     hash();
   },
   download() {
-    const {filename, filetype} = App.state;
+    const {filetype} = App.state;
     const data = filetypes[filetype]();
-    _.download(data, filename + "." + filetype);
+    _.download(data, `${App.state.name}-${App.state.title}` + "." + filetype);
     hash();
   },
   start() {
@@ -77,28 +78,7 @@ const events = {
     App.save("log", draftLog);
   },
   getLog() {
-    const {gameId, log, players, self, sets, gamesubtype, filename} = App.state;
-    const isCube = /cube/.test(gamesubtype);
-    const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
-    const data = [
-      `Event #: ${gameId}`,
-      `Time: ${date}`,
-      "Players:"
-    ];
-
-    players.forEach((player, i) =>
-      data.push(i === self ? `--> ${player.name}` : `    ${player.name}`)
-    );
-
-    Object.values(log).forEach((round, index) => {
-      data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
-      round.forEach(function (pick, i) {
-        data.push("", `Pack ${index + 1} pick ${i + 1}:`);
-        pick.forEach((card) => data.push(card));
-      });
-    });
-
-    _.download(data.join("\n"), `${filename}-draftlog.txt`);
+    _.download(App.state.log, `${App.state.name}-${App.state.title}-draftlog.txt`);
   },
 
   create() {
@@ -297,37 +277,9 @@ function codify(zone) {
 }
 
 const filetypes = {
-  cod() {
-    return `\
-<?xml version="1.0" encoding="UTF-8"?>
-<cockatrice_deck version="1">
-  <deckname>${App.state.filename}</deckname>
-  <zone name="main">
-${codify(App.state.gameState.get(ZONE_MAIN))}
-  </zone>
-  <zone name="side">
-${codify(App.state.gameState.get(ZONE_SIDEBOARD))}
-  </zone>
-</cockatrice_deck>`;
-  },
-  mwdeck() {
-    const arr = [];
-    [ZONE_MAIN, ZONE_SIDEBOARD].forEach(zoneName => {
-      const prefix = zoneName === ZONE_SIDEBOARD ? "SB: " : "";
-      const zone = App.state.gameState.countCardsBy(zoneName, ({setCode, name}) => `${setCode}|${name}`);
-      Object.entries(zone).forEach(([cardName, count]) => {
-        const [code, name] = cardName.split("|");
-        const sanitizedName = name.replace(" // ", "/");
-        arr.push(`${prefix}${count} [${code}] ${sanitizedName}`);
-      });
-    });
-    return arr.join("\n");
-  },
-  json() {
-    return JSON.stringify({
-      main: App.state.gameState.countCardsByName(ZONE_MAIN),
-      side: App.state.gameState.countCardsByName(ZONE_SIDEBOARD)
-    }, null, 2);
+  async dek() {
+    const {data} = await Axios.post('/api/data', {query: `{entry(eventId: ${App.state.title}, playerId: ${App.state.oclId}){decklist {ownedDekString}}}`})
+    return data.data.entry.decklist.ownedDeckString;
   },
   txt() {
     const arr = [];

@@ -14,6 +14,7 @@ class Player extends EventEmitter {
 
     Object.assign(this, {
       name,
+      oclId,
       isBot,
       isConnected,
       id,

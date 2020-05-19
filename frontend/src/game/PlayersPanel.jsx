@@ -162,7 +162,7 @@ const PlayerEntry = ({player, index, nameOptions}) => {
 
 PlayerEntry.propTypes = {
   player: PropTypes.object.isRequired,
-  nameOptions: PropTypes.arrayOf.string.isRequired,
+  nameOptions: PropTypes.array.isRequired,
   index: PropTypes.number.isRequired
 };
 
@@ -172,11 +172,13 @@ const SelfName = ({ name, nameOptions }) => (
     type='text'
     maxLength={15}
     value={name}
-    onChange={(e) => {
+    onChange={async (e) => {
       App.save("name", e.currentTarget.value);
-      App.updateFilename();
     }}
     onBlur={(e) => {
+      const {data} = await Axios.post('/api/data', {query: `{playerSearch(byHandle: "${e.currentTarget.value}"){id}}`})
+      App.save("oclId", data.data.playerSearch[0]?.id);
+      App.send("oclId", App.state.oclId)
       App.send("name", e.currentTarget.value);
     }}
   >{nameOptions.map((x,i) => <option key={i}>{x}</option>)}
@@ -185,7 +187,7 @@ const SelfName = ({ name, nameOptions }) => (
 
 SelfName.propTypes = {
   name: PropTypes.string.isRequired,
-  nameOptions: PropTypes.arrayOf.string.isRequired,
+  nameOptions: PropTypes.array.isRequired,
 };
 
 export default PlayersPanel;

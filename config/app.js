@@ -2,7 +2,7 @@ const joi = require("@hapi/joi");
 
 const envVarsSchema = joi.object({
   PORT: joi.number()
-    .default(8093),
+    .default(8011),
   HOST: joi.string()
     .default("localhost"),
   DEFAULT_USERNAME: joi.string()
