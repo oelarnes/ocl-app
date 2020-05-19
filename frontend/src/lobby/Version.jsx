@@ -2,9 +2,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-<<<<<<< HEAD
-const Version = ({version, MTGJSONVersion}) => {
-=======
 const getLink = (version) => (
   (/^v\d+\.\d+\.\d+$/.test(version)) ?
     `releases/tag/${version}` :
@@ -12,9 +9,11 @@ const getLink = (version) => (
 );
 
 const Version = ({version, MTGJSONVersion, boosterRulesVersion}) => {
->>>>>>> master
   return (
-    <p>Using <a href="https://www.mtgjson.com">MTGJSON</a> {" "}
+    <p>Running Version: {" "}
+      <a href={`https://github.com/dr4fters/dr4ft/${getLink(version)}`}>
+        {version}
+      </a> (build {BUILD_DATE}) - Using <a href="https://www.mtgjson.com">MTGJSON</a> {" "}
       card data {" "}
       <a href={`https://mtgjson.com/changelog/#_${MTGJSONVersion.version.replace(/\./g, "-")}`}>
         v{MTGJSONVersion.version}
@@ -26,13 +25,9 @@ const Version = ({version, MTGJSONVersion, boosterRulesVersion}) => {
 };
 
 Version.propTypes = {
-<<<<<<< HEAD
-  MTGJSONVersion: PropTypes.object
-=======
   version: PropTypes.string,
   MTGJSONVersion: PropTypes.object,
   boosterRulesVersion: PropTypes.string
->>>>>>> master
 };
 
 export default Version;

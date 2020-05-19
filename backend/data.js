@@ -88,17 +88,20 @@ const getCubableCardByName = (cardName) => {
   return getCardByUuid(cubableCardsByName[cardName]);
 };
 
-const writeCards = async (newCards) => {
+const writeCards = (newCards) => {
+  fs.writeFileSync(`${getDataDir()}/${CARDS_PATH}`, JSON.stringify(newCards, undefined, 4));
+};
+
+const persistCardsToMongo = async (newCards) => {
   const mongo = await oclMongo();
+  await mongo.collection("all_cards").deleteMany({});
   await mongo.collection("all_cards").insertMany(Object.values(newCards).reduce(
     (prev, curr) => prev.concat(curr), []
   ));
   await mongo.collection("all_cards").createIndex("uuid");
   await mongo.collection("all_cards").createIndex("name");
   await mongo.collection("all_cards").createIndex("mtgoId");
-
-  cards = newCards;
-};
+}
 
 const sortByPriority = allSets => (card1, card2) => {
   const set1 = allSets[card1.setCode];

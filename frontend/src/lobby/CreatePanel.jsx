@@ -9,6 +9,7 @@ import GameOptions from "./GameOptions";
 
 const CreatePanel = () => {
   const {title, seats} = App.state;
+  console.log(`title: ${title}`)
 
   return (
     <fieldset className='fieldset'>
@@ -39,7 +40,7 @@ const CreatePanel = () => {
             {_.seq(100, 1).map((x, i) =>
               <option key={i}>{x}</option>)}
           </select>
-        </div> : '' 
+        </div> : ''
       }
       {title.includes('casual-other-') ? <GameOptions/> : ''}
       <p>

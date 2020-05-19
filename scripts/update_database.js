@@ -5,7 +5,7 @@ const { saveSetsAndCards, getDataDir } = require("../backend/data");
 const doSet = require("../backend/import/doSet");
 
 
-const updateDatabase = () => {
+const updateDatabase = async () => {
   let allCards = {};
   const allSets = {};
 
@@ -66,7 +66,7 @@ const updateDatabase = () => {
   }
 
   logger.info("Parsing AllSets.json finished");
-  saveSetsAndCards(allSets, allCards);
+  await saveSetsAndCards(allSets, allCards);
   logger.info("Writing sets.json and cards.json finished");
 };
 

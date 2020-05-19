@@ -1,6 +1,6 @@
 {
-  "name": "ocl-site",
-  "version": "0.1.1",
+  "name": "ocl-app",
+  "version": "0.1.0",
   "description": "game client/server",
   "license": "MIT",
   "author": "Dr4fters Team <zach@dr4ft.info>",

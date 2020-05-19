@@ -15,7 +15,7 @@ const GameTypes = () => {
   const getAvailableSubTypes = (gameType) => gameOptions[gameType];
   return (
     <div>
-      <p>Game type:{" "}
+      {/* <p>Game type:{" "}
         <span className='connected-container'>
           {getAvailableTypes().map((gameType, key) =>
             <GameType name={"type"}
@@ -34,7 +34,7 @@ const GameTypes = () => {
             />
           )}
         </span>
-      </p>
+      </p> */}
       <p>Game mode:{" "}
         <span className='connected-container'>
           {getAvailableSubTypes(App.state.gametype).map((type, key) =>
