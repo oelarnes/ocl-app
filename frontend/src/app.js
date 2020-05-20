@@ -3,8 +3,6 @@ import EventEmitter from "events";
 import {STRINGS} from "./config";
 import eio from "engine.io-client";
 import {times, constant} from "lodash";
-import {eventIdOptions} from "./utils";
-import axios from "axios";
 import GameState from "./gamestate";
 
 function message(msg) {
@@ -18,6 +16,7 @@ let App = {
   state: {
     id: null,
     oclId: "",
+    oclDataSync: false,
     name: STRINGS.BRANDING.DEFAULT_USERNAME,
 
     serverVersion: null,
@@ -58,7 +57,6 @@ let App = {
     cols: true,
     hidepicks: false,
     deckSize: 40,
-    filename: "filename",
     filetype: "txt",
     side: false,
     sort: "cmc",
@@ -224,19 +222,12 @@ let App = {
       game: {type, sets, packsInfo}
     });
   },
-  updateFilename() {
-    const filename = `${App.state.name}-${App.state.title}`;
-    App.save({
-      filename
-    });
-    App.update()
-  },
   getZone(zoneName){
     return App.state.gameState.get(zoneName);
   },
   getSortedZone(zoneName) {
     return App.state.gameState.getSortedZone(zoneName, App.state.sort);
-  } 
+  }
 };
 
 export default App;

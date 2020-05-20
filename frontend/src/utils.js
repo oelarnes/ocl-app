@@ -11,23 +11,23 @@ const toTitleCase = (sentence, separator=" ") => {
 };
 
 function eventIdOptions() {
-  const today = new Date()
-  const year = new Intl.DateTimeFormat('en', { year: '2-digit' }).format(today)
-  const mon = new Intl.DateTimeFormat('en', { month: 'short' }).format(today).toLowerCase()
-  const da = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(today)
-  const dateStr = `${da}${mon}${year}`
-  const prizeTypes = ['qp', 'ranked', 'casual']
-  const cubeTypes = ['powered', 'interactive']
+  const today = new Date();
+  const year = new Intl.DateTimeFormat("en", { year: "2-digit" }).format(today);
+  const mon = new Intl.DateTimeFormat("en", { month: "short" }).format(today).toLowerCase();
+  const da = new Intl.DateTimeFormat("en", { day: "numeric" }).format(today);
+  const dateStr = `${da}${mon}${year}`;
+  const prizeTypes = ["qp", "ranked", "casual"];
+  const cubeTypes = ["powered", "interactive"];
 
-  const retVals = []
+  const retVals = [];
   for (const pt of prizeTypes) {
     for (const ct of cubeTypes) {
-      retVals.push(`${pt}-${ct}-${dateStr}`)
+      retVals.push(`${pt}-${ct}-${dateStr}`);
     }
   }
 
-  retVals.push(`casual-other-${dateStr}`)
-  return retVals
+  retVals.push(`casual-other-${dateStr}`);
+  return retVals;
 }
 
 module.exports = {

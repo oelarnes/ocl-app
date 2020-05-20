@@ -82,14 +82,14 @@ const events = {
   },
 
   create() {
-    let {gametype, gamesubtype, seats, title, isPrivate, modernOnly, totalChaos, chaosDraftPacksNumber, chaosSealedPacksNumber} = App.state;
+    let {gametype, gamesubtype, seats, title, isPrivate, modernOnly, totalChaos, chaosDraftPacksNumber, chaosSealedPacksNumber, oclDataSync} = App.state;
     seats = Number(seats);
 
     //TODO: either accept to use the legacy types (draft, sealed, chaos draft ...) by  keeping it like this
     // OR change backend to accept "regular draft" instead of "draft" and "regular sealed" instead of "sealed"
     const type = `${/regular/.test(gamesubtype) ? "" : gamesubtype + " "}${gametype}`;
 
-    let options = {type, seats, title, isPrivate, modernOnly, totalChaos};
+    let options = {type, seats, title, isPrivate, modernOnly, totalChaos, oclDataSync};
 
     switch (gamesubtype) {
     case "regular": {
@@ -278,7 +278,10 @@ function codify(zone) {
 
 const filetypes = {
   async dek() {
-    const {data} = await Axios.post('/api/data', {query: `{entry(eventId: ${App.state.title}, playerId: ${App.state.oclId}){decklist {ownedDekString}}}`})
+    let data;
+    if (App.state.oclDataSync) {
+      data = await Axios.post("/api/data", {query: `{entry(eventId: ${App.state.title}, playerId: ${App.state.oclId}){decklist {ownedDekString}}}`}).data;
+    }
     return data.data.entry.decklist.ownedDeckString;
   },
   txt() {

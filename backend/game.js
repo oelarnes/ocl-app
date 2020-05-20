@@ -15,11 +15,11 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = class Game extends Room {
-  constructor({ hostId, title, seats, type, sets, cube, isPrivate, modernOnly, totalChaos, chaosPacksNumber }) {
+  constructor({ hostId, title, seats, type, sets, cube, isPrivate, modernOnly, totalChaos, chaosPacksNumber, oclDataSync }) {
     super({ isPrivate });
     const gameID = uuid.v1();
     Object.assign(this, {
-      title, seats, type, isPrivate, modernOnly, totalChaos, cube, chaosPacksNumber,
+      title, seats, type, isPrivate, modernOnly, totalChaos, cube, chaosPacksNumber, oclDataSync,
       delta: -1,
       hostID: hostId,
       id: gameID,
@@ -301,7 +301,8 @@ module.exports = class Game extends Room {
       self: this.players.indexOf(h),
       sets: this.sets,
       gameId: this.id,
-      title: this.title
+      title: this.title,
+      oclDataSync: this.oclDataSync
     });
     h.send("gameInfos", {
       type: this.type,
@@ -378,11 +379,11 @@ module.exports = class Game extends Room {
           `Time: ${date}`,
           "Players:"
         ];
-  
+
         players.forEach((player, i) =>
           data.push(i === self ? `--> ${player.oclId}` : `    ${player.oclId}`)
         );
-  
+
         Object.values(draftLog.round).forEach((round, index) => {
           data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
           round.forEach(function (pick, i) {
@@ -390,7 +391,7 @@ module.exports = class Game extends Room {
             data = data.concat(pick);
           });
         });
-  
+
         p.logFile = data.join("\n");
         p.send("log", p.logFile);
         if (fs.existsSync(`data/events/${title}`)) {
@@ -647,6 +648,7 @@ module.exports = class Game extends Room {
     Game State
     ----------
     id: ${this.id}
+    oclDataSync: ${this.oclDataSync}
     hostId: ${this.hostID}
     title: ${this.title}
     seats: ${this.seats}
