@@ -1,42 +1,4 @@
 :root{
-  --card-title: #868987;
-  --generic-mana: #b1b5b7;
-  --border-black: #1c1c1c;
-  --border-white: #ededef;
-  --card-name: #868987;
-  --artifact-frame-light: #957f6b;
-  --artifact-frame-dark: #7D7062;
-  --artifact-textarea: #c9c3b3;
-  --generic-mana: #b1b5b7;
-  --white-frame-light: #cab9aa;
-  --white-frame-dark: #b9ac9e;
-  --white-textarea: #d6d2d0;
-  --white-mana: #e7e7d7;
-  --blue-frame-light: #5488a0;
-  --blue-frame-dark: #464a70;
-  --blue-textarea: #96c9d9;
-  --blue-mana: #a7d7c4;
-  --black-frame-light: #52595d;
-  --black-frame-dark: #303133;
-  --black-textarea: #cab191;
-  --black-mana: #717777;
-  --red-frame-light: #904045;
-  --red-frame-dark: #7e343a;
-  --red-textarea: #9a6a65;
-  --red-mana: #c79b8a;
-  --green-frame-light: #557266;
-  --green-frame-dark: #41554b;
-  --green-textarea: #6d5b4c;
-  --green-mana: #b3c3a3;
-  --land-frame-light: #a29791;
-  --land-frame-dark: #6e6362;
-  --cardback-leather: #985433;
-  --cardback-frame-light: #806223;
-  --cardback-frame-dark: #473019;
-  --cardback-letters-light: #86b4dc;
-  --cardback-letters-dark: #4f5e97;
-  --cardback-red-pips: #b63e27;
-  --current-frame: var(--artifact-frame-light);
   --mythic-orange: rgb(255,62,35);
 }
 
@@ -59,7 +21,7 @@
   padding: 1em;
   border-style: solid;
   border-width: 4px;
-  border-color: var(--cardback-letters-dark);
+  border-color: #4f5e97;
 }
 
 .loading_website {
@@ -85,7 +47,7 @@ body {
   font-family: "Cormorant Garamond", fserif;
   font-weight: 600;
   font-size: 20px;
-  color: var(--cardback-letters-light);
+  color: #78b3ca;
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -98,7 +60,7 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   white-space: nowrap;
-  color: var(--cardback-letters-light);
+  color: #78b3ca;
   
   
   padding: 0px 0px 0px;
@@ -131,11 +93,11 @@ textarea {
 }
 
 time {
-  color: var(--card-name);
+  color: #868987;
 }
 
 a {
-  color: var(--cardback-red-pips);
+  color: #b63e27;
 }
 
 th {
@@ -148,9 +110,9 @@ th {
 /** Fieldsets and forms **/
 
 .fieldset {
-  background-color: rgb(132, 109, 70);
+  background-color: rgb(177, 144, 87);
   border-radius: 6px;
-  border: solid var(--cardback-leather) 1px;
+  border: solid #7b3a0e 1px;
   line-height: 20px;
   padding: 10px 10px 10px;
   color: black;
@@ -160,10 +122,10 @@ th {
 }
 
 .legend {
-  background-color: #88471B;
-  border: solid var(--border-black) 2px;
+  background-color: #7b3a0e;
+  border: solid #1c1c1c 2px;
   border-radius: 4px;
-  color: var(--cardback-letters-light);
+  color: #99d1e6;
   font-family: "Cormorant Garamond", serif;
   font-variant: small-caps;
   font-size: 24px;
@@ -220,7 +182,7 @@ textarea:hover {
 input[type=button]:active,
 .uploadFile:active,
 button:active {
-  box-shadow: 0 0 1px 0 var(--border-black) inset;
+  box-shadow: 0 0 1px 0 #1c1c1c inset;
 }
 
 input[type=button]:disabled,
@@ -321,7 +283,7 @@ input[type="checkbox"], input[type="radio"] {
 
 .lobby-header {
   font-family: "Inknut Antiqua", serif;
-  text-shadow: -3px -3px 0px var(--cardback-letters-dark);
+  text-shadow: -3px -3px 0px #4f5e97;
   font-size: 54px;
   height: 54px;
   margin: 40px 0px 40px;
@@ -356,7 +318,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .chat {
-  border-left: 1px solid var(--cardback-letters-light);
+  border-left: 1px solid #99d1e6;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -386,7 +348,7 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type=text].chat-input {
   background-color: rgb(64,68,75);
-  color: var(--border-white)
+  color: #ededef
 }
 
 /*** Join rooms ***/
@@ -403,9 +365,9 @@ input[type=text].chat-input {
 }
 
 .join-room-table tbody tr {
-  background-color: var(--artifact-textarea);
+  background-color: rgb(177, 144, 87);
   color: black;
-  border: solid var(--cardback-letters-light) 1px;
+  border: solid #99d1e6 1px;
 }
 
 .join-room-link:after {
@@ -508,7 +470,7 @@ input[type=text].chat-input {
   left: 0;
   right: 0;
 
-  color: var(--cardback-letters-light);
+  color: #99d1e6;
   font-family: Verdana, Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -565,7 +527,7 @@ input[type=text].chat-input {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
-  border-top: solid var(--cardback-letters-light) 1px;
+  border-top: solid #99d1e6 1px;
 }
 
 /** Players **/

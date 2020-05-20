@@ -16,7 +16,6 @@ let App = {
   state: {
     id: null,
     oclId: "",
-    oclDataSync: false,
     name: STRINGS.BRANDING.DEFAULT_USERNAME,
 
     serverVersion: null,
@@ -24,6 +23,9 @@ let App = {
     numPlayers: 0,
     numActiveGames: 0,
     roomInfo: [],
+
+    oclDataSync: false,
+    oclSyncEvents: [],
 
     seats: 8,
     title: "",
@@ -129,9 +131,9 @@ let App = {
     }
   },
   connect() {
-    let {id, name} = App.state;
+    let {id, name, oclId} = App.state;
     let options = {
-      query: { id, name }
+      query: { id, name, oclId }
     };
     if(!this.ws) {
       this.ws = eio(location.href, options);

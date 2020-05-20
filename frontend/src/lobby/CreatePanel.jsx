@@ -7,7 +7,7 @@ import axios from "axios";
 import GameOptions from "./GameOptions";
 
 const CreatePanel = () => {
-  const {title, seats} = App.state;
+  const {title, seats, oclSyncEvents} = App.state;
 
   return (
     <fieldset className="fieldset">
@@ -28,9 +28,9 @@ const CreatePanel = () => {
                 const {data} = await axios.post("/api/data", {query: `{cubeByType(cubeType: ${ctParam}){cardNames}}`});
                 App.save("list", data.data.cubeByType.cardNames.join("\n"));
               }
-              App.save("oclDataSync", !/$casual-/.test(value));
+              App.save("oclDataSync", !/^casual-/.test(value));
             }}>
-            {eventIdOptions().map((x,i) => <option key={i}>{x}</option>)}
+            {eventIdOptions().concat(oclSyncEvents).map((x,i) => <option key={i}>{x}</option>)}
           </select>
         </label>
       </div>

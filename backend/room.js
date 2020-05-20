@@ -23,7 +23,6 @@ module.exports = class Room extends EventEmitter {
   }
   oclId(oclId, sock) {
     sock.oclId = oclId;
-    console.log(oclId);
   }
   exit(sock) {
     sock.removeAllListeners("say");

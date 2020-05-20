@@ -7,7 +7,6 @@ import Header from "./Header";
 import JoinPanel from "./JoinPanel";
 import NewsPanel from "./NewsPanel";
 import CreatePanel from "./CreatePanel";
-import FileUpload from "./FileUpload";
 import Version from "./Version";
 
 export default class Lobby extends Component {

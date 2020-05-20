@@ -33,9 +33,10 @@ class Sock extends EventEmitter {
   constructor(ws) {
     super();
     this.ws = ws;
-    const {id = "", name = DEFAULT_USERNAME} = ws.request._query;
+    const {id = "", name = DEFAULT_USERNAME, oclId = ""} = ws.request._query;
     this.id = id.slice(0, 25);
     this.name = name.slice(0, 15);
+    this.oclId = oclId;
 
     for (let key in mixins)
       this[key] = mixins[key].bind(this);

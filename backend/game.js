@@ -167,6 +167,12 @@ module.exports = class Game extends Room {
     this.meta();
   }
 
+  oclId(oclId, sock) {
+    super.oclId(oclId, sock);
+    sock.h.oclId = sock.oclId;
+    this.meta();
+  }
+
   join(sock) {
     // Reattach sock to player based on his id
     const reattachPlayer = this.players.some((player) => {
@@ -194,6 +200,7 @@ module.exports = class Game extends Room {
 
     super.join(sock);
     this.logger.debug(`${sock.name} joined the game`);
+    this.logger.debug(`${sock.name} has oclId ${sock.oclId}`);
 
     function regularDraftPickDelegate(index) {
       const pack = this.packs.shift();
@@ -328,6 +335,7 @@ module.exports = class Game extends Room {
     state.players = this.players.map(p => ({
       hash: p.hash,
       name: p.name,
+      oclId: p.oclId,
       time: p.time,
       packs: p.packs.length,
       isBot: p.isBot,
@@ -352,7 +360,8 @@ module.exports = class Game extends Room {
 
   async end() {
     const { type, title, players, sets, oclDataSync } = this;
-    this.players.forEach(async (p) => {
+    const tag = oclDataSync ? "oclId" : "name";
+    await Promise.all(this.players.map(async (p) => {
       if (!p.isBot) {
         const { draftLog, self, name } = p;
         const isCube = /cube/.test(type);
@@ -364,7 +373,7 @@ module.exports = class Game extends Room {
         ];
 
         players.forEach((player, i) =>
-          data.push(i === self ? `--> ${player.oclId}` : `    ${player.oclId}`)
+          data.push(i === self ? `--> ${player[tag]}` : `    ${player[tag]}`)
         );
 
         Object.values(draftLog.round).forEach((round, index) => {
@@ -382,8 +391,9 @@ module.exports = class Game extends Room {
             await fs.promises.writeFile(`data/events/${title}/${name}-${title}-draftlog.txt`, p.logFile);
           }
         }
+        return;
       }
-    });
+    }));
     if (oclDataSync) {
       dataSync();
     }
@@ -401,6 +411,7 @@ module.exports = class Game extends Room {
       "time": Date.now(),
       "cap": this.players.map((player, seat) => ({
         "id": player.id,
+        "oclId": player.oclId,
         "name": player.name,
         "seat": seat,
         "picks": player.cap.packs,

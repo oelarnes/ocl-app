@@ -16,7 +16,7 @@ function eventIdOptions() {
   const mon = new Intl.DateTimeFormat("en", { month: "short" }).format(today).toLowerCase();
   const da = new Intl.DateTimeFormat("en", { day: "numeric" }).format(today);
   const dateStr = `${da}${mon}${year}`;
-  const prizeTypes = ["qp", "ranked", "casual"];
+  const prizeTypes = ["casual"];
   const cubeTypes = ["powered", "interactive"];
 
   const retVals = [];
