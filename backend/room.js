@@ -13,12 +13,17 @@ module.exports = class Room extends EventEmitter {
     sock.once("exit", this.exit.bind(this));
     sock.on("say", this.say.bind(this));
     sock.on("name", this.name.bind(this));
+    sock.on("oclId", this.oclId.bind(this));
     sock.send("chat", this.messages);
   }
   name(name, sock) {
     if (typeof name !== "string")
       return;
     sock.name = name.slice(0, 15);
+  }
+  oclId(oclId, sock) {
+    sock.oclId = oclId;
+    console.log(oclId);
   }
   exit(sock) {
     sock.removeAllListeners("say");

@@ -172,14 +172,16 @@ const SelfName = ({ name, nameOptions }) => (
     type='text'
     maxLength={15}
     value={name}
-    onChange={async (e) => {
+    onChange={(e) => {
       App.save("name", e.currentTarget.value);
     }}
-    onBlur={(e) => {
-      const {data} = await Axios.post('/api/data', {query: `{playerSearch(byHandle: "${e.currentTarget.value}"){id}}`})
+    onBlur={async (e) => {
+      const value = e.currentTarget.value;
+      const {data} = await Axios.post("/api/data", {query: `{playerSearch(byHandle: "${value}"){id}}`});
       App.save("oclId", data.data.playerSearch[0]?.id);
-      App.send("oclId", App.state.oclId)
-      App.send("name", e.currentTarget.value);
+      console.log(`oclId: ${App.state.oclId}`);
+      App.send("oclId", App.state.oclId);
+      App.send("name", value);
     }}
   >{nameOptions.map((x,i) => <option key={i}>{x}</option>)}
   </select>

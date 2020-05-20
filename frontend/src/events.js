@@ -2,7 +2,7 @@ import _ from "utils/utils";
 import App from "./app";
 import {vanillaToast} from "vanilla-toast";
 import DOMPurify from "dompurify";
-import {range, times, constant, countBy, findIndex} from "lodash";
+import {range, times, constant, findIndex} from "lodash";
 import {ZONE_JUNK, ZONE_MAIN, ZONE_PACK, ZONE_SIDEBOARD} from "./zones";
 import Axios from "axios";
 
@@ -268,21 +268,14 @@ const events = {
 
 Object.keys(events).forEach((event) => App.on(event, events[event]));
 
-function codify(zone) {
-  const arr = [];
-  Object.entries(countBy(zone, "name")).forEach(([name, number]) => {
-    arr.push(`    <card number="${number}" name="${name}"/>`);
-  });
-  return arr.join("\n");
-}
-
 const filetypes = {
   async dek() {
     let data;
     if (App.state.oclDataSync) {
       data = await Axios.post("/api/data", {query: `{entry(eventId: ${App.state.title}, playerId: ${App.state.oclId}){decklist {ownedDekString}}}`}).data;
+      return data.data.entry.decklist.ownedDeckString;
     }
-    return data.data.entry.decklist.ownedDeckString;
+    return "";
   },
   txt() {
     const arr = [];

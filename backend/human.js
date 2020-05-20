@@ -10,7 +10,8 @@ module.exports = class extends Player {
       isBot: false,
       isConnected: true,
       name: sock.name,
-      id: sock.id
+      id: sock.id,
+      oclId: sock.oclId,
     });
     this.pickDelegate = pickDelegate.bind(this);
     this.attach(sock);

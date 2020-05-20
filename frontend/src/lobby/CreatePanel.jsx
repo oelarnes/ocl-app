@@ -22,12 +22,13 @@ const CreatePanel = () => {
               App.save("title", e.currentTarget.value);
             }}
             onBlur={async (e) => {
-              const ctParam = e.currentTarget.value.includes("-powered-") ? "Powered" : e.currentTarget.value.includes("-interactive-") ? "Interactive" : null;
+              const value = e.currentTarget.value;
+              const ctParam = value.includes("-powered-") ? "Powered" : value.includes("-interactive-") ? "Interactive" : null;
               if (ctParam) {
                 const {data} = await axios.post("/api/data", {query: `{cubeByType(cubeType: ${ctParam}){cardNames}}`});
                 App.save("list", data.data.cubeByType.cardNames.join("\n"));
               }
-              App.save("oclDataSync", !/$casual-/.test(e.currentTarget.value));
+              App.save("oclDataSync", !/$casual-/.test(value));
             }}>
             {eventIdOptions().map((x,i) => <option key={i}>{x}</option>)}
           </select>

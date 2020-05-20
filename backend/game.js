@@ -350,27 +350,10 @@ module.exports = class Game extends Room {
     this.emit("kill");
   }
 
-  async uploadDraftStats() {
-    const draftStats = this.cube
-      ? { list: this.cube.list }
-      : { sets: this.sets };
-    draftStats.id = this.id;
-    draftStats.title = this.title;
-    draftStats.draft = {};
-
-    this.players.forEach((p) => {
-      if (!p.isBot) {
-        draftStats.draft[p.name] = p.draftStats;
-      }
-    });
-
-    return dataSync();
-  }
-
   async end() {
+    const { type, title, players, sets, oclDataSync } = this;
     this.players.forEach(async (p) => {
       if (!p.isBot) {
-        const { type, title, players, sets } = this;
         const { draftLog, self, name } = p;
         const isCube = /cube/.test(type);
         const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
@@ -394,13 +377,18 @@ module.exports = class Game extends Room {
 
         p.logFile = data.join("\n");
         p.send("log", p.logFile);
-        if (fs.existsSync(`data/events/${title}`)) {
-          await fs.promises.writeFile(`data/events/${title}/${name}-${title}-draftlog.txt`, p.logFile);
+        if (oclDataSync) {
+          if (fs.existsSync(`data/events/${title}`)) {
+            await fs.promises.writeFile(`data/events/${title}/${name}-${title}-draftlog.txt`, p.logFile);
+          }
         }
       }
     });
+    if (oclDataSync) {
+      dataSync();
+    }
 
-    const cubeHash = /cube/.test(this.type)
+    const cubeHash = /cube/.test(type)
       ? crypto.createHash("SHA512").update(this.cube.list.join("")).digest("hex")
       : "";
 
