@@ -7,7 +7,13 @@ import axios from "axios";
 import GameOptions from "./GameOptions";
 
 const CreatePanel = () => {
-  const {title, seats, oclSyncEvents} = App.state;
+  const {title, seats} = App.state;
+  const [events, setEvents] = React.useState([]);
+  eventIdOptions().then(setEvents);
+
+  if(events.length > 0 && !events.includes(title)) {
+    App.save("title", events[0]);
+  }
 
   return (
     <fieldset className="fieldset">
@@ -30,7 +36,7 @@ const CreatePanel = () => {
               }
               App.save("oclDataSync", !/^casual-/.test(value));
             }}>
-            {eventIdOptions().concat(oclSyncEvents).map((x,i) => <option key={i}>{x}</option>)}
+            {events.map((x,i) => <option key={i}>{x}</option>)}
           </select>
         </label>
       </div>

@@ -1,4 +1,5 @@
 const capitalize = require("lodash/capitalize");
+const Axios = require("axios");
 
 const toTitleCase = (sentence, separator=" ") => {
   if (!sentence || typeof sentence !== "string") {
@@ -10,11 +11,12 @@ const toTitleCase = (sentence, separator=" ") => {
   return capitalized.join(separator);
 };
 
-function eventIdOptions() {
+async function eventIdOptions() {
   const today = new Date();
   const year = new Intl.DateTimeFormat("en", { year: "2-digit" }).format(today);
   const mon = new Intl.DateTimeFormat("en", { month: "short" }).format(today).toLowerCase();
   const da = new Intl.DateTimeFormat("en", { day: "numeric" }).format(today);
+
   const dateStr = `${da}${mon}${year}`;
   const prizeTypes = ["casual"];
   const cubeTypes = ["powered", "interactive"];
@@ -27,7 +29,9 @@ function eventIdOptions() {
   }
 
   retVals.push(`casual-other-${dateStr}`);
-  return retVals;
+  const scheduledEvents = await Axios.get("/api/events");
+
+  return scheduledEvents.data.concat(retVals);
 }
 
 module.exports = {

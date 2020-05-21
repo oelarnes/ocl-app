@@ -19,3 +19,4 @@ coverage/
 
 google-auth
 config/ocl.ini
+db
