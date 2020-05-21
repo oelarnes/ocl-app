@@ -9,11 +9,12 @@ import GameOptions from "./GameOptions";
 const CreatePanel = () => {
   const {title, seats} = App.state;
   const [events, setEvents] = React.useState([]);
-  eventIdOptions().then(setEvents);
-
-  if(events.length > 0 && !events.includes(title)) {
-    App.save("title", events[0]);
-  }
+  eventIdOptions().then(options => {
+    if(options.length > 0 && !options.includes(title)) {
+      App.save("title", options[0]);
+    }
+    setEvents(options);
+  });
 
   return (
     <fieldset className="fieldset">

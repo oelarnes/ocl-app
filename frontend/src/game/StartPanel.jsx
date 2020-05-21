@@ -40,7 +40,7 @@ const StartControls = () => {
 
 const Options = () => {
   const {useTimer} = App.state;
-  const timers = ["Fast", "Moderate", "Slow", "Leisurely"];
+  const timers = ["Test", "Fast", "Moderate", "Slow", "Leisurely"];
   return (
     <span>
       {showAddBotsCheckbox()
