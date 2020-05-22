@@ -1,12 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 const logger = require("../backend/logger");
-const { saveSetsAndCards, getDataDir } = require("../backend/data");
+const { saveSetsAndCards, getDataDir, persistCardsToMongo } = require("../backend/data");
 const doSet = require("../backend/import/doSet");
 
 
 const updateDatabase = async () => {
   let allCards = {};
+  let allRawCards = [];
   const allSets = {};
 
   // Add normal sets
@@ -28,9 +29,11 @@ const updateDatabase = async () => {
         const json = JSON.parse(fs.readFileSync(filePath, "UTF-8"));
         if (json.code) {
           logger.info(`Found set to integrate ${json.code} with path ${filePath}`);
-          const {set, cards} = doSet(json);
+          const {set, cards, rawCards} = doSet(json);
+
           allSets[json.code] = set;
-          allCards = { ...allCards, ...cards };
+          allCards = { ...allCards, ...cards};
+          allRawCards = [...allRawCards, ...rawCards];
           logger.info(`Parsing ${json.code} finished`);
         } else {
           logger.warn(`Set ${json.name} with path ${filePath} will NOT BE INTEGRATED`);
@@ -67,6 +70,7 @@ const updateDatabase = async () => {
 
   logger.info("Parsing AllSets.json finished");
   await saveSetsAndCards(allSets, allCards);
+  await persistCardsToMongo(allRawCards);
   logger.info("Writing sets.json and cards.json finished");
 };
 

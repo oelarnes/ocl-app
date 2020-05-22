@@ -94,9 +94,7 @@ const writeCards = (newCards) => {
 const persistCardsToMongo = async (newCards) => {
   const mongo = await oclMongo();
   await mongo.collection("all_cards").deleteMany({});
-  await mongo.collection("all_cards").insertMany(Object.values(newCards).reduce(
-    (prev, curr) => prev.concat(curr), []
-  ));
+  await mongo.collection("all_cards").insertMany(newCards);
   await mongo.collection("all_cards").createIndex("uuid");
   await mongo.collection("all_cards").createIndex("name");
   await mongo.collection("all_cards").createIndex("mtgoId");
@@ -278,5 +276,6 @@ module.exports = {
   reloadData,
   getBoosterRules,
   getBoosterRulesVersion,
-  saveBoosterRules
+  saveBoosterRules,
+  persistCardsToMongo
 };
