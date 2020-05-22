@@ -98,6 +98,7 @@ const persistCardsToMongo = async (newCards) => {
   await mongo.collection("all_cards").createIndex("uuid");
   await mongo.collection("all_cards").createIndex("name");
   await mongo.collection("all_cards").createIndex("mtgoId");
+  return;
 };
 
 const sortByPriority = allSets => (card1, card2) => {
