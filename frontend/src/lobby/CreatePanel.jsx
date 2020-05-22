@@ -50,7 +50,7 @@ const CreatePanel = () => {
           </select>
         </div> : ""
       }
-      {title.includes("casual-other-") ? <GameOptions/> : ""}
+      {!/powered|interactive/.test(title) ? <GameOptions/> : ""}
       <p>
         <button onClick={App._emit("create")}>
           Create Room

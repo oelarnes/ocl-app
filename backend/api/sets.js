@@ -109,7 +109,7 @@ function integrateJson(json) {
 
   //TODO: that should be done done by a service -> parse and save (and write file)
   sanitize(json);
-  const [set, cards] = doSet(json);
+  const {set, cards} = doSet(json);
   saveSetAndCards({ set, cards });
   logger.info(`adding new set with code "${json.code}" to database`);
 

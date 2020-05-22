@@ -75,11 +75,10 @@ module.exports = class extends Player {
       const MTRTimes = [40, 40, 35, 30, 25, 25, 20, 20, 15, 10, 10, 5, 5, 5, 5];
       // whereas MTGO starts @ 75s and decrements by 5s per pick
       const MTGOTimes = [75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 12, 10];
-      const TestTimes = [1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1];
       // and here's a happy medium
       timer = [55, 51, 47, 43, 38, 34, 30, 26, 22, 18, 14, 13, 11, 9, 7];
       if (this.timerLength == "Test") {
-        timer = TestTimes;
+        timer = new Array(15).fill(1);
       }
       if (this.timerLength === "Fast") {
         timer = MTRTimes;

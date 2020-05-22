@@ -379,7 +379,7 @@ module.exports = class Game extends Room {
         Object.values(draftLog.round).forEach((round, index) => {
           data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
           round.forEach(function (pick, i) {
-            data.push("", `Pack ${index} pick ${i + 1}:`);
+            data.push("", `Pack ${index + 1} pick ${i + 1}:`);
             data = data.concat(pick);
           });
         });

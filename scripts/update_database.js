@@ -28,7 +28,7 @@ const updateDatabase = async () => {
         const json = JSON.parse(fs.readFileSync(filePath, "UTF-8"));
         if (json.code) {
           logger.info(`Found set to integrate ${json.code} with path ${filePath}`);
-          const [set, cards] = doSet(json);
+          const {set, cards} = doSet(json);
           allSets[json.code] = set;
           allCards = { ...allCards, ...cards };
           logger.info(`Parsing ${json.code} finished`);
@@ -53,7 +53,7 @@ const updateDatabase = async () => {
           if (json.code) {
             json.type = "custom";
             logger.info(`Found custom set to integrate ${json.code} with path ${filePath}`);
-            const [set, cards] = doSet(json);
+            const {set, cards} = doSet(json);
             allSets[json.code] = set;
             allCards = { ...allCards, ...cards };
             logger.info(`Parsing ${json.code} finished`);
