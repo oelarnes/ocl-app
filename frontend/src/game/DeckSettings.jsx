@@ -23,7 +23,7 @@ const DownloadPanel = () => (
 );
 
 const Download = () => {
-  const filetypes = App.state.oclDataSync ? ["dek", "txt"] : ["txt"];
+  const filetypes = ["dek", "txt"];
   const select = <Select link='filetype' opts={filetypes}/>;
 
   return (

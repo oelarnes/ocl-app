@@ -45,7 +45,7 @@ class PlayerEntries extends Component {
         p.time--; this.forceUpdate();
   }
   componentDidMount() {
-    Axios.post("/api/data", {"query": "{players{discordHandle}}"}).then(({ data }) => {
+    Axios.post("/api/data", {query: "{players{discordHandle}}"}).then(({ data }) => {
       const handles = [ ... new Set(data.data.players.map((player) => player.discordHandle))];
       this.setState({nameOptions: [STRINGS.BRANDING.DEFAULT_USERNAME].concat(
         handles.sort((a,b) => a.toLowerCase() < b.toLowerCase() ? -1 : 1)

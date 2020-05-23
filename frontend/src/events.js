@@ -43,8 +43,9 @@ const events = {
   },
   download() {
     const {filetype} = App.state;
-    const data = filetypes[filetype]();
-    _.download(data, `${App.state.name}-${App.state.title}` + "." + filetype);
+    filetypes[filetype]().then(data => {
+      _.download(data, `${App.state.name}-${App.state.title}` + "." + filetype);
+    });
     hash();
   },
   start() {
@@ -270,12 +271,23 @@ Object.keys(events).forEach((event) => App.on(event, events[event]));
 
 const filetypes = {
   async dek() {
-    let data;
     if (App.state.oclDataSync) {
-      data = await Axios.post("/api/data", {query: `{entry(eventId: ${App.state.title}, playerId: ${App.state.oclId}){decklist {ownedDekString}}}`}).data;
-      return data.data.entry.decklist.ownedDeckString;
+      const query = `{entry(eventId: "${App.state.title}", playerId: "${App.state.oclId}"){deck{ownedDekString}}}`;
+      const {data} = await Axios.post("/api/data", {query});
+      console.log(data);
+      return data.data.entry.deck.ownedDekString;
+    } else {
+      const mainNameStr = App.state.gameState.get(ZONE_MAIN).map(({name}) => name).join("\", \"");
+      const sbNameStr = App.state.gameState.get(ZONE_SIDEBOARD).map(({name}) => name).join("\", \"");
+      const query = `
+{ownedDekString(
+  ${mainNameStr ? "mainCardNames: [\"" + mainNameStr + "\"]" : ""}
+  ${mainNameStr && sbNameStr ? "," : ""}
+  ${sbNameStr ? "sideboardCardNames: [\"" + sbNameStr + "\"]" : ""}
+)}`;
+      const {data} = await Axios.post("/api/data", {query});
+      return data.data.ownedDekString;
     }
-    return "";
   },
   txt() {
     const arr = [];
@@ -288,7 +300,7 @@ const filetypes = {
           arr.push(`${count} ${name}`);
         });
     });
-    return arr.join("\n");
+    return new Promise((resolve) => resolve(arr.join("\n")));
   }
 };
 
