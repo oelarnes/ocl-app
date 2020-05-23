@@ -1,13 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 const logger = require("../backend/logger");
-const { saveSetsAndCards, getDataDir, persistCardsToMongo } = require("../backend/data");
+const { saveSetsAndCards, getDataDir } = require("../backend/data");
 const doSet = require("../backend/import/doSet");
-
+const {oclMongo} = require("ocl-data");
 
 const updateDatabase = async () => {
+  const mongo = await oclMongo();
+  await mongo.collection("all_cards").deleteMany({});
   let allCards = {};
-  let allRawCards = [];
   const allSets = {};
 
   // Add normal sets
@@ -16,13 +17,13 @@ const updateDatabase = async () => {
   const setsDataDir = path.join(getDataDir(), "sets");
   if (fs.existsSync(setsDataDir)) {
     const files = fs.readdirSync(setsDataDir);
-    files.forEach(file => {
+    for (const file of files) {
       if (!/.json/g.test(file)) {
-        return;
+        continue;
       }
       const [setName,] = file.split(".");
       if (setsToIgnore.includes(setName)) {
-        return;
+        continue;
       }
       const filePath = path.join(setsDataDir, `${file}`);
       try {
@@ -30,10 +31,12 @@ const updateDatabase = async () => {
         if (json.code) {
           logger.info(`Found set to integrate ${json.code} with path ${filePath}`);
           const {set, cards, rawCards} = doSet(json);
+          if (rawCards.length > 0) {
+            await mongo.collection("all_cards").insertMany(rawCards);
+          }
 
           allSets[json.code] = set;
           allCards = { ...allCards, ...cards};
-          allRawCards = [...allRawCards, ...rawCards];
           logger.info(`Parsing ${json.code} finished`);
         } else {
           logger.warn(`Set ${json.name} with path ${filePath} will NOT BE INTEGRATED`);
@@ -41,7 +44,7 @@ const updateDatabase = async () => {
       } catch (err) {
         logger.error(`Error while integrating the file ${filePath}: ${err.stack}`);
       }
-    });
+    }
   }
   // Add custom sets
   const customDataDir = path.join(getDataDir(), "custom");
@@ -70,7 +73,10 @@ const updateDatabase = async () => {
 
   logger.info("Parsing AllSets.json finished");
   await saveSetsAndCards(allSets, allCards);
-  await persistCardsToMongo(allRawCards);
+  await mongo.collection("all_cards").createIndex("uuid");
+  await mongo.collection("all_cards").createIndex("name");
+  await mongo.collection("all_cards").createIndex("mtgoId");
+
   logger.info("Writing sets.json and cards.json finished");
 };
 

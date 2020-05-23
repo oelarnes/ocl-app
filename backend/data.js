@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const readFile = (path) => JSON.parse(fs.readFileSync(path, "UTF-8"));
 const { keyCardsUuidByName, groupCardsByName } = require("./import/keyCards");
-const { oclMongo } = require("ocl-data");
 
 const DATA_DIR = "data";
 const CARDS_PATH = "cards.json";
@@ -89,16 +88,6 @@ const getCubableCardByName = (cardName) => {
 
 const writeCards = (newCards) => {
   fs.writeFileSync(`${getDataDir()}/${CARDS_PATH}`, JSON.stringify(newCards, undefined, 4));
-};
-
-const persistCardsToMongo = async (newCards) => {
-  const mongo = await oclMongo();
-  await mongo.collection("all_cards").deleteMany({});
-  await mongo.collection("all_cards").insertMany(newCards);
-  await mongo.collection("all_cards").createIndex("uuid");
-  await mongo.collection("all_cards").createIndex("name");
-  await mongo.collection("all_cards").createIndex("mtgoId");
-  return;
 };
 
 const sortByPriority = allSets => (card1, card2) => {
@@ -277,6 +266,5 @@ module.exports = {
   reloadData,
   getBoosterRules,
   getBoosterRulesVersion,
-  saveBoosterRules,
-  persistCardsToMongo
+  saveBoosterRules
 };
