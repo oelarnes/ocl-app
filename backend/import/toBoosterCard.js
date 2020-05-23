@@ -1,8 +1,9 @@
 const { upperFirst, find } = require("lodash");
 const uuidV1 = require("uuid").v1;
 
-const toBoosterCard = (setCode) => (mtgjsonCard, index, rawCards) => {
+const toBoosterCard = (mtgjsonCard, index, rawCards) => {
   let {
+    setCode, // set by dr4ft
     name,
     frameEffects,
     number,

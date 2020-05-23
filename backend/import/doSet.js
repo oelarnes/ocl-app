@@ -3,9 +3,9 @@ const { keyCardsUuidByNumber, groupCardsUuidByRarity, keyCardsByUuid} = require(
 
 function doSet({code, baseSetSize, name, type, releaseDate, boosterV3, cards: mtgJsonCards}) {
   const rawCards = mtgJsonCards
-    .filter((card) => !card.isAlternative);
+    .filter((card) => !card.isAlternative).map(card => ({...card, setCode: code}));
   const cards = rawCards
-    .map(toBoosterCard(code));
+    .map(toBoosterCard);
   const size = !boosterV3 ? 4 : boosterV3.filter(x => x === "common").length;
 
   return {
