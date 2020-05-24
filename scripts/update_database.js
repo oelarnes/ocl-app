@@ -98,5 +98,5 @@ const updateDatabase = async () => {
 module.exports = updateDatabase;
 
 if (!module.parent) {
-  updateDatabase();
+  updateDatabase().then(() => {process.exit();});
 }
