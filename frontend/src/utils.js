@@ -31,7 +31,7 @@ async function eventIdOptions() {
   retVals.push(`casual-other-${dateStr}`);
   const scheduledEvents = await Axios.get("/api/events");
 
-  return scheduledEvents.data.concat(retVals);
+  return [""].concat(scheduledEvents.data).concat(retVals);
 }
 
 module.exports = {

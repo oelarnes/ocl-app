@@ -514,6 +514,10 @@ input[type=text].chat-input {
   color: rgb( 241, 196, 15);
 }
 
+.name.sow {
+  color: #fff7cc;
+}
+
 .error {
   color: var(--mythic-orange);
 }

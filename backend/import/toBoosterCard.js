@@ -1,9 +1,8 @@
 const { upperFirst, find } = require("lodash");
 const uuidV1 = require("uuid").v1;
 
-const toBoosterCard = (mtgjsonCard, index, rawCards) => {
+const toBoosterCard = (setCode) => (mtgjsonCard, index, rawCards) => {
   let {
-    setCode, // set by dr4ft
     name,
     frameEffects,
     number,
@@ -23,6 +22,8 @@ const toBoosterCard = (mtgjsonCard, index, rawCards) => {
     toughness,
     loyalty,
     text,
+    mtgoId,
+    prices,
     uuid = `dr4ft-${uuidV1()}`
   } = mtgjsonCard;
 
@@ -62,6 +63,8 @@ const toBoosterCard = (mtgjsonCard, index, rawCards) => {
     toughness,
     loyalty,
     text,
+    mtgoId,
+    prices,
     frameEffects
   };
 };

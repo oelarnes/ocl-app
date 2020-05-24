@@ -83,29 +83,18 @@ const events = {
   },
 
   create() {
-    let {gametype, gamesubtype, seats, title, isPrivate, modernOnly, totalChaos, chaosDraftPacksNumber, chaosSealedPacksNumber, oclDataSync} = App.state;
+    let {gametype, gamesubtype, seats, title, isPrivate, oclDataSync} = App.state;
     seats = Number(seats);
 
     //TODO: either accept to use the legacy types (draft, sealed, chaos draft ...) by  keeping it like this
     // OR change backend to accept "regular draft" instead of "draft" and "regular sealed" instead of "sealed"
     const type = `${/regular/.test(gamesubtype) ? "" : gamesubtype + " "}${gametype}`;
 
-    let options = {type, seats, title, isPrivate, modernOnly, totalChaos, oclDataSync};
+    let options = {type, seats, title, isPrivate, oclDataSync};
 
     switch (gamesubtype) {
-    case "regular": {
-      const {setsDraft, setsSealed} = App.state;
-      options.sets = gametype === "sealed" ? setsSealed : setsDraft;
-      break;
-    }
-    case "decadent":
-      options.sets = App.state.setsDecadentDraft;
-      break;
     case "cube":
       options.cube = parseCubeOptions();
-      break;
-    case "chaos":
-      options.chaosPacksNumber = /draft/.test(gametype) ? chaosDraftPacksNumber : chaosSealedPacksNumber;
       break;
     }
     App.send("create", options);
@@ -285,6 +274,7 @@ const filetypes = {
   ${mainNameStr && sbNameStr ? "," : ""}
   ${sbNameStr ? "sideboardCardNames: [\"" + sbNameStr + "\"]" : ""}
 )}`;
+      console.log(query);
       const {data} = await Axios.post("/api/data", {query});
       return data.data.ownedDekString;
     }

@@ -7,9 +7,8 @@ const DATA_DIR = "data";
 const CARDS_PATH = "cards.json";
 const CUBABLE_CARDS_PATH = "cubable_cards_by_name.json";
 const SETS_PATH = "sets.json";
-const BOOSTER_RULES_PATH = "boosterRules.json";
 
-let cards, cubableCardsByName, sets, playableSets, latestSet, boosterRules;
+let cards, cubableCardsByName;
 
 const getDataDir = () => {
   const repoRoot = process.cwd();
@@ -27,27 +26,8 @@ const reloadData = (filename) => {
     cubableCardsByName = null;
     break;
   }
-  case SETS_PATH: {
-    sets = null;
-    playableSets = null;
-    latestSet = null;
-    break;
-  }
-  case BOOSTER_RULES_PATH: {
-    boosterRules = null;
-    break;
-  }
   }
 };
-
-const getSets = () => {
-  if (!sets) {
-    sets = readFile(`${getDataDir()}/${SETS_PATH}`);
-  }
-  return sets;
-};
-
-const getSet = (setCode) => getSets()[setCode];
 
 const getCards = () => {
   if (!cards) {
@@ -60,14 +40,6 @@ const mergeCardsTogether = (oldCards, newCards) => ({
   ...oldCards,
   ...newCards
 });
-
-//TODO: someone should handle this? Maybe a service?
-const saveSetAndCards = ({set: newSet, cards: newCards}) => {
-  saveSetsAndCards({
-    ...sets,
-    [newSet.code]: newSet
-  }, mergeCardsTogether(getCards(), newCards));
-};
 
 const saveSetsAndCards = (allSets, allCards) => {
   writeSets(allSets);
@@ -133,138 +105,17 @@ const writeSets = (newSets) => {
   fs.writeFileSync(`${getDataDir()}/${SETS_PATH}`, JSON.stringify(newSets, undefined, 4));
 };
 
-const getPlayableSets = () => {
-  if (playableSets) {
-    return playableSets;
-  }
-  playableSets = {};
-
-  const AllSets = getSets();
-  for (let code in AllSets) {
-    const { type, name, releaseDate } = AllSets[code];
-
-    //We do not want to play with these types of set
-    if (!["core", "draft_innovation", "expansion", "funny", "starter", "masters", "custom"].includes(type)) {
-      continue;
-    }
-
-    if (isReleasedExpansionOrCoreSet(type, releaseDate)) {
-      if (!latestSet) {
-        latestSet = { code, type, name, releaseDate };
-      } else if (new Date(releaseDate).getTime() > new Date(latestSet.releaseDate).getTime()) {
-        latestSet = { code, type, name, releaseDate };
-      }
-    }
-
-    if (!playableSets[type]) {
-      playableSets[type] = [{ code, name, releaseDate }];
-    } else {
-      playableSets[type].push({ code, name, releaseDate });
-    }
-  }
-
-  //Add random possibility
-  playableSets["random"] = [{ code: "RNG", name: "Random Set" }];
-
-  // sort all keys depending on releaseDate
-  for (let type in playableSets) {
-    playableSets[type].sort((a, b) => {
-      return Number(b.releaseDate.replace(/-/g, "")) - Number(a.releaseDate.replace(/-/g, ""));
-    });
-  }
-
-  return playableSets;
-};
-
-const getRandomSet = () => {
-  const allSets = getPlayableSets();
-  const allTypes = Object.keys(allSets);
-  let randomType = allTypes[allTypes.length * Math.random() << 0];
-
-  //Avoid random set
-  while (randomType === "random") {
-    randomType = allTypes[allTypes.length * Math.random() << 0];
-  }
-  const randomSets = allSets[randomType];
-  return randomSets[randomSets.length * Math.random() << 0];
-};
-
-const getLatestReleasedSet = () => {
-  if (!latestSet) {
-    getPlayableSets();
-  }
-  return latestSet;
-};
-
-const getExpansionOrCoreModernSets = () => {
-  const sets = [];
-  for (const setCode in getSets()) {
-    const set = getSets()[setCode];
-    if (isReleasedExpansionOrCoreSet(set.type, set.releaseDate)
-      && Date.parse("2003-07-26") <= Date.parse(set.releaseDate)) {
-      set.code = setCode;
-      sets.push(set);
-    }
-  }
-  return sets;
-};
-
-const getExansionOrCoreSets = () => {
-  const sets = [];
-  for (const setCode in getSets()) {
-    const set = getSets()[setCode];
-    if (isReleasedExpansionOrCoreSet(set.type, set.releaseDate)) {
-      set.code = setCode;
-      sets.push(set);
-    }
-  }
-  return sets;
-};
-
 const isReleasedExpansionOrCoreSet = (type, releaseDate) => (
   ["expansion", "core"].includes(type) &&
   Date.parse(releaseDate) <= new Date()
 );
 
-const getBoosterRules = (setCode) => {
-  if (!boosterRules) {
-    boosterRules = readFile(`${getDataDir()}/${BOOSTER_RULES_PATH}`);
-  }
-  return boosterRules[setCode];
-};
-
-const getBoosterRulesVersion = () => {
-  if (!boosterRules) {
-    try {
-      boosterRules = readFile(`${getDataDir()}/${BOOSTER_RULES_PATH}`);
-    } catch(error) {
-      return "";
-    }
-  }
-  return boosterRules.repoHash.substring(0,7);
-};
-
-const saveBoosterRules = (boosterRules) => {
-  fs.writeFileSync(`${getDataDir()}/${BOOSTER_RULES_PATH}`, JSON.stringify(boosterRules, undefined, 4));
-};
-
 module.exports = {
+  saveSetsAndCards,
   getDataDir,
   getCards,
-  getSets,
-  getSet,
-  getPlayableSets,
-  getRandomSet,
-  getLatestReleasedSet,
-  getExpansionOrCoreModernSets,
-  getExansionOrCoreSets,
-  saveSetAndCards,
-  saveSetsAndCards,
   mergeCardsTogether,
   getCardByUuid,
   getCardByName: getCubableCardByName,
-  reloadData,
-  getBoosterRules,
-  getBoosterRulesVersion,
-  saveBoosterRules
+  reloadData
 };

@@ -6,7 +6,8 @@ const envVarsSchema = joi.object({
   HOST: joi.string()
     .default("localhost"),
   DEFAULT_USERNAME: joi.string()
-    .default("Mulldrifter")
+    .default("Mulldrifter"),
+  OCL_ENV: joi.string().default("test")
 }).unknown()
   .required();
 

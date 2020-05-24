@@ -37,9 +37,9 @@ const updateDatabase = async () => {
           logger.info(
             `Found set to integrate ${json.code} with path ${filePath}`
           );
-          const { set, cards, rawCards } = doSet(json);
-          if (rawCards.length > 0) {
-            await mongo.collection("all_cards").insertMany(rawCards);
+          const { set, cards } = doSet(json);
+          if (cards.length > 0) {
+            await mongo.collection("all_cards").insertMany(Object.values(cards));
           }
 
           allSets[json.code] = set;

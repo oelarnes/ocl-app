@@ -1,6 +1,5 @@
 const Player = require("./player");
 const util = require("./util");
-const hash = require("./hash");
 const {random} = require("lodash");
 const logger = require("./logger");
 
@@ -26,8 +25,6 @@ module.exports = class extends Player {
     sock.on("autopick", this._autopick.bind(this));
     sock.removeAllListeners("pick");
     sock.on("pick", this._pick.bind(this));
-    sock.removeAllListeners("hash");
-    sock.on("hash", this._hash.bind(this));
     sock.once("exit", this._farewell.bind(this));
 
     let [pack] = this.packs;
@@ -37,14 +34,6 @@ module.exports = class extends Player {
   }
   err(message) {
     this.send("error", message);
-  }
-  _hash(deck) {
-    if (!util.deck(deck, this.pool)){
-      logger.warn(`wrong deck submitted for hashing by ${this.name}`);
-      return;
-    }
-    this.hash = hash(deck);
-    this.emit("meta");
   }
   _farewell() {
     this.isConnected = false;

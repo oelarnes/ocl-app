@@ -1,6 +1,6 @@
 const assert = require("assert");
 const {countBy} = require("lodash");
-const { getSet, getCardByName } = require("./data");
+const { getCardByName } = require("./data");
 const BASICS = [
   "Forest",
   "Island",
@@ -65,15 +65,10 @@ module.exports = {
 
     return true;
   },
-  game({ seats, type, sets, cube, isPrivate, modernOnly = true, chaosPacksNumber, totalChaos = true }) {
+  game({ seats, type, cube, isPrivate }) {
     const acceptableGameTypes = [
-      "draft",
-      "sealed",
       "cube draft",
-      "cube sealed",
-      "chaos draft",
-      "chaos sealed",
-      "decadent draft"
+      "cube sealed"
     ];
     assert(acceptableGameTypes.includes(type),
       `type can be one of: ${acceptableGameTypes.join(", ")}`);
@@ -82,23 +77,10 @@ module.exports = {
     assert(seats >= 1 && seats <= 100, "seats' number must be between 1 and 100");
 
     switch (type) {
-    case "draft":
-    case "sealed":
-      assert(Array.isArray(sets), "sets must be an array");
-      assert(sets.length >= 1, "sets length must be at least 1");
-      sets.forEach(set =>
-        assert(set === "RNG" || getSet(set) !== undefined, `set ${set} is invalid or does not exist`));
-      break;
     case "cube draft":
     case "cube sealed":
       assert(typeof cube === "object", "cube must be an object");
       controlCubeSettingsAndTransformList(cube, seats, type);
-      break;
-    case "chaos draft":
-    case "chaos sealed":
-      assert(typeof modernOnly === "boolean", "modernOnly must be a boolean");
-      assert(typeof totalChaos === "boolean", "totalChaos must be a boolean");
-      assert(typeof chaosPacksNumber === "number", "chaosPacksNumber must be a number");
       break;
     }
   },
@@ -107,7 +89,7 @@ module.exports = {
     assert(typeof addBots === "boolean", "addBots must be a boolean");
     assert(typeof useTimer === "boolean", "useTimer must be a boolean");
     assert(typeof shufflePlayers === "boolean", "shufflePlayers must be a boolean");
-    assert(useTimer && ["Fast", "Moderate", "Slow", "Leisurely"].includes(timerLength),
-      "timerLength must be Fast, Moderate, Slow or Leisurely");
+    assert(useTimer && ["Test", "Fast", "Moderate", "Slow", "Leisurely"].includes(timerLength),
+      "timerLength must be Test, Fast, Moderate, Slow or Leisurely");
   }
 };

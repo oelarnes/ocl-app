@@ -1,6 +1,6 @@
 # ocl-app
 
-*ocl-app* is a fork of the *dr4ft* project, described below, for the purposes of the Online Cube League.
+*ocl-app* is a fork of the *dr4ft* project, described below, for the purposes of the Online Cube League. Much of the set-drafting capability has been stripped out to simplify maintenance and extension.
 <br>
 *ocl-app* depends on *ocl-data*, and requires a file `ocl.ini` in the config directory which will specify database environments and sheets links, as well as a google-auth folder containing credentials to pull/push from sheets. Contact Joel to discuss this access or building ocl-app without it.
 
@@ -85,9 +85,6 @@ This command downloads all sets from MTGJson and integrates them.
 
 `npm run update_database`
 This command downloads integrates all files previously downloaded from MTGJson.
-
-`npm run download_booster_rules`
- download and parse booster generation rules from [magic-sealed-data](https://github.com/taw/magic-sealed-data)
 
 ## Development Notes
 

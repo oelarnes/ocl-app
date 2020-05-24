@@ -7,14 +7,26 @@ import App from "../app";
 import "vanilla-toast/vanilla-toast.css";
 
 const chatClassMap = {
-  cmustewart: 'fod',
-  magicflea: 'dw',
-  jrp: 'sc',
-  lasersloths: 'sower',
-  lipingpong: 'cop',
-  steamedfish: 'cop',
-  Mort: 'cop'
-}
+  cmustewart: "fod",
+  magicflea: "dw",
+  jrp: "sc",
+  lasersloths: "sower",
+  lipingpong: "cop",
+  steamedfish: "cop",
+  Mort: "cop",
+  Borkenedd: "qb",
+  brodo: "qb",
+  erik: "qb",
+  GermanGaryOak: "qb",
+  hipdadip: "qb",
+  audreyflew: "qb",
+  jnqt: "qb",
+  kauffj: "qb",
+  raj: "qb",
+  Tobes: "qb",
+  TravisFrankMTG: "qb",
+  wylie: "qb"
+};
 
 export default class Chat extends Component {
   constructor(props) {
@@ -105,9 +117,9 @@ MessagesHeader.propTypes = {
 };
 
 const Message = ({time, name, text}) => {
-  const chatClass = chatClassMap[name] || 'qb';
+  const chatClass = chatClassMap[name] || "sow";
   const date = new Date(time);
-  const hours   = _.pad(2, "0", date.getHours());
+  const hours = _.pad(2, "0", date.getHours());
   const minutes = _.pad(2, "0", date.getMinutes());
   const timestamp = `${hours}:${minutes}`;
 

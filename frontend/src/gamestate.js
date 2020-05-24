@@ -20,7 +20,7 @@ const BASICS_LANDS = Object.entries(COLORS_TO_LANDS_NAME)
       name: cardName,
       cmc: 0,
       colorSign,
-      code: "BFZ",
+      code: "THB",
       color: "Colorless",
       rarity: "Basic",
       type: "Land",

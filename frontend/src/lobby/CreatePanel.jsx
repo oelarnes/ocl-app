@@ -10,7 +10,6 @@ const CreatePanel = () => {
   const {title, seats} = App.state;
   const [events, setEvents] = React.useState([]);
   eventIdOptions().then(options => {
-    App.save("title", "");
     setEvents(options);
   });
 
@@ -50,7 +49,7 @@ const CreatePanel = () => {
       }
       {!/powered|interactive/.test(title) ? <GameOptions/> : ""}
       <p>
-        <button onClick={App._emit("create")}>
+        <button onClick={App._emit("create")} disabled={title===""}>
           Create Room
         </button>
       </p>

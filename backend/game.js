@@ -15,37 +15,23 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = class Game extends Room {
-  constructor({ hostId, title, seats, type, sets, cube, isPrivate, modernOnly, totalChaos, chaosPacksNumber, oclDataSync }) {
+  constructor({ hostId, title, seats, type, cube, isPrivate, oclDataSync }) {
     super({ isPrivate });
     const gameID = uuid.v1();
     Object.assign(this, {
-      title, seats, type, isPrivate, modernOnly, totalChaos, cube, chaosPacksNumber, oclDataSync,
+      title, seats, type, isPrivate, cube, oclDataSync,
       delta: -1,
       hostID: hostId,
       id: gameID,
       players: [],
       round: 0,
       bots: 0,
-      sets: sets || [],
-      isDecadent: false,
       secret: uuid.v4(),
       logger: logger.child({ id: gameID })
     });
 
     // Handle packsInfos to show various informations about the game
     switch(type) {
-    case "draft":
-    case "sealed":
-      this.packsInfo = this.sets.join(" / ");
-      this.rounds = this.sets.length;
-      break;
-    case "decadent draft":
-      // Sets should all be the same and there can be a large number of them.
-      // Compress this info into e.g. "36x IKO" instead of "IKO / IKO / ...".
-      this.packsInfo = `${this.sets.length}x ${this.sets[0]}`;
-      this.rounds = this.sets.length;
-      this.isDecadent = true;
-      break;
     case "cube draft":
       this.packsInfo = `${cube.packs} packs with ${cube.cards} cards from a pool of ${cube.list.length} cards`;
       this.rounds = this.cube.packs;
@@ -54,16 +40,6 @@ module.exports = class Game extends Room {
       this.packsInfo = `${cube.cubePoolSize} cards per player from a pool of ${cube.list.length} cards`;
       this.rounds = this.cube.packs;
       break;
-    case "chaos draft":
-    case "chaos sealed": {
-      const chaosOptions = [];
-      chaosOptions.push(`${this.chaosPacksNumber} Packs`);
-      chaosOptions.push(modernOnly ? "Modern sets only" : "Not modern sets only");
-      chaosOptions.push(totalChaos ? "Total Chaos" : "Not Total Chaos");
-      this.packsInfo = `${chaosOptions.join(", ")}`;
-      this.rounds = this.chaosPacksNumber;
-      break;
-    }
     default:
       this.packsInfo = "";
     }
@@ -202,7 +178,7 @@ module.exports = class Game extends Room {
     this.logger.debug(`${sock.name} joined the game`);
     this.logger.debug(`${sock.name} has oclId ${sock.oclId}`);
 
-    function regularDraftPickDelegate(index) {
+    function draftPickDelegate(index) {
       const pack = this.packs.shift();
       const card = pack.splice(index, 1)[0];
 
@@ -226,37 +202,6 @@ module.exports = class Game extends Room {
       this.autopickIndex = -1;
       this.emit("pass", pack);
     }
-
-    function decadentDraftPickDelegate(index) {
-      const pack = this.packs.shift();
-      const card = pack.splice(index, 1)[0];
-
-      this.draftLog.pack.push( [`--> ${card.name}`].concat(pack.map(x => `    ${x.name}`)) );
-      this.updateDraftStats(this.draftLog.pack[ this.draftLog.pack.length-1 ], this.pool);
-
-      let pickcard = card.name;
-      if (card.foil === true)
-        pickcard = "*" + pickcard + "*";
-
-      this.pool.push(card);
-      this.picks.push(pickcard);
-      this.send("add", card);
-
-      let [next] = this.packs;
-      if (!next)
-        this.time = 0;
-      else
-        this.sendPack(next);
-
-      // Discard the rest of the cards in the pack
-      // after one is chosen.
-      pack.length = 0;
-
-      this.autopickIndex = -1;
-      this.emit("pass", pack);
-    }
-
-    const draftPickDelegate = this.isDecadent ? decadentDraftPickDelegate : regularDraftPickDelegate;
 
     const h = new Human(sock, draftPickDelegate);
     if (h.id === this.hostID) {
@@ -306,15 +251,13 @@ module.exports = class Game extends Room {
       isHost: h.isHost,
       round: this.round,
       self: this.players.indexOf(h),
-      sets: this.sets,
       gameId: this.id,
       title: this.title,
       oclDataSync: this.oclDataSync
     });
     h.send("gameInfos", {
       type: this.type,
-      packsInfo: this.packsInfo,
-      sets: this.sets
+      packsInfo: this.packsInfo
     });
   }
 
@@ -333,7 +276,6 @@ module.exports = class Game extends Room {
 
   meta(state = {}) {
     state.players = this.players.map(p => ({
-      hash: p.hash,
       name: p.name,
       oclId: p.oclId,
       time: p.time,
@@ -359,12 +301,11 @@ module.exports = class Game extends Room {
   }
 
   async end() {
-    const { type, title, players, sets, oclDataSync } = this;
+    const { type, title, players, oclDataSync } = this;
     const tag = oclDataSync ? "oclId" : "name";
     await Promise.all(this.players.map(async (p) => {
       if (!p.isBot) {
         const { draftLog, self, name } = p;
-        const isCube = /cube/.test(type);
         const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
         let data = [
           `Event #: ${title}`,
@@ -377,7 +318,7 @@ module.exports = class Game extends Room {
         );
 
         Object.values(draftLog.round).forEach((round, index) => {
-          data.push("", `------ ${isCube ? "Cube" : sets.shift()} ------`);
+          data.push("", "------ Cube ------");
           round.forEach(function (pick, i) {
             data.push("", `Pack ${index + 1} pick ${i + 1}:`);
             data = data.concat(pick);
@@ -406,7 +347,6 @@ module.exports = class Game extends Room {
       "gameID": this.id,
       "players": this.players.length - this.bots,
       "type": this.type,
-      "sets": this.sets,
       "seats": this.seats,
       "time": Date.now(),
       "cap": this.players.map((player, seat) => ({
@@ -538,39 +478,6 @@ module.exports = class Game extends Room {
       });
       break;
     }
-    case "draft":
-    case "decadent draft": {
-      this.pool = Pool.DraftNormal({
-        playersLength: this.players.length,
-        sets: this.sets
-      });
-      break;
-    }
-    case "sealed": {
-      this.pool = Pool.SealedNormal({
-        playersLength: this.players.length,
-        sets: this.sets
-      });
-      break;
-    }
-    case "chaos draft": {
-      this.pool = Pool.DraftChaos({
-        playersLength: this.players.length,
-        packsNumber: this.chaosPacksNumber,
-        modernOnly: this.modernOnly,
-        totalChaos: this.totalChaos
-      });
-      break;
-    }
-    case "chaos sealed": {
-      this.pool = Pool.SealedChaos({
-        playersLength: this.players.length,
-        packsNumber: this.chaosPacksNumber,
-        modernOnly: this.modernOnly,
-        totalChaos: this.totalChaos
-      });
-      break;
-    }
     default: throw new Error(`Type ${this.type} not recognized`);
     }
   }
@@ -652,11 +559,7 @@ module.exports = class Game extends Room {
     title: ${this.title}
     seats: ${this.seats}
     type: ${this.type}
-    sets: ${this.sets}
     isPrivate: ${this.isPrivate}
-    modernOnly: ${this.modernOnly}
-    totalChaos: ${this.totalChaos}
-    chaosPacksNumber: ${this.chaosPacksNumber}
     packsInfos: ${this.packsInfo}
     players: ${this.players.length} (${this.players.filter(pl => !pl.isBot).map(pl => pl.name).join(", ")})
     bots: ${this.bots}

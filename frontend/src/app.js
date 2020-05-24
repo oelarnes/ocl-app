@@ -2,7 +2,6 @@ import _ from "utils/utils";
 import EventEmitter from "events";
 import {STRINGS} from "./config";
 import eio from "engine.io-client";
-import {times, constant} from "lodash";
 import GameState from "./gamestate";
 
 function message(msg) {
@@ -31,17 +30,8 @@ let App = {
     title: "",
     gameId: "",
     isPrivate: true,
-    modernOnly: false,
-    totalChaos: false,
-    chaosDraftPacksNumber: 3,
-    chaosSealedPacksNumber: 6,
     gametype: "draft",
     gamesubtype: "cube",
-    sets: [],
-    setsDraft: [],
-    setsSealed: [],
-    setsDecadentDraft: [],
-    availableSets: {},
     list: "",
     cards: 15,
     packs: 3,
@@ -87,10 +77,6 @@ let App = {
     get isGameFinished() {
       return App.state.round === -1;
     },
-    get isDecadentDraft() {
-      return /decadent draft/.test(App.state.game.type);
-    },
-
     get notificationBlocked() {
       return ["denied", "notsupported"].includes(App.state.notificationResult);
     }
@@ -101,6 +87,7 @@ let App = {
     App.on("route", App.route);
 
     App.restore();
+    App.state.title = "";
     App.connect();
     router(App);
   },
@@ -175,19 +162,6 @@ let App = {
   },
   set(state) {
     Object.assign(App.state, state);
-    if (App.state.latestSet) {
-      // Default sets to the latest set.
-      const defaultSetCode = App.state.latestSet.code;
-      const replicateDefaultSet = (desiredLength) => times(desiredLength, constant(defaultSetCode));
-      const initializeIfEmpty = (sets, desiredLength) => {
-        if (sets.length === 0) {
-          sets = replicateDefaultSet(desiredLength);
-        }
-      };
-      initializeIfEmpty(App.state.setsSealed, 6);
-      initializeIfEmpty(App.state.setsDraft, 3);
-      initializeIfEmpty(App.state.setsDecadentDraft, 36);
-    }
     App.update();
   },
   update() {

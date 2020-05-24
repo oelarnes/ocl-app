@@ -1,6 +1,6 @@
 {
   "name": "ocl-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "game client/server",
   "license": "MIT",
   "author": "Dr4fters Team <zach@dr4ft.info>",
@@ -32,10 +32,9 @@
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "npm run lint",
     "test": "npm run postinstall && --reporter spec --exit \"./{,!(node_modules)/**/}*.spec.js\"",
-    "postinstall": " npm run download_allsets && npm run download_booster_rules && webpack --config webpack.prod.js",
+    "postinstall": " npm run download_allsets && webpack --config webpack.prod.js",
     "update_database": "OCL_ENV=prod node scripts/update_database",
-    "download_allsets": "node scripts/download_allsets",
-    "download_booster_rules": "node scripts/download_booster_rules"
+    "download_allsets": "node scripts/download_allsets"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",
