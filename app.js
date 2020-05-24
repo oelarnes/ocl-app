@@ -11,12 +11,12 @@ const logger = require("./backend/logger");
 const router = require("./backend/router");
 const apiRouter = require("./backend/api/");
 const {app: config, version} = require("./config");
-const { dataSyncLoop } = require('ocl-data');
+const { dataSyncLoop } = require("ocl-data");
 require("./backend/data-watch");
 
 const app = express();
 
-dataSyncLoop(1000 * 60 * 30)
+dataSyncLoop(1000 * 60 * 30);
 // Middlewares
 app.use(helmet());
 app.use(bodyParser.json()); // for parsing application/json

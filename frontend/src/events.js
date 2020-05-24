@@ -63,7 +63,7 @@ const events = {
       if (App.state.notify) {
         if (document.hidden) {
           new Notification("Pack awaiting", {
-            icon: "/4-hq.png",
+            icon: "/ocl-384x384.png",
             body: "A new pack is available!"
           });
         }

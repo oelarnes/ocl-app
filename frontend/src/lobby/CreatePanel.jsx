@@ -10,9 +10,7 @@ const CreatePanel = () => {
   const {title, seats} = App.state;
   const [events, setEvents] = React.useState([]);
   eventIdOptions().then(options => {
-    if(options.length > 0 && !options.includes(title)) {
-      App.save("title", options[0]);
-    }
+    App.save("title", "");
     setEvents(options);
   });
 

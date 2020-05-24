@@ -6,7 +6,7 @@ const URL = "https://raw.githubusercontent.com/taw/magic-sealed-data/master/seal
 const REPO_URL = "https://api.github.com/repos/taw/magic-sealed-data/git/refs/heads/master";
 
 
-const whitelistSets = ["9ED", "DIS", "WWK", "MRD", "ME2", "ME4", "MMA", "THS", "RAV", "ROE", "UDS", "5DN", "AER", "EXO", "MOR", "IKO", "USG",
+const whitelistSets = ["2ED", "9ED", "DIS", "WWK", "MRD", "ME2", "ME4", "MMA", "THS", "RAV", "ROE", "UDS", "5DN", "AER", "EXO", "MOR", "IKO", "USG",
   "EMA", "FUT", "ME1", "PZ2", "DST", "DGM", "RIX", "M13", "TMP", "SCG", "BFZ", "ZEN", "VIS", "M19", "LGN", "SOK", "M10", "BNG", "8ED", "RNA",
   "EVE", "SOM", "CMD", "DDF", "CON", "INV", "DOM", "XLN", "MIR", "AVR", "JUD", "SHM", "TD2", "TOR", "PZ1", "GTC", "SOI", "BBD", "PLS", "RTR",
   "APC", "ORI", "IMA", "PC2", "LRW", "7ED", "M15", "M11", "KLD", "C14", "C19", "MBS", "ELD", "TD0", "ONS", "GRN", "AKH", "OGW", "WAR", "THB",
