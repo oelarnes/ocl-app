@@ -38,7 +38,7 @@ const updateDatabase = async () => {
             `Found set to integrate ${json.code} with path ${filePath}`
           );
           const { set, cards } = doSet(json);
-          if (cards.length > 0) {
+          if (Object.values(cards).length > 0) {
             await mongo.collection("all_cards").insertMany(Object.values(cards));
           }
 

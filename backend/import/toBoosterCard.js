@@ -24,6 +24,7 @@ const toBoosterCard = (setCode) => (mtgjsonCard, index, rawCards) => {
     text,
     mtgoId,
     prices,
+    side,
     uuid = `dr4ft-${uuidV1()}`
   } = mtgjsonCard;
 
@@ -65,7 +66,8 @@ const toBoosterCard = (setCode) => (mtgjsonCard, index, rawCards) => {
     text,
     mtgoId,
     prices,
-    frameEffects
+    frameEffects,
+    side
   };
 };
 
