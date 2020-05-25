@@ -324,6 +324,7 @@ module.exports = class Game extends Room {
             data = data.concat(pick);
           });
         });
+        data.push("");
 
         p.logFile = data.join("\n");
         p.send("log", p.logFile);
