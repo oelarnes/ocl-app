@@ -79,5 +79,5 @@ module.exports = {
 
 //Allow this script to be called directly from commandline.
 if (!module.parent) {
-  download();
+  download().then(() => process.exit());
 }
