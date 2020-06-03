@@ -1,21 +1,21 @@
 # redeploy ocl-app
 
+sudo reboot
+
 sudo rm -rf ocl-app
 git clone https://github.com/oelarnes/ocl-app
 mkdir ocl-app/data
-cp -r google-auth ocl-app
-cp -r events ocl-app/data
-cp ocl.ini ocl-app/config
+cp -r backup/google-auth ocl-app
+cp -r backup/events ocl-app/data
+cp backup/ocl.ini ocl-app/config
 sudo service mongod start
-cp owned* ocl-app/data
-cp wishlist* ocl-app/data
+cp backup/owned* ocl-app/data
+cp backup/wishlist* ocl-app/data
 
 cd ocl-app
-npm install
-npm run download_allsets
-npm run update_database
-npm run build
-OCL_ENV=prod node scripts/initialize_ocl.js
+export OCL_ENV=prod
+sudo npm install
+node scripts/initialize_ocl.js
 sudo /opt/bitnami/ctlscript.sh stop apache
 sudo /opt/bitnami/ctlscript.sh stop redis
 
@@ -24,18 +24,18 @@ sudo npm run start
 # new dek files
 # joel:~/ocl-data$
 
-ssh ocl 'rm owned*'
-ssh ocl 'rm wishlist*'
-scp data/owned* ocl:~
-scp data/wishlist* ocl:~
-scp config/ocl.ini ocl:~
+ssh ocl 'rm backup/owned*'
+ssh ocl 'rm backup/wishlist*'
+scp data/owned* ocl:~/backup
+scp data/wishlist* ocl:~/backup
+scp config/ocl.ini ocl:~/backup
 ssh ocl
 rm ocl-app/config/ocl.ini
 rm ocl-app/data/owned*
 rm ocl-app/data/wishlist*
-cp ocl.ini ocl-app/config
-cp owned* ocl-app/data
-cp wishlist* ocl-app/data
+cp backup/ocl.ini ocl-app/config
+cp backup/owned* ocl-app/data
+cp backup/wishlist* ocl-app/data
 
 mutation{syncData}
 

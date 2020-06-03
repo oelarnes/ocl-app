@@ -14,7 +14,6 @@ let App = {
 
   state: {
     id: null,
-    oclId: "",
     name: STRINGS.BRANDING.DEFAULT_USERNAME,
 
     serverVersion: null,
@@ -118,9 +117,9 @@ let App = {
     }
   },
   connect() {
-    let {id, name, oclId} = App.state;
+    let {id, name} = App.state;
     let options = {
-      query: { id, name, oclId }
+      query: { id, name }
     };
     if(!this.ws) {
       this.ws = eio(location.href, options);

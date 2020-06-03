@@ -1,7 +1,5 @@
 const Player = require("./player");
-const util = require("./util");
 const {random} = require("lodash");
-const logger = require("./logger");
 
 module.exports = class extends Player {
   constructor(sock, pickDelegate) {
@@ -9,8 +7,7 @@ module.exports = class extends Player {
       isBot: false,
       isConnected: true,
       name: sock.name,
-      id: sock.id,
-      oclId: sock.oclId,
+      id: sock.id
     });
     this.pickDelegate = pickDelegate.bind(this);
     this.attach(sock);

@@ -9,7 +9,7 @@ const Room = require("./room");
 const Rooms = require("./rooms");
 const logger = require("./logger");
 const Sock = require("./sock");
-const {dataSync} = require("ocl-data");
+const {syncData, getIdForHandle} = require("ocl-data");
 const {getDataDir} = require("./data");
 const path = require("path");
 const fs = require("fs");
@@ -143,12 +143,6 @@ module.exports = class Game extends Room {
     this.meta();
   }
 
-  oclId(oclId, sock) {
-    super.oclId(oclId, sock);
-    sock.h.oclId = sock.oclId;
-    this.meta();
-  }
-
   join(sock) {
     // Reattach sock to player based on his id
     const reattachPlayer = this.players.some((player) => {
@@ -176,7 +170,6 @@ module.exports = class Game extends Room {
 
     super.join(sock);
     this.logger.debug(`${sock.name} joined the game`);
-    this.logger.debug(`${sock.name} has oclId ${sock.oclId}`);
 
     function draftPickDelegate(index) {
       const pack = this.packs.shift();
@@ -277,7 +270,6 @@ module.exports = class Game extends Room {
   meta(state = {}) {
     state.players = this.players.map(p => ({
       name: p.name,
-      oclId: p.oclId,
       time: p.time,
       packs: p.packs.length,
       isBot: p.isBot,
@@ -302,19 +294,29 @@ module.exports = class Game extends Room {
 
   async end() {
     const { type, title, players, oclDataSync } = this;
-    const tag = oclDataSync ? "oclId" : "name";
+    let oclId = "";
+
     await Promise.all(this.players.map(async (p) => {
       if (!p.isBot) {
         const { draftLog, self, name } = p;
+
+        if (oclDataSync) {
+          oclId = await getIdForHandle(name);
+          if (oclId === undefined) {
+            oclId = "Unknown";
+          }
+        }
+
         const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
         let data = [
           `Event #: ${title}`,
+          `Player ID: ${oclDataSync ? oclId : name}`,
           `Time: ${date}`,
           "Players:"
         ];
 
         players.forEach((player, i) =>
-          data.push(i === self ? `--> ${player[tag]}` : `    ${player[tag]}`)
+          data.push(i === self ? `--> ${player.name}` : `    ${player.name}`)
         );
 
         Object.values(draftLog.round).forEach((round, index) => {
@@ -337,7 +339,7 @@ module.exports = class Game extends Room {
       }
     }));
     if (oclDataSync) {
-      dataSync();
+      await syncData().catch(console.log);
     }
 
     const cubeHash = /cube/.test(type)
@@ -352,7 +354,6 @@ module.exports = class Game extends Room {
       "time": Date.now(),
       "cap": this.players.map((player, seat) => ({
         "id": player.id,
-        "oclId": player.oclId,
         "name": player.name,
         "seat": seat,
         "picks": player.cap.packs,

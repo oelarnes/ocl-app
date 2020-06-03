@@ -261,9 +261,12 @@ Object.keys(events).forEach((event) => App.on(event, events[event]));
 const filetypes = {
   async dek() {
     if (App.state.oclDataSync) {
-      const query = `{entry(eventId: "${App.state.title}", playerId: "${App.state.oclId}"){deck{ownedDekString}}}`;
+      const idResult = await Axios.post("/api/data", {query: `{playerSearch(byHandle: "${App.state.name}"){id}}`});
+
+      const playerId = idResult.data.data.playerSearch[0]?.id;
+      const query = `{entry(eventId: "${App.state.title}", playerId: "${playerId}"){deck{ownedDekString}}}`;
+
       const {data} = await Axios.post("/api/data", {query});
-      console.log(data);
       return data.data.entry.deck.ownedDekString;
     } else {
       const mainNameStr = App.state.gameState.get(ZONE_MAIN).map(({name}) => name).join("\", \"");

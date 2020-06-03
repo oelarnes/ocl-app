@@ -64,7 +64,7 @@ const download = async () => {
   if (!isUpToDate) {
     await fetchZip();
     logger.info("Fetch AllSets.json finished. Updating the cards and sets data");
-    updateDatabase();
+    await updateDatabase();
     logger.info("Update DB finished");
     fs.writeFileSync(setsVersion, version);
     refreshVersion();

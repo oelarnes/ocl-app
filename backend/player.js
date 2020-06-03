@@ -5,7 +5,7 @@ const {EventEmitter} = require("events");
  * Abstract class for Human and Bot
  */
 class Player extends EventEmitter {
-  constructor({id, isBot, isConnected, name, oclId}) {
+  constructor({id, isBot, isConnected, name}) {
     super();
 
     if (this.constructor === Player) {
@@ -17,7 +17,6 @@ class Player extends EventEmitter {
       isBot,
       isConnected,
       id,
-      oclId,
       isHost: false,
       time: 0,
       packs: [],
