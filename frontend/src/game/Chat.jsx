@@ -7,14 +7,14 @@ import App from "../app";
 import "vanilla-toast/vanilla-toast.css";
 
 const chatClassMap = {
-  cmustewart: "fod",
+  cmustewart: "sower",
   magicflea: "dw",
   jrp: "sc",
   lasersloths: "sower",
   lipingpong: "cop",
-  steamedfish: "cop",
+  steamedfish: "fod",
   Mort: "cop",
-  Borkenedd: "qb",
+  borkenedd: "qb",
   brodo: "qb",
   erik: "qb",
   GermanGaryOak: "qb",
@@ -25,7 +25,8 @@ const chatClassMap = {
   raj: "qb",
   Tobes: "qb",
   TravisFrankMTG: "qb",
-  wylie: "qb"
+  wylie: "qb",
+  rollpanda: "qb",
 };
 
 export default class Chat extends Component {

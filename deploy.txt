@@ -2,6 +2,7 @@
 
 sudo reboot
 
+ssh ocl
 sudo rm -rf ocl-app
 git clone https://github.com/oelarnes/ocl-app
 mkdir ocl-app/data
@@ -15,6 +16,7 @@ cp backup/wishlist* ocl-app/data
 cd ocl-app
 export OCL_ENV=prod
 sudo npm install
+npm run build
 node scripts/initialize_ocl.js
 sudo /opt/bitnami/ctlscript.sh stop apache
 sudo /opt/bitnami/ctlscript.sh stop redis
@@ -41,7 +43,7 @@ mutation{syncData}
 
 # new event files
 
-scp data/events/<eventId>/* ocl:~/events/<eventId>
+scp data/events/<eventId>/* ocl:~/backup/events/<eventId>
 scp data/events/<eventId>/* ocl:~/ocl-app/data/events/<eventId>
 
 mutation{syncData}
