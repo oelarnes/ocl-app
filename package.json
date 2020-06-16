@@ -72,7 +72,7 @@
     "jsonfile": "^6.0.1",
     "lodash": "^4.17.15",
     "node-schedule": "^1.3.2",
-    "ocl-data": "file:../ocl-data",
+    "ocl-data": "git://github.com/oelarnes/ocl-data.git",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
