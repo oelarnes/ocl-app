@@ -264,10 +264,10 @@ const filetypes = {
       const idResult = await Axios.post("/api/data", {query: `{playerSearch(byHandle: "${App.state.name}"){id}}`});
 
       const playerId = idResult.data.data.playerSearch[0]?.id;
-      const query = `{entry(eventId: "${App.state.title}", playerId: "${playerId}"){deck{ownedDekString}}}`;
+      const query = `{entry(eventId: "${App.state.title}", playerId: "${playerId}"){ownedDekString}}`;
 
       const {data} = await Axios.post("/api/data", {query});
-      return data.data.entry.deck.ownedDekString;
+      return data.data.entry.ownedDekString;
     } else {
       const mainNameStr = App.state.gameState.get(ZONE_MAIN).map(({name}) => name).join("\", \"");
       const sbNameStr = App.state.gameState.get(ZONE_SIDEBOARD).map(({name}) => name).join("\", \"");

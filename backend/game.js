@@ -309,8 +309,7 @@ module.exports = class Game extends Room {
 
         const date = new Date().toISOString().slice(0, -5).replace(/-/g, "").replace(/:/g, "").replace("T", "_");
         let data = [
-          `Event #: ${title}`,
-          `Player ID: ${oclDataSync ? oclId : name}`,
+          `Event #: ${oclDataSync ? oclId : name}@${title}`,
           `Time: ${date}`,
           "Players:"
         ];

@@ -17,6 +17,7 @@ cd ocl-app
 export OCL_ENV=prod
 sudo npm install
 npm run build
+npm run download_allsets
 node scripts/initialize_ocl.js
 sudo /opt/bitnami/ctlscript.sh stop apache
 sudo /opt/bitnami/ctlscript.sh stop redis
