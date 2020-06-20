@@ -11,7 +11,8 @@ cp -r backup/events ocl-app/data
 cp backup/ocl.ini ocl-app/config
 sudo service mongod start
 cp backup/owned* ocl-app/data
-cp backup/wishlist* ocl-app/data
+cp backup/wishlist* ocl-
+app/data
 
 cd ocl-app
 export OCL_ENV=prod
