@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/oelarnes/ocl-site.git"
+    "url": "https://github.com/oelarnes/ocl-app.git"
   },
   "scripts": {
     "start": "OCL_ENV=prod PORT=80 HOST=0.0.0.0 node scripts/run",

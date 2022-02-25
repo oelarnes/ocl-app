@@ -5,6 +5,7 @@ node_modules
 .idea
 
 data
+backup
 frontend/index.html
 
 config.client.js
