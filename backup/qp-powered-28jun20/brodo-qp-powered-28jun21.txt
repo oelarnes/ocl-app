@@ -1,0 +1,51 @@
+1 Elvish Mystic
+1 Oko, Thief of Crowns
+1 Oracle of Mul Daya
+1 Tropical Island
+1 Hexdrinker
+1 Birds of Paradise
+1 Walking Ballista
+1 Botanical Sanctum
+1 Sol Ring
+1 Joraga Treespeaker
+1 Looter il-Kor
+1 Hornet Queen
+1 Hydroid Krasis
+1 Tireless Tracker
+1 Green Sun's Zenith
+10 Forest
+1 Edric, Spymaster of Trest
+1 Devoted Druid
+1 Arbor Elf
+1 Craterhoof Behemoth
+1 Harmonize
+1 Garruk Wildspeaker
+1 Nissa, Voice of Zendikar
+1 Gilded Goose
+1 Opposition
+1 Reclamation Sage
+1 Paradise Druid
+4 Island
+
+1 Thousand-Year Storm
+1 Ramunap Excavator
+1 Carnage Tyrant
+1 Gideon Jura
+1 Ravages of War
+1 Hieroglyphic Illumination
+1 Empty the Warrens
+1 Koth of the Hammer
+1 Sword of Light and Shadow
+1 Razorverge Thicket
+1 Gruul Signet
+1 Dreadhorde Invasion
+1 Tinker
+1 Man-o'-War
+1 Narset, Parter of Veils
+1 Thrashing Brontodon
+1 Thrun, the Last Troll
+1 Kogla, the Titan Ape
+4 Island
+1 Everflowing Chalice
+3 Plains
+3 Forest

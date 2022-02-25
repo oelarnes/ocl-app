@@ -1,0 +1,46 @@
+1 Grave Titan
+1 Noxious Gearhulk
+1 Exhume
+1 Duress
+1 Frantic Search
+1 Ponder
+1 Reanimate
+1 Recurring Nightmare
+1 Bloodghast
+1 Faithless Looting
+1 Griselbrand
+1 Kolaghan's Command
+1 Mulldrifter
+1 Inquisition of Kozilek
+1 Vampiric Tutor
+1 Hymn to Tourach
+1 Thragtusk
+1 Iona, Shield of Emeria
+1 Feldon of the Third Path
+1 Wheel of Fortune
+1 Ophiomancer
+1 Badlands
+1 Polluted Delta
+1 Ancient Tomb
+1 Wooded Foothills
+1 Botanical Sanctum
+1 Mox Emerald
+1 Mox Pearl
+1 Blood Crypt
+1 Demonic Tutor
+1 Ugin, the Spirit Dragon
+
+1 Channel
+1 Tarmogoyf
+1 Brain Freeze
+1 Courser of Kruphix
+1 Thrun, the Last Troll
+1 Splinter Twin
+1 Sneak Attack
+1 Razorverge Thicket
+1 Gravecrawler
+1 Diregraf Ghoul
+1 Cabal Ritual
+1 Mystic Confluence
+1 Scrubland
+1 Godless Shrine

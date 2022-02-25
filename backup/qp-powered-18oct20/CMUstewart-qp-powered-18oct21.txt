@@ -1,0 +1,50 @@
+1 Time Spiral
+3 Mountain
+1 Yawgmoth's Will
+1 Coldsteel Heart
+1 Ancestral Vision
+1 Rakdos Signet
+1 Chrome Mox
+1 Palinchron
+1 Underground Sea
+1 Lightning Strike
+1 Lotus Bloom
+1 Tendrils of Agony
+1 Preordain
+1 Thousand-Year Storm
+1 Dimir Signet
+1 Tolarian Academy
+1 Thirst for Knowledge
+1 Frantic Search
+2 Swamp
+1 Wheel of Fortune
+1 Mana Flare
+1 Desperate Ritual
+1 Mana Vault
+1 Bloodstained Mire
+1 Sol Ring
+1 Dream Halls
+1 Orzhov Signet
+1 Manamorphose
+1 Serum Visions
+1 Mystical Tutor
+1 Mox Sapphire
+1 Spirebluff Canal
+5 Island
+
+1 Rakdos Cackler
+1 Cryptbreaker
+1 Imposing Sovereign
+1 Cast Down
+1 Ophiomancer
+1 Recruiter of the Guard
+1 Wrath of God
+1 Ravenous Chupacabra
+1 Smokestack
+1 Sacred Foundry
+1 Inkwell Leviathan
+1 Tinker
+1 Chandra, Torch of Defiance
+1 Past in Flames
+1 Treasure Cruise
+

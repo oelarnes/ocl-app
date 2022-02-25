@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="66193" Quantity="1" Sideboard="false" Name="Channel" />
+  <Cards CatID="55364" Quantity="1" Sideboard="false" Name="Ugin, the Spirit Dragon" />
+  <Cards CatID="31745" Quantity="1" Sideboard="false" Name="Noble Hierarch" />
+  <Cards CatID="36408" Quantity="1" Sideboard="false" Name="Joraga Treespeaker" />
+  <Cards CatID="26081" Quantity="1" Sideboard="false" Name="Wall of Roots" />
+  <Cards CatID="39581" Quantity="1" Sideboard="false" Name="Green Sun's Zenith" />
+  <Cards CatID="79632" Quantity="12" Sideboard="false" Name="Forest" />
+  <Cards CatID="61797" Quantity="1" Sideboard="false" Name="Smuggler's Copter" />
+  <Cards CatID="39710" Quantity="1" Sideboard="false" Name="Karn Liberated" />
+  <Cards CatID="24023" Quantity="1" Sideboard="false" Name="Azorius Signet" />
+  <Cards CatID="24015" Quantity="1" Sideboard="false" Name="Simic Signet" />
+  <Cards CatID="19705" Quantity="1" Sideboard="false" Name="Thirst for Knowledge" />
+  <Cards CatID="79626" Quantity="2" Sideboard="false" Name="Island" />
+  <Cards CatID="53460" Quantity="1" Sideboard="false" Name="Elvish Mystic" />
+  <Cards CatID="52815" Quantity="1" Sideboard="false" Name="Rofellos, Llanowar Emissary" />
+  <Cards CatID="71944" Quantity="1" Sideboard="false" Name="Nissa, Who Shakes the World" />
+  <Cards CatID="70535" Quantity="1" Sideboard="false" Name="Mana Vault" />
+  <Cards CatID="38307" Quantity="1" Sideboard="false" Name="Myr Battlesphere" />
+  <Cards CatID="21097" Quantity="1" Sideboard="false" Name="Sakura-Tribe Elder" />
+  <Cards CatID="53119" Quantity="1" Sideboard="false" Name="Timetwister" />
+  <Cards CatID="12385" Quantity="1" Sideboard="false" Name="Time Spiral" />
+  <Cards CatID="61853" Quantity="1" Sideboard="false" Name="Botanical Sanctum" />
+  <Cards CatID="36178" Quantity="1" Sideboard="false" Name="Garruk Wildspeaker" />
+  <Cards CatID="56956" Quantity="1" Sideboard="false" Name="Survival of the Fittest" />
+  <Cards CatID="51851" Quantity="1" Sideboard="false" Name="Courser of Kruphix" />
+  <Cards CatID="67801" Quantity="1" Sideboard="false" Name="Llanowar Elves" />
+  <Cards CatID="37598" Quantity="1" Sideboard="false" Name="Birds of Paradise" />
+  <Cards CatID="62489" Quantity="1" Sideboard="false" Name="Primal Command" />
+  <Cards CatID="60791" Quantity="1" Sideboard="true" Name="Winter Orb" />
+  <Cards CatID="72752" Quantity="1" Sideboard="true" Name="Wall of Blossoms" />
+  <Cards CatID="72722" Quantity="1" Sideboard="true" Name="Regrowth" />
+  <Cards CatID="52246" Quantity="1" Sideboard="true" Name="Eidolon of the Great Revel" />
+  <Cards CatID="45526" Quantity="1" Sideboard="true" Name="Searing Spear" />
+  <Cards CatID="68465" Quantity="1" Sideboard="true" Name="Lightning Strike" />
+  <Cards CatID="41135" Quantity="1" Sideboard="true" Name="Incinerate" />
+  <Cards CatID="43469" Quantity="1" Sideboard="true" Name="Thalia, Guardian of Thraben" />
+  <Cards CatID="46435" Quantity="1" Sideboard="true" Name="Rakdos Cackler" />
+  <Cards CatID="25691" Quantity="1" Sideboard="true" Name="Lotus Bloom" />
+  <Cards CatID="72616" Quantity="1" Sideboard="true" Name="Firebolt" />
+  <Cards CatID="20007" Quantity="1" Sideboard="true" Name="Crystal Shard" />
+  <Cards CatID="39726" Quantity="1" Sideboard="true" Name="Deceiver Exarch" />
+  <Cards CatID="50404" Quantity="1" Sideboard="true" Name="Spear of Heliod" />
+  <Cards CatID="79132" Quantity="1" Sideboard="true" Name="Banishing Light" />
+  <Cards CatID="53941" Quantity="1" Sideboard="true" Name="Smokestack" />
+  <Cards CatID="50628" Quantity="1" Sideboard="true" Name="Polukranos, World Eater" />
+  <Cards CatID="55990" Quantity="1" Sideboard="true" Name="Secure the Wastes" />
+  <Cards CatID="65376" Quantity="1" Sideboard="true" Name="Carnage Tyrant" />
+  <Cards CatID="79626" Quantity="5" Sideboard="true" Name="Island" />
+  <Cards CatID="79632" Quantity="6" Sideboard="true" Name="Forest" />
+  <Cards CatID="79628" Quantity="5" Sideboard="true" Name="Swamp" />
+  <Cards CatID="79624" Quantity="5" Sideboard="true" Name="Plains" />
+  <Cards CatID="79630" Quantity="5" Sideboard="true" Name="Mountain" />
+</Deck>

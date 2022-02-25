@@ -1,0 +1,50 @@
+4 Plains
+1 Porcelain Legionnaire
+1 Flametongue Kavu
+1 Scalding Tarn
+1 Dauntless Bodyguard
+1 Sram's Expertise
+1 Mutavault
+1 Wasteland
+1 Reckless Bushwhacker
+1 Champion of the Parish
+1 Bonesplitter
+1 Council's Judgment
+1 Armageddon
+1 Searing Spear
+1 Mogg War Marshal
+1 Thalia's Lieutenant
+1 Silverblade Paladin
+1 Legion Loyalist
+1 Bloodstained Mire
+1 Monastery Swiftspear
+1 Stromkirk Noble
+1 Soul-Scar Mage
+1 Goblin Glory Chaser
+1 Goblin Cratermaker
+1 Mana Tithe
+1 Light Up the Stage
+1 Goblin Guide
+1 Mardu Woe-Reaper
+1 Stormblood Berserker
+1 Sacred Foundry
+1 Legion Warboss
+5 Mountain
+1 Plateau
+
+1 Judith, the Scourge Diva
+1 Thrun, the Last Troll
+4 Plains
+1 Ketria Triome
+4 Mountain
+1 Gravecrawler
+1 Goblin Lackey
+1 Greater Gargadon
+1 Giant Killer
+1 Young Pyromancer
+1 Angel of Invention
+1 Lodestone Golem
+1 Firedrinker Satyr
+1 Scrapheap Scrounger
+1 Anax, Hardened in the Forge
+1 Fiery Temper

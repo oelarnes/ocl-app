@@ -1,0 +1,467 @@
+Event #: p0022@qp-powered-9aug20
+Time: 20200810_010540
+Players:
+    TravisFrankMTG
+    wylie
+--> brodo
+    magicflea
+    steamedfish
+    lasersloths
+    lipingpong
+    JesseB34R
+
+------ Cube ------
+
+Pack 1 pick 1:
+--> True-Name Nemesis
+    Mind's Desire
+    Search for Tomorrow
+    Path to Exile
+    Phoenix of Ash
+    Savannah
+    Bitterblossom
+    Life // Death
+    Thoughtseize
+    Scrubland
+    Looter il-Kor
+    Thalia, Guardian of Thraben
+    Assassin's Trophy
+    Tooth and Nail
+    Elspeth Conquers Death
+
+Pack 1 pick 2:
+--> Force Spike
+    Searing Spear
+    Imposing Sovereign
+    Timetwister
+    Blade Splicer
+    Thrun, the Last Troll
+    Mystical Tutor
+    Kolaghan's Command
+    Zealous Conscripts
+    Gilded Lotus
+    Tidehollow Sculler
+    Regrowth
+    Dreadhorde Invasion
+    Kitesail Freebooter
+
+Pack 1 pick 3:
+--> Wurmcoil Engine
+    Daretti, Scrap Savant
+    Volcanic Island
+    Craterhoof Behemoth
+    Blooming Marsh
+    Bomat Courier
+    Thundermaw Hellkite
+    Snapcaster Mage
+    Hallowed Fountain
+    Braids, Cabal Minion
+    Firebolt
+    Force of Will
+    Lotus Bloom
+
+Pack 1 pick 4:
+--> Tolarian Academy
+    Questing Beast
+    Batterskull
+    Overgrown Tomb
+    Hero of Bladehold
+    Baral, Chief of Compliance
+    Oracle of Mul Daya
+    Mulldrifter
+    Temple Garden
+    Raugrin Triome
+    Nissa, Vastwood Seer
+    Shatter the Sky
+
+Pack 1 pick 5:
+--> Pack Rat
+    Arc Trail
+    Elesh Norn, Grand Cenobite
+    Necromancy
+    Shrine of Burning Rage
+    Student of Warfare
+    Earthshaker Khenra
+    Crucible of Worlds
+    Goblin Cratermaker
+    Tireless Tracker
+    Chain Lightning
+
+Pack 1 pick 6:
+--> Liliana, the Last Hope
+    Monastery Mentor
+    Kogla, the Titan Ape
+    Sword of War and Peace
+    Sakura-Tribe Elder
+    Swords to Plowshares
+    Grim Lavamancer
+    Heartless Act
+    Impulse
+    Paradise Druid
+
+Pack 1 pick 7:
+--> Toxic Deluge
+    Vindicate
+    Past in Flames
+    Acidic Slime
+    Territorial Hellkite
+    Daretti, Ingenious Iconoclast
+    Kytheon, Hero of Akros
+    Ramunap Excavator
+    Sword of Light and Shadow
+
+Pack 1 pick 8:
+--> Steam Vents
+    Dread Wanderer
+    Firedrinker Satyr
+    Magmatic Sinkhole
+    Selfless Spirit
+    Spirit of the Labyrinth
+    Plow Under
+    Mirran Crusader
+
+Pack 1 pick 9:
+--> Mind's Desire
+    Phoenix of Ash
+    Savannah
+    Thalia, Guardian of Thraben
+    Assassin's Trophy
+    Tooth and Nail
+    Elspeth Conquers Death
+
+Pack 1 pick 10:
+--> Gilded Lotus
+    Searing Spear
+    Imposing Sovereign
+    Blade Splicer
+    Thrun, the Last Troll
+    Tidehollow Sculler
+
+Pack 1 pick 11:
+--> Lotus Bloom
+    Craterhoof Behemoth
+    Thundermaw Hellkite
+    Braids, Cabal Minion
+    Firebolt
+
+Pack 1 pick 12:
+--> Nissa, Vastwood Seer
+    Hero of Bladehold
+    Temple Garden
+    Shatter the Sky
+
+Pack 1 pick 13:
+--> Goblin Cratermaker
+    Student of Warfare
+    Earthshaker Khenra
+
+Pack 1 pick 14:
+--> Sword of War and Peace
+    Sakura-Tribe Elder
+
+Pack 1 pick 15:
+--> Sword of Light and Shadow
+
+------ Cube ------
+
+Pack 2 pick 1:
+--> Brain Freeze
+    Botanical Sanctum
+    Dig Through Time
+    Reclamation Sage
+    Deep Forest Hermit
+    Rakdos Cackler
+    Torrential Gearhulk
+    Miscalculation
+    Eternal Witness
+    Grapeshot
+    Yawgmoth's Will
+    Kiki-Jiki, Mirror Breaker
+    Deceiver Exarch
+    Inquisition of Kozilek
+    Kitchen Finks
+
+Pack 2 pick 2:
+--> Hymn to Tourach
+    Wooded Foothills
+    Mana Confluence
+    Cabal Ritual
+    Mind Stone
+    Yawgmoth's Bargain
+    Spear of Heliod
+    Ugin, the Spirit Dragon
+    Copperline Gorge
+    Arbor Elf
+    Duress
+    Brimaz, King of Oreskos
+    Winter Orb
+    Phantasmal Image
+
+Pack 2 pick 3:
+--> Lion's Eye Diamond
+    Yavimaya Elder
+    Savai Triome
+    Balance
+    Dauntless Bodyguard
+    Hangarback Walker
+    Channel
+    Garruk, Primal Hunter
+    Rakdos Signet
+    Gruul Signet
+    Ulamog, the Ceaseless Hunger
+    Birds of Paradise
+    Unexpectedly Absent
+
+Pack 2 pick 4:
+--> Creeping Tar Pit
+    Iona, Shield of Emeria
+    Venser, Shaper Savant
+    Liliana, Death's Majesty
+    Gaea's Cradle
+    Noble Hierarch
+    Phyrexian Revoker
+    Inspiring Vantage
+    Simic Signet
+    Abbot of Keral Keep
+    Phyrexian Arena
+    Repeal
+
+Pack 2 pick 5:
+--> Vampiric Tutor
+    Gideon Jura
+    Liliana of the Veil
+    Recruiter of the Guard
+    Nissa, Vital Force
+    Treasure Cruise
+    Scrapheap Scrounger
+    Leonin Relic-Warder
+    Sword of Fire and Ice
+    Bayou
+    Day of Judgment
+
+Pack 2 pick 6:
+--> Goblin Electromancer
+    Wall of Roots
+    Giver of Runes
+    Cast Down
+    Memory Lapse
+    Desperate Ritual
+    Sacred Foundry
+    Lightning Helix
+    History of Benalia
+    Plateau
+
+Pack 2 pick 7:
+--> Mana Flare
+    Manglehorn
+    Grim Monolith
+    Breeding Pool
+    Zagoth Triome
+    Spirebluff Canal
+    Collective Brutality
+    Entomb
+    Ophiomancer
+
+Pack 2 pick 8:
+--> Dream Halls
+    Golgari Signet
+    Kodama's Reach
+    Sheoldred, Whispering One
+    Vedalken Shackles
+    Sphinx of the Steel Wind
+    Elvish Mystic
+    Tendrils of Agony
+
+Pack 2 pick 9:
+--> Yawgmoth's Will
+    Dig Through Time
+    Reclamation Sage
+    Deep Forest Hermit
+    Eternal Witness
+    Grapeshot
+    Kitchen Finks
+
+Pack 2 pick 10:
+--> Cabal Ritual
+    Mind Stone
+    Yawgmoth's Bargain
+    Ugin, the Spirit Dragon
+    Copperline Gorge
+    Brimaz, King of Oreskos
+
+Pack 2 pick 11:
+--> Gruul Signet
+    Yavimaya Elder
+    Dauntless Bodyguard
+    Garruk, Primal Hunter
+    Birds of Paradise
+
+Pack 2 pick 12:
+--> Repeal
+    Noble Hierarch
+    Inspiring Vantage
+    Simic Signet
+
+Pack 2 pick 13:
+--> Bayou
+    Leonin Relic-Warder
+    Day of Judgment
+
+Pack 2 pick 14:
+--> Desperate Ritual
+    History of Benalia
+
+Pack 2 pick 15:
+--> Manglehorn
+
+------ Cube ------
+
+Pack 3 pick 1:
+--> Brainstorm
+    Agonizing Remorse
+    Armageddon
+    Walking Ballista
+    Monastery Swiftspear
+    Brightling
+    Tarmogoyf
+    Ancient Tomb
+    Stormblood Berserker
+    Recurring Nightmare
+    Flickerwisp
+    Forbid
+    Gutterbones
+    Cast Out
+    Narset, Parter of Veils
+
+Pack 3 pick 2:
+--> Turnabout
+    Living Death
+    Exhume
+    Mana Leak
+    Banishing Light
+    Quarantine Field
+    Mu Yanling, Sky Dancer
+    Legion Warboss
+    Cursed Scroll
+    Stomping Ground
+    Hero's Downfall
+    Mesmeric Fiend
+    Opposition
+    Gideon, Ally of Zendikar
+
+Pack 3 pick 3:
+--> Compulsive Research
+    Dire Fleet Daredevil
+    Celestial Colonnade
+    Man-o'-War
+    Grave Titan
+    Mana Vault
+    Supreme Verdict
+    Ketria Triome
+    Remand
+    Survival of the Fittest
+    Maze of Ith
+    Char
+    Lingering Souls
+
+Pack 3 pick 4:
+--> Opt
+    Bloodsoaked Champion
+    Cryptbreaker
+    Scavenging Ooze
+    Mimic Vat
+    Griselbrand
+    Joraga Treespeaker
+    Izzet Charm
+    Mana Tithe
+    Lodestone Golem
+    Lightning Strike
+    Myr Battlesphere
+
+Pack 3 pick 5:
+--> Arid Mesa
+    Gush
+    Izzet Signet
+    Rampaging Ferocidon
+    Ashen Rider
+    Soulfire Grand Master
+    Baleful Strix
+    Courser of Kruphix
+    Boros Signet
+    Fatal Push
+    Skymarcher Aspirant
+
+Pack 3 pick 6:
+--> Gitaxian Probe
+    Terastodon
+    Embereth Shieldbreaker
+    Falkenrath Gorger
+    Consecrated Sphinx
+    Deranged Hermit
+    Edric, Spymaster of Trest
+    Voracious Hydra
+    Hornet Queen
+    Llanowar Elves
+
+Pack 3 pick 7:
+--> Seething Song
+    Den Protector
+    Carnage Tyrant
+    Sword of Feast and Famine
+    Solemn Simulacrum
+    Everflowing Chalice
+    Hydroid Krasis
+    Coalition Relic
+    Hexdrinker
+
+Pack 3 pick 8:
+--> Underworld Breach
+    Soldier of the Pantheon
+    Thopter Spy Network
+    Mardu Woe-Reaper
+    Concealed Courtyard
+    Academy Ruins
+    Wrath of God
+    Taiga
+
+Pack 3 pick 9:
+--> Recurring Nightmare
+    Brightling
+    Tarmogoyf
+    Stormblood Berserker
+    Flickerwisp
+    Forbid
+    Cast Out
+
+Pack 3 pick 10:
+--> Legion Warboss
+    Living Death
+    Exhume
+    Banishing Light
+    Quarantine Field
+    Cursed Scroll
+
+Pack 3 pick 11:
+--> Man-o'-War
+    Celestial Colonnade
+    Supreme Verdict
+    Survival of the Fittest
+    Maze of Ith
+
+Pack 3 pick 12:
+--> Cryptbreaker
+    Scavenging Ooze
+    Mimic Vat
+    Lodestone Golem
+
+Pack 3 pick 13:
+--> Gush
+    Soulfire Grand Master
+    Boros Signet
+
+Pack 3 pick 14:
+--> Llanowar Elves
+    Voracious Hydra
+
+Pack 3 pick 15:
+--> Hexdrinker

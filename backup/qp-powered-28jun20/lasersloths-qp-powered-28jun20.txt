@@ -1,0 +1,53 @@
+1 Mox Jet
+1 Magmatic Sinkhole
+1 Tendrils of Agony
+1 Raugrin Triome
+1 Seething Song
+1 Serum Visions
+1 Cabal Ritual
+1 Lion's Eye Diamond
+1 Mana Crypt
+1 Past in Flames
+1 Verdant Catacombs
+1 Dimir Signet
+1 Wooded Foothills
+1 Impulse
+1 Brainstorm
+1 City of Brass
+1 Lotus Bloom
+1 Ancestral Vision
+1 Dark Ritual
+1 Vampiric Tutor
+1 Volcanic Island
+1 Dream Halls
+1 Scalding Tarn
+1 Gush
+1 Frantic Search
+1 Brain Freeze
+1 Force Spike
+1 Faithless Looting
+1 Dismember
+1 Yawgmoth's Bargain
+1 Orzhov Signet
+4 Island
+3 Swamp
+2 Mountain
+
+1 Journey to Nowhere
+1 Tidehollow Sculler
+1 Brightling
+1 Elspeth, Knight-Errant
+1 Fallen Shinobi
+1 Recurring Nightmare
+1 Sword of Body and Mind
+1 Gutterbones
+1 Cryptbreaker
+1 Elesh Norn, Grand Cenobite
+1 Iona, Shield of Emeria
+1 Bloodghast
+1 Liliana of the Veil
+3 Island
+3 Swamp
+2 Mountain
+1 Ashiok, Nightmare Weaver
+4 Plains

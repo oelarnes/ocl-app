@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="79628" Quantity="4" Sideboard="false" Name="Swamp" />
+  <Cards CatID="12641" Quantity="1" Sideboard="false" Name="Bone Shredder" />
+  <Cards CatID="22595" Quantity="1" Sideboard="false" Name="Remove Soul" />
+  <Cards CatID="60877" Quantity="1" Sideboard="false" Name="Animate Dead" />
+  <Cards CatID="58511" Quantity="1" Sideboard="false" Name="Hedron Archive" />
+  <Cards CatID="70187" Quantity="1" Sideboard="false" Name="Frantic Search" />
+  <Cards CatID="41291" Quantity="1" Sideboard="false" Name="Frost Titan" />
+  <Cards CatID="43102" Quantity="1" Sideboard="false" Name="Exhume" />
+  <Cards CatID="56818" Quantity="1" Sideboard="false" Name="Mox Diamond" />
+  <Cards CatID="25851" Quantity="1" Sideboard="false" Name="Looter il-Kor" />
+  <Cards CatID="58301" Quantity="1" Sideboard="false" Name="Ulamog, the Ceaseless Hunger" />
+  <Cards CatID="55727" Quantity="1" Sideboard="false" Name="Griselbrand" />
+  <Cards CatID="61068" Quantity="1" Sideboard="false" Name="Emrakul, the Promised End" />
+  <Cards CatID="60769" Quantity="1" Sideboard="false" Name="Sneak Attack" />
+  <Cards CatID="39976" Quantity="1" Sideboard="false" Name="Gitaxian Probe" />
+  <Cards CatID="79626" Quantity="3" Sideboard="false" Name="Island" />
+  <Cards CatID="10709" Quantity="1" Sideboard="false" Name="Survival of the Fittest" />
+  <Cards CatID="34448" Quantity="1" Sideboard="false" Name="Into the Roil" />
+  <Cards CatID="39746" Quantity="1" Sideboard="false" Name="Sheoldred, Whispering One" />
+  <Cards CatID="12607" Quantity="1" Sideboard="false" Name="Miscalculation" />
+  <Cards CatID="55976" Quantity="1" Sideboard="false" Name="Dragonlord Atarka" />
+  <Cards CatID="32537" Quantity="1" Sideboard="false" Name="Shriekmaw" />
+  <Cards CatID="28739" Quantity="1" Sideboard="false" Name="Oona's Prowler" />
+  <Cards CatID="65466" Quantity="1" Sideboard="false" Name="Hostage Taker" />
+  <Cards CatID="46433" Quantity="1" Sideboard="false" Name="Izzet Charm" />
+  <Cards CatID="53077" Quantity="1" Sideboard="false" Name="Badlands" />
+  <Cards CatID="71532" Quantity="1" Sideboard="false" Name="Breeding Pool" />
+  <Cards CatID="58529" Quantity="1" Sideboard="false" Name="Lumbering Falls" />
+  <Cards CatID="34622" Quantity="1" Sideboard="false" Name="Misty Rainforest" />
+  <Cards CatID="28707" Quantity="1" Sideboard="false" Name="Shelldock Isle" />
+  <Cards CatID="30308" Quantity="1" Sideboard="false" Name="Underground Sea" />
+  <Cards CatID="69931" Quantity="1" Sideboard="false" Name="Watery Grave" />
+  <Cards CatID="59259" Quantity="1" Sideboard="false" Name="Wandering Fumarole" />
+  <Cards CatID="69927" Quantity="1" Sideboard="false" Name="Steam Vents" />
+  <Cards CatID="38293" Quantity="1" Sideboard="false" Name="Blackcleave Cliffs" />
+  <Cards CatID="50628" Quantity="1" Sideboard="true" Name="Polukranos, World Eater" />
+  <Cards CatID="39796" Quantity="1" Sideboard="true" Name="Birthing Pod" />
+  <Cards CatID="42466" Quantity="1" Sideboard="true" Name="Bloodline Keeper" />
+  <Cards CatID="21335" Quantity="1" Sideboard="true" Name="Gifts Ungiven" />
+  <Cards CatID="22771" Quantity="1" Sideboard="true" Name="Phyrexian Arena" />
+  <Cards CatID="68621" Quantity="1" Sideboard="true" Name="Crucible of Worlds" />
+  <Cards CatID="59908" Quantity="1" Sideboard="true" Name="Hanweir Militia Captain" />
+  <Cards CatID="65054" Quantity="1" Sideboard="true" Name="Legion's Landing" />
+  <Cards CatID="46603" Quantity="1" Sideboard="true" Name="Ultimate Price" />
+  <Cards CatID="72692" Quantity="1" Sideboard="true" Name="Crashing Footfalls" />
+  <Cards CatID="60891" Quantity="1" Sideboard="true" Name="Mystical Tutor" />
+  <Cards CatID="20007" Quantity="1" Sideboard="true" Name="Crystal Shard" />
+</Deck>

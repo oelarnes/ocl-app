@@ -1,0 +1,46 @@
+1 Snapcaster Mage
+1 Mana Vault
+1 Marsh Flats
+1 Creeping Tar Pit
+1 Ponder
+1 Batterskull
+1 Memory Lapse
+1 Impulse
+1 Ashiok, Nightmare Weaver
+1 Treachery
+1 Azorius Signet
+1 Daze
+1 Monastery Mentor
+1 Ugin, the Spirit Dragon
+1 True-Name Nemesis
+1 Preordain
+1 Swords to Plowshares
+1 Black Lotus
+1 Stoneforge Mystic
+1 Ancestral Vision
+1 Shelldock Isle
+1 Orzhov Signet
+1 Tidehollow Sculler
+1 Wall of Omens
+1 Supreme Verdict
+1 Godless Shrine
+1 Gideon, Ally of Zendikar
+1 Celestial Colonnade
+1 Flickerwisp
+
+1 Chain Lightning
+1 Fatal Push
+1 Rofellos, Llanowar Emissary
+1 Goblin Cratermaker
+1 Desperate Ritual
+1 Mana Flare
+1 Pernicious Deed
+1 Temple Garden
+1 Iona, Shield of Emeria
+1 High Tide
+1 Restoration Angel
+1 Mirran Crusader
+1 Torrential Gearhulk
+1 Elspeth, Sun's Champion
+1 Cryptic Command
+1 Venser, Shaper Savant

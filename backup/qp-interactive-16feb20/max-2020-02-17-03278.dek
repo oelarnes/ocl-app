@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="19301" Quantity="1" Sideboard="false" Name="City of Brass" />
+  <Cards CatID="23294" Quantity="1" Sideboard="false" Name="Compulsive Research" />
+  <Cards CatID="54200" Quantity="1" Sideboard="false" Name="Wooded Foothills" />
+  <Cards CatID="34542" Quantity="1" Sideboard="false" Name="Oracle of Mul Daya" />
+  <Cards CatID="45364" Quantity="1" Sideboard="false" Name="Arbor Elf" />
+  <Cards CatID="39730" Quantity="1" Sideboard="false" Name="Sword of War and Peace" />
+  <Cards CatID="68161" Quantity="1" Sideboard="false" Name="Llanowar Elves" />
+  <Cards CatID="37132" Quantity="1" Sideboard="false" Name="Garruk Wildspeaker" />
+  <Cards CatID="52889" Quantity="1" Sideboard="false" Name="Yavimaya Elder" />
+  <Cards CatID="19179" Quantity="1" Sideboard="false" Name="Bribery" />
+  <Cards CatID="19705" Quantity="1" Sideboard="false" Name="Thirst for Knowledge" />
+  <Cards CatID="27044" Quantity="1" Sideboard="false" Name="Mind Stone" />
+  <Cards CatID="34546" Quantity="1" Sideboard="false" Name="Lotus Cobra" />
+  <Cards CatID="28245" Quantity="1" Sideboard="false" Name="Mulldrifter" />
+  <Cards CatID="62561" Quantity="1" Sideboard="false" Name="Walking Ballista" />
+  <Cards CatID="53099" Quantity="1" Sideboard="false" Name="Volcanic Island" />
+  <Cards CatID="61851" Quantity="1" Sideboard="false" Name="Spirebluff Canal" />
+  <Cards CatID="67006" Quantity="1" Sideboard="false" Name="Brainstorm" />
+  <Cards CatID="43463" Quantity="1" Sideboard="false" Name="Huntmaster of the Fells" />
+  <Cards CatID="32430" Quantity="1" Sideboard="false" Name="Bloodbraid Elf" />
+  <Cards CatID="28767" Quantity="1" Sideboard="false" Name="Sower of Temptation" />
+  <Cards CatID="53093" Quantity="1" Sideboard="false" Name="Tropical Island" />
+  <Cards CatID="45582" Quantity="1" Sideboard="false" Name="Thragtusk" />
+  <Cards CatID="20754" Quantity="1" Sideboard="false" Name="Grafted Wargear" />
+  <Cards CatID="37136" Quantity="1" Sideboard="false" Name="Jace Beleren" />
+  <Cards CatID="49547" Quantity="1" Sideboard="false" Name="Mountain" />
+  <Cards CatID="44033" Quantity="1" Sideboard="false" Name="Zealous Conscripts" />
+  <Cards CatID="45252" Quantity="1" Sideboard="false" Name="Rancor" />
+  <Cards CatID="35675" Quantity="1" Sideboard="false" Name="Raging Ravine" />
+  <Cards CatID="60058" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="61466" Quantity="1" Sideboard="false" Name="Noose Constrictor" />
+  <Cards CatID="49307" Quantity="3" Sideboard="false" Name="Island" />
+  <Cards CatID="49303" Quantity="6" Sideboard="false" Name="Forest" />
+  <Cards CatID="30776" Quantity="1" Sideboard="true" Name="Ravages of War" />
+  <Cards CatID="54040" Quantity="1" Sideboard="true" Name="Hooting Mandrills" />
+  <Cards CatID="38189" Quantity="1" Sideboard="true" Name="Genesis Wave" />
+  <Cards CatID="67106" Quantity="1" Sideboard="true" Name="Living Death" />
+  <Cards CatID="21021" Quantity="1" Sideboard="true" Name="Kiki-Jiki, Mirror Breaker" />
+  <Cards CatID="7445" Quantity="1" Sideboard="true" Name="Worldly Tutor" />
+  <Cards CatID="26844" Quantity="1" Sideboard="true" Name="Tarmogoyf" />
+  <Cards CatID="59567" Quantity="1" Sideboard="true" Name="Sylvan Advocate" />
+  <Cards CatID="62795" Quantity="1" Sideboard="true" Name="Rishkar, Peema Renegade" />
+  <Cards CatID="26249" Quantity="1" Sideboard="true" Name="Harmonize" />
+  <Cards CatID="29978" Quantity="1" Sideboard="true" Name="Wickerbough Elder" />
+  <Cards CatID="57926" Quantity="1" Sideboard="true" Name="Whirler Rogue" />
+  <Cards CatID="35709" Quantity="1" Sideboard="true" Name="Lodestone Golem" />
+  <Cards CatID="26594" Quantity="1" Sideboard="true" Name="Venser, Shaper Savant" />
+  <Cards CatID="24071" Quantity="1" Sideboard="true" Name="Trygon Predator" />
+  <Cards CatID="46411" Quantity="1" Sideboard="true" Name="Dryad Militant" />
+</Deck>

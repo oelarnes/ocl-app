@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="40609" Quantity="1" Sideboard="false" Name="Sol Ring" />
+  <Cards CatID="52931" Quantity="1" Sideboard="false" Name="Upheaval" />
+  <Cards CatID="59131" Quantity="1" Sideboard="false" Name="Mystic Confluence" />
+  <Cards CatID="41607" Quantity="1" Sideboard="false" Name="Birds of Paradise" />
+  <Cards CatID="24529" Quantity="1" Sideboard="false" Name="Coldsteel Heart" />
+  <Cards CatID="43921" Quantity="1" Sideboard="false" Name="Craterhoof Behemoth" />
+  <Cards CatID="61853" Quantity="1" Sideboard="false" Name="Botanical Sanctum" />
+  <Cards CatID="35591" Quantity="1" Sideboard="false" Name="Jace, the Mind Sculptor" />
+  <Cards CatID="56818" Quantity="1" Sideboard="false" Name="Mox Diamond" />
+  <Cards CatID="57880" Quantity="1" Sideboard="false" Name="Jace, Vryn's Prodigy" />
+  <Cards CatID="72472" Quantity="1" Sideboard="false" Name="Fact or Fiction" />
+  <Cards CatID="60320" Quantity="1" Sideboard="false" Name="Tireless Tracker" />
+  <Cards CatID="72708" Quantity="1" Sideboard="false" Name="Hexdrinker" />
+  <Cards CatID="79626" Quantity="5" Sideboard="false" Name="Island" />
+  <Cards CatID="36408" Quantity="1" Sideboard="false" Name="Joraga Treespeaker" />
+  <Cards CatID="26249" Quantity="1" Sideboard="false" Name="Harmonize" />
+  <Cards CatID="54300" Quantity="1" Sideboard="false" Name="Treasure Cruise" />
+  <Cards CatID="39710" Quantity="1" Sideboard="false" Name="Karn Liberated" />
+  <Cards CatID="25405" Quantity="1" Sideboard="false" Name="Search for Tomorrow" />
+  <Cards CatID="12385" Quantity="1" Sideboard="false" Name="Time Spiral" />
+  <Cards CatID="53157" Quantity="1" Sideboard="false" Name="Mana Drain" />
+  <Cards CatID="19705" Quantity="1" Sideboard="false" Name="Thirst for Knowledge" />
+  <Cards CatID="35629" Quantity="1" Sideboard="false" Name="Terastodon" />
+  <Cards CatID="58056" Quantity="1" Sideboard="false" Name="Nissa, Vastwood Seer" />
+  <Cards CatID="71532" Quantity="1" Sideboard="false" Name="Breeding Pool" />
+  <Cards CatID="11867" Quantity="1" Sideboard="false" Name="Gaea's Cradle" />
+  <Cards CatID="10175" Quantity="1" Sideboard="false" Name="Dream Halls" />
+  <Cards CatID="79632" Quantity="7" Sideboard="false" Name="Forest" />
+  <Cards CatID="54202" Quantity="1" Sideboard="false" Name="Windswept Heath" />
+  <Cards CatID="41605" Quantity="1" Sideboard="false" Name="Llanowar Elves" />
+  <Cards CatID="53085" Quantity="1" Sideboard="true" Name="Savannah" />
+  <Cards CatID="27895" Quantity="1" Sideboard="true" Name="Mishra's Factory" />
+  <Cards CatID="19969" Quantity="1" Sideboard="true" Name="Tooth and Nail" />
+  <Cards CatID="21077" Quantity="1" Sideboard="true" Name="Heartbeat of Spring" />
+  <Cards CatID="60785" Quantity="1" Sideboard="true" Name="Sylvan Library" />
+  <Cards CatID="71530" Quantity="1" Sideboard="true" Name="Blood Crypt" />
+  <Cards CatID="56050" Quantity="1" Sideboard="true" Name="Zurgo Bellstriker" />
+  <Cards CatID="10709" Quantity="1" Sideboard="true" Name="Survival of the Fittest" />
+  <Cards CatID="59335" Quantity="1" Sideboard="true" Name="Nissa, Voice of Zendikar" />
+  <Cards CatID="18866" Quantity="1" Sideboard="true" Name="Tendrils of Agony" />
+  <Cards CatID="18890" Quantity="1" Sideboard="true" Name="Mind's Desire" />
+  <Cards CatID="29329" Quantity="1" Sideboard="true" Name="Kitchen Finks" />
+  <Cards CatID="72722" Quantity="1" Sideboard="true" Name="Regrowth" />
+  <Cards CatID="23562" Quantity="1" Sideboard="true" Name="Dimir Signet" />
+  <Cards CatID="65160" Quantity="1" Sideboard="true" Name="Search for Azcanta" />
+  <Cards CatID="67517" Quantity="1" Sideboard="true" Name="Lyra Dawnbringer" />
+  <Cards CatID="29605" Quantity="1" Sideboard="true" Name="Spectral Procession" />
+</Deck>

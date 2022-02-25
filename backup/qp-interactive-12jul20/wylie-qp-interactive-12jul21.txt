@@ -1,0 +1,54 @@
+1 Coalition Relic
+1 Ponder
+1 Nimble Obstructionist
+1 Man-o'-War
+1 Spell Pierce
+1 Brainstorm
+1 Into the Roil
+1 Frantic Search
+1 Remove Soul
+1 Delver of Secrets
+1 Blood Crypt
+1 Deceiver Exarch
+1 Splinter Twin
+1 Zealous Conscripts
+1 Young Pyromancer
+1 Vedalken Shackles
+1 Bloodstained Mire
+1 Electrolyze
+1 Duress
+1 Collective Brutality
+1 Dreadbore
+6 Island
+3 Mountain
+1 Tundra
+1 Chandra, Flamecaller
+1 Evolving Wilds
+1 Plains
+1 Lingering Souls
+1 Lightning Helix
+1 Monastery Mentor
+2 Swamp
+1 Marsh Flats
+
+5 Swamp
+4 Mountain
+7 Plains
+1 Tidehollow Sculler
+4 Island
+1 Myr Battlesphere
+1 Mindslaver
+1 Grumgully, the Generous
+1 Exhume
+1 Doomed Traveler
+1 Remorseful Cleric
+1 Cloudgoat Ranger
+1 Feldon of the Third Path
+1 Crystal Shard
+1 Banisher Priest
+1 Faith's Fetters
+1 Sram's Expertise
+1 Abbot of Keral Keep
+1 Dreadhorde Invasion
+1 Asylum Visitor
+1 Sneak Attack

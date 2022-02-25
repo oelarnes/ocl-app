@@ -1,0 +1,46 @@
+1 Mimic Vat
+1 Tundra
+1 Vedalken Shackles
+1 Evolving Wilds
+1 Savannah
+1 Batterskull
+1 Day of Judgment
+1 Verdant Catacombs
+1 Kitchen Finks
+1 Satyr Wayfinder
+1 Copperline Gorge
+1 Manglehorn
+1 Tasigur, the Golden Fang
+1 Polukranos, World Eater
+1 Worldly Tutor
+1 Wurmcoil Engine
+1 Coldsteel Heart
+1 Volcanic Island
+1 Noble Hierarch
+1 Woodfall Primus
+1 Lumbering Falls
+1 Primeval Titan
+1 Llanowar Elves
+1 Birds of Paradise
+1 Staggershock
+1 Dance of the Dead
+1 Academy Ruins
+1 Noose Constrictor
+1 Master of the Wild Hunt
+1 Dragonlord Atarka
+1 Farseek
+1 Mystic Confluence
+1 Tropical Island
+1 Oblivion Ring
+1 Bayou
+1 Taiga
+1 Duskwatch Recruiter
+1 Joraga Treespeaker
+1 Oracle of Mul Daya
+1 Deranged Hermit
+1 Kodama's Reach
+1 Lodestone Golem
+1 Tarmogoyf
+1 Thirst for Knowledge
+1 Green Sun's Zenith
+

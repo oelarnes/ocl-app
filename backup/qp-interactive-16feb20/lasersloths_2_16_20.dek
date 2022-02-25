@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="37907" Quantity="1" Sideboard="false" Name="Lightning Bolt" />
+  <Cards CatID="59776" Quantity="1" Sideboard="false" Name="Falkenrath Gorger" />
+  <Cards CatID="42554" Quantity="1" Sideboard="false" Name="Stromkirk Noble" />
+  <Cards CatID="41135" Quantity="1" Sideboard="false" Name="Incinerate" />
+  <Cards CatID="35559" Quantity="1" Sideboard="false" Name="Searing Blaze" />
+  <Cards CatID="39834" Quantity="1" Sideboard="false" Name="Porcelain Legionnaire" />
+  <Cards CatID="23212" Quantity="1" Sideboard="false" Name="Char" />
+  <Cards CatID="53500" Quantity="1" Sideboard="false" Name="Goblin Rabblemaster" />
+  <Cards CatID="49135" Quantity="1" Sideboard="false" Name="Mutavault" />
+  <Cards CatID="62745" Quantity="1" Sideboard="false" Name="Kari Zev, Skyship Raider" />
+  <Cards CatID="41453" Quantity="1" Sideboard="false" Name="Stormblood Berserker" />
+  <Cards CatID="70980" Quantity="15" Sideboard="false" Name="Mountain" />
+  <Cards CatID="64664" Quantity="1" Sideboard="false" Name="Earthshaker Khenra" />
+  <Cards CatID="62087" Quantity="1" Sideboard="false" Name="Scrapheap Scrounger" />
+  <Cards CatID="34374" Quantity="1" Sideboard="false" Name="Goblin Guide" />
+  <Cards CatID="64650" Quantity="1" Sideboard="false" Name="Abrade" />
+  <Cards CatID="69579" Quantity="1" Sideboard="false" Name="Goblin Cratermaker" />
+  <Cards CatID="50612" Quantity="1" Sideboard="false" Name="Firedrinker Satyr" />
+  <Cards CatID="33500" Quantity="1" Sideboard="false" Name="Chain Lightning" />
+  <Cards CatID="41611" Quantity="1" Sideboard="false" Name="Grim Lavamancer" />
+  <Cards CatID="38151" Quantity="1" Sideboard="false" Name="Arc Trail" />
+  <Cards CatID="56050" Quantity="1" Sideboard="false" Name="Zurgo Bellstriker" />
+  <Cards CatID="13809" Quantity="1" Sideboard="false" Name="Tangle Wire" />
+  <Cards CatID="43185" Quantity="1" Sideboard="false" Name="Hellrider" />
+  <Cards CatID="58042" Quantity="1" Sideboard="false" Name="Abbot of Keral Keep" />
+  <Cards CatID="54114" Quantity="1" Sideboard="false" Name="Arc Lightning" />
+  <Cards CatID="28349" Quantity="1" Sideboard="true" Name="Cloudgoat Ranger" />
+  <Cards CatID="41259" Quantity="1" Sideboard="true" Name="Day of Judgment" />
+  <Cards CatID="39517" Quantity="1" Sideboard="true" Name="Thrun, the Last Troll" />
+  <Cards CatID="27444" Quantity="1" Sideboard="true" Name="Wrath of God" />
+  <Cards CatID="49413" Quantity="1" Sideboard="true" Name="Young Pyromancer" />
+  <Cards CatID="64488" Quantity="1" Sideboard="true" Name="Adorned Pouncer" />
+  <Cards CatID="67338" Quantity="1" Sideboard="true" Name="Pernicious Deed" />
+  <Cards CatID="23629" Quantity="1" Sideboard="true" Name="Electrolyze" />
+  <Cards CatID="69677" Quantity="1" Sideboard="true" Name="Assassin's Trophy" />
+  <Cards CatID="23154" Quantity="1" Sideboard="true" Name="Lightning Helix" />
+  <Cards CatID="69655" Quantity="1" Sideboard="true" Name="Pelt Collector" />
+  <Cards CatID="41315" Quantity="1" Sideboard="true" Name="Inferno Titan" />
+  <Cards CatID="25581" Quantity="1" Sideboard="true" Name="Greater Gargadon" />
+  <Cards CatID="73185" Quantity="1" Sideboard="true" Name="Goblin Ringleader" />
+  <Cards CatID="36640" Quantity="1" Sideboard="true" Name="Flame Slash" />
+  <Cards CatID="67725" Quantity="1" Sideboard="true" Name="Goblin Warchief" />
+  <Cards CatID="54362" Quantity="1" Sideboard="true" Name="Hordeling Outburst" />
+  <Cards CatID="41213" Quantity="1" Sideboard="true" Name="Goblin Chieftain" />
+  <Cards CatID="45414" Quantity="1" Sideboard="true" Name="Thundermaw Hellkite" />
+  <Cards CatID="72648" Quantity="1" Sideboard="true" Name="Pashalik Mons" />
+</Deck>

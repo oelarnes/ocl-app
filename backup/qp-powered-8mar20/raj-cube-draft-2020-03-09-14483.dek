@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="52919" Quantity="1" Sideboard="false" Name="Mox Sapphire" />
+  <Cards CatID="72112" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="66339" Quantity="1" Sideboard="false" Name="Thran Dynamo" />
+  <Cards CatID="72694" Quantity="1" Sideboard="false" Name="Deep Forest Hermit" />
+  <Cards CatID="78190" Quantity="1" Sideboard="false" Name="Emry, Lurker of the Loch" />
+  <Cards CatID="72124" Quantity="3" Sideboard="false" Name="Mountain" />
+  <Cards CatID="72860" Quantity="1" Sideboard="false" Name="Prismatic Vista" />
+  <Cards CatID="25535" Quantity="1" Sideboard="false" Name="Empty the Warrens" />
+  <Cards CatID="72134" Quantity="7" Sideboard="false" Name="Forest" />
+  <Cards CatID="34546" Quantity="1" Sideboard="false" Name="Lotus Cobra" />
+  <Cards CatID="53221" Quantity="1" Sideboard="false" Name="Lion's Eye Diamond" />
+  <Cards CatID="62561" Quantity="1" Sideboard="false" Name="Walking Ballista" />
+  <Cards CatID="54316" Quantity="1" Sideboard="false" Name="Dig Through Time" />
+  <Cards CatID="72114" Quantity="2" Sideboard="false" Name="Island" />
+  <Cards CatID="13287" Quantity="1" Sideboard="false" Name="Dark Ritual" />
+  <Cards CatID="29305" Quantity="1" Sideboard="false" Name="Devoted Druid" />
+  <Cards CatID="9135" Quantity="1" Sideboard="false" Name="Mind Stone" />
+  <Cards CatID="42678" Quantity="1" Sideboard="false" Name="Avacyn's Pilgrim" />
+  <Cards CatID="52793" Quantity="1" Sideboard="false" Name="Deranged Hermit" />
+  <Cards CatID="24071" Quantity="1" Sideboard="false" Name="Trygon Predator" />
+  <Cards CatID="53364" Quantity="1" Sideboard="false" Name="Hornet Queen" />
+  <Cards CatID="53460" Quantity="1" Sideboard="false" Name="Elvish Mystic" />
+  <Cards CatID="67895" Quantity="1" Sideboard="false" Name="Gilded Lotus" />
+  <Cards CatID="29653" Quantity="1" Sideboard="false" Name="Manamorphose" />
+  <Cards CatID="67006" Quantity="1" Sideboard="false" Name="Brainstorm" />
+  <Cards CatID="26081" Quantity="1" Sideboard="false" Name="Wall of Roots" />
+  <Cards CatID="38301" Quantity="1" Sideboard="false" Name="Copperline Gorge" />
+  <Cards CatID="42744" Quantity="1" Sideboard="false" Name="Garruk Relentless" />
+  <Cards CatID="38279" Quantity="1" Sideboard="false" Name="Sword of Body and Mind" />
+  <Cards CatID="38293" Quantity="1" Sideboard="false" Name="Blackcleave Cliffs" />
+  <Cards CatID="43267" Quantity="1" Sideboard="false" Name="Faithless Looting" />
+  <Cards CatID="71054" Quantity="1" Sideboard="true" Name="Tithe Taker" />
+  <Cards CatID="67493" Quantity="1" Sideboard="true" Name="Dauntless Bodyguard" />
+  <Cards CatID="55568" Quantity="1" Sideboard="true" Name="Mardu Woe-Reaper" />
+  <Cards CatID="60889" Quantity="1" Sideboard="true" Name="Enlightened Tutor" />
+  <Cards CatID="37136" Quantity="1" Sideboard="true" Name="Jace Beleren" />
+  <Cards CatID="53245" Quantity="1" Sideboard="true" Name="Wheel of Fortune" />
+  <Cards CatID="38261" Quantity="1" Sideboard="true" Name="Mindslaver" />
+  <Cards CatID="59177" Quantity="1" Sideboard="true" Name="Fiery Confluence" />
+  <Cards CatID="64664" Quantity="1" Sideboard="true" Name="Earthshaker Khenra" />
+  <Cards CatID="25851" Quantity="1" Sideboard="true" Name="Looter il-Kor" />
+  <Cards CatID="27444" Quantity="1" Sideboard="true" Name="Wrath of God" />
+  <Cards CatID="52747" Quantity="1" Sideboard="true" Name="Armageddon" />
+  <Cards CatID="53067" Quantity="1" Sideboard="true" Name="Control Magic" />
+  <Cards CatID="59776" Quantity="1" Sideboard="true" Name="Falkenrath Gorger" />
+  <Cards CatID="39944" Quantity="1" Sideboard="true" Name="Dismember" />
+  <Cards CatID="69921" Quantity="1" Sideboard="true" Name="Sacred Foundry" />
+  <Cards CatID="42712" Quantity="1" Sideboard="true" Name="Past in Flames" />
+  <Cards CatID="72110" Quantity="5" Sideboard="true" Name="Plains" />
+  <Cards CatID="72112" Quantity="1" Sideboard="true" Name="Island" />
+  <Cards CatID="72114" Quantity="1" Sideboard="true" Name="Island" />
+  <Cards CatID="72124" Quantity="1" Sideboard="true" Name="Mountain" />
+  <Cards CatID="72126" Quantity="2" Sideboard="true" Name="Mountain" />
+  <Cards CatID="72134" Quantity="1" Sideboard="true" Name="Forest" />
+  <Cards CatID="12103" Quantity="1" Sideboard="true" Name="Turnabout" />
+</Deck>

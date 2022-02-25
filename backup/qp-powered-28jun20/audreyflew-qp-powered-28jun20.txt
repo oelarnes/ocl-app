@@ -1,0 +1,48 @@
+1 Snapcaster Mage
+1 Flooded Strand
+1 Opt
+1 Vendilion Clique
+1 Boros Signet
+1 Council's Judgment
+7 Plains
+1 Spell Pierce
+1 Elspeth, Sun's Champion
+1 Lyra Dawnbringer
+1 Mana Vault
+1 Fact or Fiction
+1 Ponder
+1 Restoration Angel
+7 Island
+1 Ugin, the Spirit Dragon
+1 Celestial Colonnade
+1 Mana Leak
+1 Azorius Signet
+1 Force of Will
+1 Phyrexian Metamorph
+1 Consecrated Sphinx
+1 Wurmcoil Engine
+1 Wrath of God
+1 Sphinx's Revelation
+1 Cast Out
+1 Banishing Light
+1 Simic Signet
+
+1 Zagoth Triome
+1 Savai Triome
+1 Regrowth
+1 Arc Trail
+1 Animate Dead
+1 Spirit of the Labyrinth
+1 Student of Warfare
+1 Thraben Inspector
+1 Living Death
+1 Languish
+1 Sun Titan
+1 Light Up the Stage
+1 Goblin Rabblemaster
+1 Necromancy
+1 Shatter the Sky
+1 Elspeth Conquers Death
+1 Quarantine Field
+1 Karn, Scion of Urza
+1 Flickerwisp

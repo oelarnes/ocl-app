@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="55410" Quantity="1" Sideboard="false" Name="Monastery Mentor" />
+  <Cards CatID="59695" Quantity="1" Sideboard="false" Name="Strip Mine" />
+  <Cards CatID="60240" Quantity="1" Sideboard="false" Name="Thraben Inspector" />
+  <Cards CatID="61859" Quantity="1" Sideboard="false" Name="Concealed Courtyard" />
+  <Cards CatID="67517" Quantity="1" Sideboard="false" Name="Lyra Dawnbringer" />
+  <Cards CatID="50304" Quantity="1" Sideboard="false" Name="Elspeth, Sun's Champion" />
+  <Cards CatID="61102" Quantity="1" Sideboard="false" Name="Selfless Spirit" />
+  <Cards CatID="58555" Quantity="1" Sideboard="false" Name="Quarantine Field" />
+  <Cards CatID="58317" Quantity="1" Sideboard="false" Name="Gideon, Ally of Zendikar" />
+  <Cards CatID="72108" Quantity="4" Sideboard="false" Name="Plains" />
+  <Cards CatID="39447" Quantity="1" Sideboard="false" Name="Go for the Throat" />
+  <Cards CatID="36586" Quantity="1" Sideboard="false" Name="Student of Warfare" />
+  <Cards CatID="43359" Quantity="1" Sideboard="false" Name="Lingering Souls" />
+  <Cards CatID="60871" Quantity="1" Sideboard="false" Name="Mother of Runes" />
+  <Cards CatID="62271" Quantity="1" Sideboard="false" Name="Recruiter of the Guard" />
+  <Cards CatID="72122" Quantity="2" Sideboard="false" Name="Swamp" />
+  <Cards CatID="66495" Quantity="1" Sideboard="false" Name="Skymarcher Aspirant" />
+  <Cards CatID="52713" Quantity="1" Sideboard="false" Name="Mox Jet" />
+  <Cards CatID="45256" Quantity="1" Sideboard="false" Name="Oblivion Ring" />
+  <Cards CatID="52909" Quantity="1" Sideboard="false" Name="Swords to Plowshares" />
+  <Cards CatID="61797" Quantity="1" Sideboard="false" Name="Smuggler's Copter" />
+  <Cards CatID="72110" Quantity="5" Sideboard="false" Name="Plains" />
+  <Cards CatID="67352" Quantity="1" Sideboard="false" Name="Vindicate" />
+  <Cards CatID="50404" Quantity="1" Sideboard="false" Name="Spear of Heliod" />
+  <Cards CatID="65236" Quantity="1" Sideboard="false" Name="Kitesail Freebooter" />
+  <Cards CatID="36526" Quantity="1" Sideboard="false" Name="Wall of Omens" />
+  <Cards CatID="54104" Quantity="1" Sideboard="false" Name="Murderous Cut" />
+  <Cards CatID="26511" Quantity="1" Sideboard="false" Name="Mana Tithe" />
+  <Cards CatID="72106" Quantity="3" Sideboard="false" Name="Plains" />
+  <Cards CatID="29329" Quantity="1" Sideboard="false" Name="Kitchen Finks" />
+  <Cards CatID="32474" Quantity="1" Sideboard="true" Name="Sphinx of the Steel Wind" />
+  <Cards CatID="32430" Quantity="1" Sideboard="true" Name="Bloodbraid Elf" />
+  <Cards CatID="36556" Quantity="1" Sideboard="true" Name="Staggershock" />
+  <Cards CatID="38610" Quantity="1" Sideboard="true" Name="Taiga" />
+  <Cards CatID="71558" Quantity="1" Sideboard="true" Name="Stomping Ground" />
+  <Cards CatID="19599" Quantity="1" Sideboard="true" Name="Plow Under" />
+  <Cards CatID="64742" Quantity="1" Sideboard="true" Name="Ramunap Excavator" />
+  <Cards CatID="56066" Quantity="1" Sideboard="true" Name="Den Protector" />
+  <Cards CatID="33520" Quantity="1" Sideboard="true" Name="Force Spike" />
+  <Cards CatID="56050" Quantity="1" Sideboard="true" Name="Zurgo Bellstriker" />
+  <Cards CatID="52635" Quantity="1" Sideboard="true" Name="Ankh of Mishra" />
+  <Cards CatID="60889" Quantity="1" Sideboard="true" Name="Enlightened Tutor" />
+  <Cards CatID="59960" Quantity="1" Sideboard="true" Name="Heir of Falkenrath" />
+  <Cards CatID="72604" Quantity="1" Sideboard="true" Name="Yawgmoth, Thran Physician" />
+  <Cards CatID="58959" Quantity="1" Sideboard="true" Name="Mirari's Wake" />
+  <Cards CatID="71778" Quantity="1" Sideboard="true" Name="Dreadhorde Invasion" />
+  <Cards CatID="50608" Quantity="1" Sideboard="true" Name="Soldier of the Pantheon" />
+  <Cards CatID="29970" Quantity="1" Sideboard="true" Name="Flickerwisp" />
+  <Cards CatID="41545" Quantity="1" Sideboard="true" Name="Solemn Simulacrum" />
+</Deck>

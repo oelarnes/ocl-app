@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="17243" Quantity="1" Sideboard="false" Name="Fiery Temper" />
+  <Cards CatID="72124" Quantity="6" Sideboard="false" Name="Mountain" />
+  <Cards CatID="71370" Quantity="1" Sideboard="false" Name="Judith, the Scourge Diva" />
+  <Cards CatID="58399" Quantity="1" Sideboard="false" Name="Ob Nixilis Reignited" />
+  <Cards CatID="61372" Quantity="1" Sideboard="false" Name="Cryptbreaker" />
+  <Cards CatID="59025" Quantity="1" Sideboard="false" Name="Flametongue Kavu" />
+  <Cards CatID="67084" Quantity="1" Sideboard="false" Name="Diabolic Edict" />
+  <Cards CatID="51344" Quantity="1" Sideboard="false" Name="Ophiomancer" />
+  <Cards CatID="56938" Quantity="1" Sideboard="false" Name="Carnophage" />
+  <Cards CatID="61957" Quantity="1" Sideboard="false" Name="Gonti, Lord of Luxury" />
+  <Cards CatID="43175" Quantity="1" Sideboard="false" Name="Gravecrawler" />
+  <Cards CatID="41295" Quantity="1" Sideboard="false" Name="Grave Titan" />
+  <Cards CatID="58405" Quantity="1" Sideboard="false" Name="Drana, Liberator of Malakir" />
+  <Cards CatID="71778" Quantity="1" Sideboard="false" Name="Dreadhorde Invasion" />
+  <Cards CatID="16705" Quantity="1" Sideboard="false" Name="Firebolt" />
+  <Cards CatID="54198" Quantity="1" Sideboard="false" Name="Bloodstained Mire" />
+  <Cards CatID="68345" Quantity="1" Sideboard="false" Name="Diregraf Ghoul" />
+  <Cards CatID="60324" Quantity="1" Sideboard="false" Name="Asylum Visitor" />
+  <Cards CatID="59960" Quantity="1" Sideboard="false" Name="Heir of Falkenrath" />
+  <Cards CatID="46435" Quantity="1" Sideboard="false" Name="Rakdos Cackler" />
+  <Cards CatID="23084" Quantity="1" Sideboard="false" Name="Dark Confidant" />
+  <Cards CatID="34408" Quantity="1" Sideboard="false" Name="Burst Lightning" />
+  <Cards CatID="46443" Quantity="1" Sideboard="false" Name="Dreadbore" />
+  <Cards CatID="72118" Quantity="7" Sideboard="false" Name="Swamp" />
+  <Cards CatID="66651" Quantity="1" Sideboard="false" Name="Dire Fleet Daredevil" />
+  <Cards CatID="63898" Quantity="1" Sideboard="false" Name="Soul-Scar Mage" />
+  <Cards CatID="55207" Quantity="1" Sideboard="false" Name="Flesh Carver" />
+  <Cards CatID="26099" Quantity="1" Sideboard="false" Name="Gemstone Mine" />
+  <Cards CatID="72122" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="32833" Quantity="1" Sideboard="true" Name="Master of the Wild Hunt" />
+  <Cards CatID="53364" Quantity="1" Sideboard="true" Name="Hornet Queen" />
+  <Cards CatID="28501" Quantity="1" Sideboard="true" Name="Primal Command" />
+  <Cards CatID="68271" Quantity="1" Sideboard="true" Name="Exclusion Mage" />
+  <Cards CatID="37388" Quantity="1" Sideboard="true" Name="Preordain" />
+  <Cards CatID="33520" Quantity="1" Sideboard="true" Name="Force Spike" />
+  <Cards CatID="60751" Quantity="1" Sideboard="true" Name="Baleful Strix" />
+  <Cards CatID="19737" Quantity="1" Sideboard="true" Name="Lightning Greaves" />
+  <Cards CatID="31925" Quantity="1" Sideboard="true" Name="Knight of the Reliquary" />
+  <Cards CatID="30923" Quantity="1" Sideboard="true" Name="Ajani Vengeant" />
+  <Cards CatID="22417" Quantity="1" Sideboard="true" Name="Wildfire" />
+  <Cards CatID="30406" Quantity="1" Sideboard="true" Name="Dance of the Dead" />
+  <Cards CatID="41573" Quantity="1" Sideboard="true" Name="Smallpox" />
+  <Cards CatID="57990" Quantity="1" Sideboard="true" Name="Pia and Kiran Nalaar" />
+  <Cards CatID="42616" Quantity="1" Sideboard="true" Name="Liliana of the Veil" />
+  <Cards CatID="61959" Quantity="1" Sideboard="true" Name="Noxious Gearhulk" />
+  <Cards CatID="71880" Quantity="1" Sideboard="true" Name="Krenko, Tin Street Kingpin" />
+  <Cards CatID="39339" Quantity="1" Sideboard="true" Name="Ichor Wellspring" />
+  <Cards CatID="54108" Quantity="1" Sideboard="true" Name="Monastery Swiftspear" />
+</Deck>

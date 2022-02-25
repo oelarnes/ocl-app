@@ -1,0 +1,48 @@
+1 Black Lotus
+1 Emrakul, the Promised End
+1 Ponder
+1 Orzhov Signet
+1 Mind's Desire
+1 Man-o'-War
+1 Brain Freeze
+1 Mana Crypt
+1 Demonic Tutor
+1 Grim Monolith
+1 Fact or Fiction
+1 Dig Through Time
+1 Lotus Bloom
+1 Boros Signet
+1 Myr Battlesphere
+1 Dimir Signet
+1 Turnabout
+1 Remand
+1 Cryptic Command
+1 Grave Titan
+1 Doom Whisperer
+1 Forbid
+1 Golgari Signet
+5 Swamp
+10 Island
+1 Creeping Tar Pit
+1 Academy Ruins
+
+1 Razorverge Thicket
+1 Verdant Catacombs
+1 Marsh Flats
+1 Hissing Quagmire
+1 Enlightened Tutor
+1 Fatal Push
+1 Desperate Ritual
+1 Regrowth
+1 Wall of Blossoms
+1 Spellskite
+1 Heartbeat of Spring
+1 Kodama's Reach
+1 Eternal Witness
+1 Kolaghan's Command
+1 Crucible of Worlds
+1 Pia and Kiran Nalaar
+1 Wrath of God
+1 Restoration Angel
+1 Faith's Fetters
+1 Sphinx's Revelation

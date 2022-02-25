@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="39537" Quantity="1" Sideboard="false" Name="Consecrated Sphinx" />
+  <Cards CatID="38498" Quantity="1" Sideboard="false" Name="Counterspell" />
+  <Cards CatID="54300" Quantity="1" Sideboard="false" Name="Treasure Cruise" />
+  <Cards CatID="65236" Quantity="1" Sideboard="false" Name="Kitesail Freebooter" />
+  <Cards CatID="24529" Quantity="1" Sideboard="false" Name="Coldsteel Heart" />
+  <Cards CatID="68707" Quantity="4" Sideboard="false" Name="Swamp" />
+  <Cards CatID="7589" Quantity="1" Sideboard="false" Name="Impulse" />
+  <Cards CatID="71536" Quantity="1" Sideboard="false" Name="Godless Shrine" />
+  <Cards CatID="68699" Quantity="6" Sideboard="false" Name="Island" />
+  <Cards CatID="10459" Quantity="1" Sideboard="false" Name="Forbid" />
+  <Cards CatID="67352" Quantity="1" Sideboard="false" Name="Vindicate" />
+  <Cards CatID="71094" Quantity="1" Sideboard="false" Name="Pteramander" />
+  <Cards CatID="26279" Quantity="1" Sideboard="false" Name="Damnation" />
+  <Cards CatID="39944" Quantity="1" Sideboard="false" Name="Dismember" />
+  <Cards CatID="60971" Quantity="1" Sideboard="false" Name="Wasteland" />
+  <Cards CatID="78634" Quantity="1" Sideboard="false" Name="Fabled Passage" />
+  <Cards CatID="38588" Quantity="1" Sideboard="false" Name="Scrubland" />
+  <Cards CatID="46559" Quantity="1" Sideboard="false" Name="Sphinx's Revelation" />
+  <Cards CatID="66617" Quantity="1" Sideboard="false" Name="Ravenous Chupacabra" />
+  <Cards CatID="60897" Quantity="1" Sideboard="false" Name="Daze" />
+  <Cards CatID="67627" Quantity="1" Sideboard="false" Name="Cast Down" />
+  <Cards CatID="60783" Quantity="1" Sideboard="false" Name="Hymn to Tourach" />
+  <Cards CatID="42436" Quantity="1" Sideboard="false" Name="Delver of Secrets" />
+  <Cards CatID="59131" Quantity="1" Sideboard="false" Name="Mystic Confluence" />
+  <Cards CatID="54196" Quantity="1" Sideboard="false" Name="Polluted Delta" />
+  <Cards CatID="46423" Quantity="1" Sideboard="false" Name="Detention Sphere" />
+  <Cards CatID="64774" Quantity="1" Sideboard="false" Name="The Scarab God" />
+  <Cards CatID="42512" Quantity="1" Sideboard="false" Name="Snapcaster Mage" />
+  <Cards CatID="55338" Quantity="1" Sideboard="false" Name="Tasigur, the Golden Fang" />
+  <Cards CatID="23174" Quantity="1" Sideboard="false" Name="Remand" />
+  <Cards CatID="62689" Quantity="1" Sideboard="false" Name="Fatal Push" />
+  <Cards CatID="68691" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="53183" Quantity="1" Sideboard="true" Name="Coercive Portal" />
+  <Cards CatID="61887" Quantity="1" Sideboard="true" Name="Angel of Invention" />
+  <Cards CatID="43359" Quantity="1" Sideboard="true" Name="Lingering Souls" />
+  <Cards CatID="37686" Quantity="1" Sideboard="true" Name="Journey to Nowhere" />
+  <Cards CatID="36526" Quantity="1" Sideboard="true" Name="Wall of Omens" />
+  <Cards CatID="25739" Quantity="1" Sideboard="true" Name="Academy Ruins" />
+  <Cards CatID="27759" Quantity="1" Sideboard="true" Name="Chromatic Star" />
+  <Cards CatID="29038" Quantity="1" Sideboard="true" Name="Bitterblossom" />
+  <Cards CatID="43513" Quantity="1" Sideboard="true" Name="Strangleroot Geist" />
+  <Cards CatID="53356" Quantity="1" Sideboard="true" Name="Phyrexian Revoker" />
+  <Cards CatID="59417" Quantity="1" Sideboard="true" Name="Kalitas, Traitor of Ghet" />
+  <Cards CatID="57906" Quantity="1" Sideboard="true" Name="Thopter Spy Network" />
+  <Cards CatID="59335" Quantity="1" Sideboard="true" Name="Nissa, Voice of Zendikar" />
+  <Cards CatID="39778" Quantity="1" Sideboard="true" Name="Spellskite" />
+  <Cards CatID="73093" Quantity="1" Sideboard="true" Name="Duress" />
+  <Cards CatID="69511" Quantity="1" Sideboard="true" Name="Doom Whisperer" />
+</Deck>

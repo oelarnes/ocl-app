@@ -1,0 +1,467 @@
+Event #: lhi4yh3wjkh
+Time: 20200323_010048
+Players:
+    lenny
+    max
+    Ian
+    jnqt
+    Jon
+    Joel B
+--> Kyle
+    Georg
+
+------ Cube ------
+
+Pack 0 pick 1:
+--> Treasure Map
+    Toxic Deluge
+    Adanto Vanguard
+    Wrath of God
+    Kiki-Jiki, Mirror Breaker
+    Cryptic Command
+    Strangleroot Geist
+    Chart a Course
+    Hanweir Militia Captain
+    Frantic Search
+    Soul-Scar Mage
+    Gurmag Angler
+    Bloodstained Mire
+    Soldier of the Pantheon
+    Sword of Feast and Famine
+
+Pack 0 pick 2:
+--> Fact or Fiction
+    Mana Leak
+    Badlands
+    Cloudgoat Ranger
+    Journey to Nowhere
+    Go for the Throat
+    Wall of Blossoms
+    Deep Forest Hermit
+    Wickerbough Elder
+    Llanowar Elves
+    Thalia, Heretic Cathar
+    Young Pyromancer
+    Kytheon, Hero of Akros
+    Chromatic Star
+
+Pack 0 pick 3:
+--> Thragtusk
+    Vindicate
+    Dance of the Dead
+    Arc Trail
+    Bloodbraid Elf
+    Sphinx's Revelation
+    Avacyn's Pilgrim
+    Burst Lightning
+    Force Spike
+    Enlightened Tutor
+    Asylum Visitor
+    Cultivate
+    Imposing Sovereign
+
+Pack 0 pick 4:
+--> Wooded Foothills
+    Fatal Push
+    Hangarback Walker
+    Preordain
+    Satyr Wayfinder
+    Lingering Souls
+    Faithless Looting
+    Dig Through Time
+    Krenko, Tin Street Kingpin
+    Liliana of the Veil
+    Searing Spear
+    Gifts Ungiven
+
+Pack 0 pick 5:
+--> Hissing Quagmire
+    Grim Lavamancer
+    Innocent Blood
+    Emeria Angel
+    Incinerate
+    Diregraf Ghoul
+    Phyrexian Revoker
+    Greater Gargadon
+    Noose Constrictor
+    Mountain Valley
+    Carnophage
+
+Pack 0 pick 6:
+--> Bitterblossom
+    Tarmogoyf
+    Exhume
+    Stormblood Berserker
+    Goblin Lackey
+    Master of the Wild Hunt
+    Good-Fortune Unicorn
+    Blade Splicer
+    Courser of Kruphix
+    Pteramander
+
+Pack 0 pick 7:
+--> Huntmaster of the Fells
+    Melira, Sylvok Outcast
+    Thopter Spy Network
+    Relic Seeker
+    Spellskite
+    Tithe Taker
+    Polukranos, World Eater
+    Copperline Gorge
+    Nullhide Ferox
+
+Pack 0 pick 8:
+--> Treetop Village
+    Izzet Charm
+    Goblin Ringleader
+    Day of Judgment
+    Bomat Courier
+    Genesis Wave
+    Hooting Mandrills
+    Abrade
+
+Pack 0 pick 9:
+--> Gurmag Angler
+    Wrath of God
+    Kiki-Jiki, Mirror Breaker
+    Hanweir Militia Captain
+    Frantic Search
+    Soul-Scar Mage
+    Soldier of the Pantheon
+
+Pack 0 pick 10:
+--> Badlands
+    Cloudgoat Ranger
+    Wall of Blossoms
+    Deep Forest Hermit
+    Young Pyromancer
+    Chromatic Star
+
+Pack 0 pick 11:
+--> Bloodbraid Elf
+    Dance of the Dead
+    Arc Trail
+    Asylum Visitor
+    Cultivate
+
+Pack 0 pick 12:
+--> Krenko, Tin Street Kingpin
+    Hangarback Walker
+    Faithless Looting
+    Gifts Ungiven
+
+Pack 0 pick 13:
+--> Noose Constrictor
+    Diregraf Ghoul
+    Carnophage
+
+Pack 0 pick 14:
+--> Goblin Lackey
+    Pteramander
+
+Pack 0 pick 15:
+--> Melira, Sylvok Outcast
+
+------ Cube ------
+
+Pack 1 pick 1:
+--> Kessig Prowler
+    Hero's Downfall
+    Wasteland
+    Sneak Attack
+    Woodfall Primus
+    Gemstone Mine
+    Man-o'-War
+    Faith's Fetters
+    Blackcleave Cliffs
+    Murderous Cut
+    Lumbering Falls
+    Gonti, Lord of Luxury
+    Goblin Warchief
+    Necromancy
+    Quarantine Field
+
+Pack 1 pick 2:
+--> Smuggler's Copter
+    Griselbrand
+    Mardu Woe-Reaper
+    Earthshaker Khenra
+    Chainer's Edict
+    Council's Judgment
+    Ulamog, the Ceaseless Hunger
+    Approach of the Second Sun
+    Baneslayer Angel
+    Carnage Tyrant
+    Lodestone Golem
+    Repeal
+    Dauntless Bodyguard
+    Scrubland
+
+Pack 1 pick 3:
+--> Thundermaw Hellkite
+    Siege-Gang Commander
+    Vampire Nighthawk
+    Entomb
+    Chain Lightning
+    Legion Warboss
+    Sword of Light and Shadow
+    Mindslaver
+    Knight of the Reliquary
+    Deceiver Exarch
+    Pestermite
+    Flame Slash
+    Daze
+
+Pack 1 pick 4:
+--> Raging Ravine
+    Bloodghast
+    Lightning Helix
+    Sram's Expertise
+    Chandra, Flamecaller
+    Falkenrath Gorger
+    Crystal Shard
+    Harsh Mentor
+    Ichor Wellspring
+    Dreadhorde Invasion
+    Ravages of War
+    Figure of Destiny
+
+Pack 1 pick 5:
+--> Goblin Rabblemaster
+    Cloudkin Seer
+    Mutavault
+    Heir of Falkenrath
+    Brimaz, King of Oreskos
+    Ophiomancer
+    Rakdos Cackler
+    Wildfire
+    Aetherling
+    Detention Sphere
+    Frost Titan
+
+Pack 1 pick 6:
+--> Rancor
+    Dreadbore
+    Fauna Shaman
+    Crashing Footfalls
+    Den Protector
+    Judith, the Scourge Diva
+    Secure the Wastes
+    Gilded Lotus
+    Arc Lightning
+    Burning of Xinye
+
+Pack 1 pick 7:
+--> Volcanic Island
+    Everflowing Chalice
+    Spear of Heliod
+    Drana, Liberator of Malakir
+    Goblin Welder
+    Walking Ballista
+    Goblin Cratermaker
+    Monastery Swiftspear
+    Mimic Vat
+
+Pack 1 pick 8:
+--> Stomping Ground
+    Flickerwisp
+    Glory-Bound Initiate
+    Meloku the Clouded Mirror
+    Light Up the Stage
+    Inferno Titan
+    Tidehollow Sculler
+    Wild Mongrel
+
+Pack 1 pick 9:
+--> Murderous Cut
+    Hero's Downfall
+    Sneak Attack
+    Blackcleave Cliffs
+    Goblin Warchief
+    Necromancy
+    Quarantine Field
+
+Pack 1 pick 10:
+--> Carnage Tyrant
+    Mardu Woe-Reaper
+    Chainer's Edict
+    Ulamog, the Ceaseless Hunger
+    Baneslayer Angel
+    Lodestone Golem
+
+Pack 1 pick 11:
+--> Legion Warboss
+    Siege-Gang Commander
+    Vampire Nighthawk
+    Deceiver Exarch
+    Flame Slash
+
+Pack 1 pick 12:
+--> Harsh Mentor
+    Bloodghast
+    Lightning Helix
+    Falkenrath Gorger
+
+Pack 1 pick 13:
+--> Mutavault
+    Heir of Falkenrath
+    Wildfire
+
+Pack 1 pick 14:
+--> Judith, the Scourge Diva
+    Dreadbore
+
+Pack 1 pick 15:
+--> Goblin Welder
+
+------ Cube ------
+
+Pack 2 pick 1:
+--> Bayou
+    Mulldrifter
+    Gideon Jura
+    Firedrinker Satyr
+    Animate Dead
+    Mishra's Factory
+    Sublime Archangel
+    Primal Command
+    Thalia's Lieutenant
+    Gravecrawler
+    Daretti, Scrap Savant
+    Ob Nixilis Reignited
+    Oona's Prowler
+    Condescend
+    Recruiter of the Guard
+
+Pack 2 pick 2:
+--> Phyrexian Metamorph
+    Goblin Bombardment
+    Treasure Cruise
+    Artisan of Kozilek
+    Yawgmoth, Thran Physician
+    Coercive Portal
+    Goblin Chieftain
+    Survival of the Fittest
+    Unburial Rites
+    Ravenous Chupacabra
+    Goblin Matron
+    Sheoldred, Whispering One
+    Forbid
+    Sakura-Tribe Elder
+
+Pack 2 pick 3:
+--> Duskwatch Recruiter
+    Search for Azcanta
+    Dryad Militant
+    Mystic Confluence
+    Terramorphic Expanse
+    Steam Vents
+    Crucible of Worlds
+    Flooded Strand
+    Hordeling Outburst
+    Mystic Snake
+    Thran Dynamo
+    Joraga Treespeaker
+    Remove Soul
+
+Pack 2 pick 4:
+--> Breeding Pool
+    Creeping Tar Pit
+    Consecrated Sphinx
+    Splinter Twin
+    Bonesplitter
+    Wandering Fumarole
+    Hostage Taker
+    Condemn
+    Dread Wanderer
+    Sword of Fire and Ice
+    Assassin's Trophy
+    Kitesail Freebooter
+
+Pack 2 pick 5:
+--> Trygon Predator
+    Hymn to Tourach
+    Mana Tithe
+    Looter il-Kor
+    Mist-Syndicate Naga
+    Worldly Tutor
+    Phyrexian Arena
+    Kalitas, Traitor of Ghet
+    Pernicious Deed
+    Evolving Wilds
+    Whirler Rogue
+
+Pack 2 pick 6:
+--> Magma Jet
+    Blooming Marsh
+    Noxious Gearhulk
+    Isochron Scepter
+    Yavimaya Elder
+    Pashalik Mons
+    Thirst for Knowledge
+    Coldsteel Heart
+    Oracle of Mul Daya
+    The Scarab God
+
+Pack 2 pick 7:
+--> Kolaghan's Command
+    Inspiring Vantage
+    Doom Whisperer
+    Smallpox
+    Pelt Collector
+    Kodama's Reach
+    Grasslands
+    Mogg War Marshal
+    Lyra Dawnbringer
+
+Pack 2 pick 8:
+--> Harmonize
+    Damnation
+    Skymarcher Aspirant
+    Soulfire Grand Master
+    Scrapheap Scrounger
+    Char
+    Mystical Tutor
+    Emrakul, the Promised End
+
+Pack 2 pick 9:
+--> Primal Command
+    Mishra's Factory
+    Thalia's Lieutenant
+    Gravecrawler
+    Daretti, Scrap Savant
+    Ob Nixilis Reignited
+    Oona's Prowler
+
+Pack 2 pick 10:
+--> Goblin Matron
+    Artisan of Kozilek
+    Goblin Chieftain
+    Unburial Rites
+    Sheoldred, Whispering One
+    Forbid
+
+Pack 2 pick 11:
+--> Terramorphic Expanse
+    Search for Azcanta
+    Mystic Snake
+    Thran Dynamo
+    Remove Soul
+
+Pack 2 pick 12:
+--> Assassin's Trophy
+    Creeping Tar Pit
+    Dread Wanderer
+    Kitesail Freebooter
+
+Pack 2 pick 13:
+--> Pernicious Deed
+    Worldly Tutor
+    Phyrexian Arena
+
+Pack 2 pick 14:
+--> Blooming Marsh
+    The Scarab God
+
+Pack 2 pick 15:
+--> Smallpox

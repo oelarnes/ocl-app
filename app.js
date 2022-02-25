@@ -1,12 +1,12 @@
 const http = require("http");
-const schedule = require("node-schedule");
+// const schedule = require("node-schedule");
 const eio = require("engine.io");
 const express = require("express");
 const helmet = require("helmet");
 const fileUpload = require("express-fileupload");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const {spawn} = require("child_process");
+// const {spawn} = require("child_process");
 const logger = require("./backend/logger");
 const router = require("./backend/router");
 const apiRouter = require("./backend/api/");
@@ -28,13 +28,13 @@ app.use(express.static("built"));
 app.use("/api", apiRouter);
 
 
-// Download Allsets.json if there's a new one and make the card DB
-spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
+// // Download Allsets.json if there's a new one and make the card DB
+// spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
 
-// Schedule check of a new sets and new boosterRules every hour
-schedule.scheduleJob("0 * * * *", () => {
-  spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
-});
+// // Schedule check of a new sets and new boosterRules every hour
+// schedule.scheduleJob("0 * * * *", () => {
+//   spawn("node", ["scripts/download_allsets.js"], { stdio: "inherit" });
+// });
 
 // Create server
 const server = http.createServer(app);

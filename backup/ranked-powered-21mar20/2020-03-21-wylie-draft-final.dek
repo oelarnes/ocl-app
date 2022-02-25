@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="53107" Quantity="1" Sideboard="false" Name="Hymn to Tourach" />
+  <Cards CatID="69931" Quantity="1" Sideboard="false" Name="Watery Grave" />
+  <Cards CatID="52697" Quantity="1" Sideboard="false" Name="Ancient Tomb" />
+  <Cards CatID="24529" Quantity="1" Sideboard="false" Name="Coldsteel Heart" />
+  <Cards CatID="53217" Quantity="1" Sideboard="false" Name="High Tide" />
+  <Cards CatID="30308" Quantity="1" Sideboard="false" Name="Underground Sea" />
+  <Cards CatID="21529" Quantity="1" Sideboard="false" Name="Desperate Ritual" />
+  <Cards CatID="52813" Quantity="1" Sideboard="false" Name="Yawgmoth's Bargain" />
+  <Cards CatID="52781" Quantity="1" Sideboard="false" Name="Yawgmoth's Will" />
+  <Cards CatID="52809" Quantity="1" Sideboard="false" Name="Memory Jar" />
+  <Cards CatID="53153" Quantity="1" Sideboard="false" Name="Brain Freeze" />
+  <Cards CatID="60891" Quantity="1" Sideboard="false" Name="Mystical Tutor" />
+  <Cards CatID="52797" Quantity="1" Sideboard="false" Name="Tendrils of Agony" />
+  <Cards CatID="64168" Quantity="1" Sideboard="false" Name="Mountain" />
+  <Cards CatID="69721" Quantity="1" Sideboard="false" Name="Goblin Electromancer" />
+  <Cards CatID="59115" Quantity="1" Sideboard="false" Name="Daretti, Scrap Savant" />
+  <Cards CatID="52713" Quantity="1" Sideboard="false" Name="Mox Jet" />
+  <Cards CatID="46869" Quantity="1" Sideboard="false" Name="Gitaxian Probe" />
+  <Cards CatID="34590" Quantity="1" Sideboard="false" Name="Scalding Tarn" />
+  <Cards CatID="53243" Quantity="1" Sideboard="false" Name="Mox Ruby" />
+  <Cards CatID="53077" Quantity="1" Sideboard="false" Name="Badlands" />
+  <Cards CatID="37388" Quantity="1" Sideboard="false" Name="Preordain" />
+  <Cards CatID="52637" Quantity="1" Sideboard="false" Name="Dark Ritual" />
+  <Cards CatID="35681" Quantity="1" Sideboard="false" Name="Everflowing Chalice" />
+  <Cards CatID="65236" Quantity="1" Sideboard="false" Name="Kitesail Freebooter" />
+  <Cards CatID="52835" Quantity="1" Sideboard="false" Name="Gush" />
+  <Cards CatID="52803" Quantity="1" Sideboard="false" Name="Frantic Search" />
+  <Cards CatID="12103" Quantity="1" Sideboard="false" Name="Turnabout" />
+  <Cards CatID="64164" Quantity="9" Sideboard="false" Name="Island" />
+  <Cards CatID="46433" Quantity="1" Sideboard="false" Name="Izzet Charm" />
+  <Cards CatID="52849" Quantity="1" Sideboard="false" Name="Demonic Tutor" />
+  <Cards CatID="18890" Quantity="1" Sideboard="false" Name="Mind's Desire" />
+  <Cards CatID="21077" Quantity="1" Sideboard="true" Name="Heartbeat of Spring" />
+  <Cards CatID="52931" Quantity="1" Sideboard="true" Name="Upheaval" />
+  <Cards CatID="63796" Quantity="1" Sideboard="true" Name="Liliana, Death's Majesty" />
+  <Cards CatID="69783" Quantity="1" Sideboard="true" Name="Thief of Sanity" />
+  <Cards CatID="64742" Quantity="1" Sideboard="true" Name="Ramunap Excavator" />
+  <Cards CatID="55107" Quantity="1" Sideboard="true" Name="Feldon of the Third Path" />
+  <Cards CatID="64168" Quantity="9" Sideboard="true" Name="Mountain" />
+  <Cards CatID="64164" Quantity="11" Sideboard="true" Name="Island" />
+  <Cards CatID="53089" Quantity="1" Sideboard="true" Name="Taiga" />
+  <Cards CatID="64166" Quantity="10" Sideboard="true" Name="Swamp" />
+  <Cards CatID="23592" Quantity="1" Sideboard="true" Name="Overgrown Tomb" />
+  <Cards CatID="64170" Quantity="4" Sideboard="true" Name="Forest" />
+  <Cards CatID="42554" Quantity="1" Sideboard="true" Name="Stromkirk Noble" />
+  <Cards CatID="60689" Quantity="1" Sideboard="true" Name="Braids, Cabal Minion" />
+  <Cards CatID="56910" Quantity="1" Sideboard="true" Name="Recurring Nightmare" />
+  <Cards CatID="53500" Quantity="1" Sideboard="true" Name="Goblin Rabblemaster" />
+  <Cards CatID="60823" Quantity="1" Sideboard="true" Name="Sulfuric Vortex" />
+  <Cards CatID="41453" Quantity="1" Sideboard="true" Name="Stormblood Berserker" />
+  <Cards CatID="42712" Quantity="1" Sideboard="true" Name="Past in Flames" />
+</Deck>

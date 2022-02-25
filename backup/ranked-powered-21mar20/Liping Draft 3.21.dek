@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="53165" Quantity="1" Sideboard="false" Name="Eureka" />
+  <Cards CatID="34542" Quantity="1" Sideboard="false" Name="Oracle of Mul Daya" />
+  <Cards CatID="34546" Quantity="1" Sideboard="false" Name="Lotus Cobra" />
+  <Cards CatID="19969" Quantity="1" Sideboard="false" Name="Tooth and Nail" />
+  <Cards CatID="60901" Quantity="1" Sideboard="false" Name="Vampiric Tutor" />
+  <Cards CatID="48960" Quantity="1" Sideboard="false" Name="Kodama's Reach" />
+  <Cards CatID="53364" Quantity="1" Sideboard="false" Name="Hornet Queen" />
+  <Cards CatID="61068" Quantity="1" Sideboard="false" Name="Emrakul, the Promised End" />
+  <Cards CatID="58301" Quantity="1" Sideboard="false" Name="Ulamog, the Ceaseless Hunger" />
+  <Cards CatID="61959" Quantity="1" Sideboard="false" Name="Noxious Gearhulk" />
+  <Cards CatID="59255" Quantity="1" Sideboard="false" Name="Hissing Quagmire" />
+  <Cards CatID="45364" Quantity="1" Sideboard="false" Name="Arbor Elf" />
+  <Cards CatID="42616" Quantity="1" Sideboard="false" Name="Liliana of the Veil" />
+  <Cards CatID="36360" Quantity="1" Sideboard="false" Name="Inquisition of Kozilek" />
+  <Cards CatID="69677" Quantity="1" Sideboard="false" Name="Assassin's Trophy" />
+  <Cards CatID="50596" Quantity="1" Sideboard="false" Name="Hero's Downfall" />
+  <Cards CatID="22771" Quantity="1" Sideboard="false" Name="Phyrexian Arena" />
+  <Cards CatID="70978" Quantity="8" Sideboard="false" Name="Swamp" />
+  <Cards CatID="38480" Quantity="1" Sideboard="false" Name="Bayou" />
+  <Cards CatID="66339" Quantity="1" Sideboard="false" Name="Thran Dynamo" />
+  <Cards CatID="58056" Quantity="1" Sideboard="false" Name="Nissa, Vastwood Seer" />
+  <Cards CatID="67627" Quantity="1" Sideboard="false" Name="Cast Down" />
+  <Cards CatID="56066" Quantity="1" Sideboard="false" Name="Den Protector" />
+  <Cards CatID="61152" Quantity="1" Sideboard="false" Name="Liliana, the Last Hope" />
+  <Cards CatID="26279" Quantity="1" Sideboard="false" Name="Damnation" />
+  <Cards CatID="39746" Quantity="1" Sideboard="false" Name="Sheoldred, Whispering One" />
+  <Cards CatID="59960" Quantity="1" Sideboard="false" Name="Heir of Falkenrath" />
+  <Cards CatID="70982" Quantity="6" Sideboard="false" Name="Forest" />
+  <Cards CatID="36426" Quantity="1" Sideboard="true" Name="Splinter Twin" />
+  <Cards CatID="50230" Quantity="1" Sideboard="true" Name="Magma Jet" />
+  <Cards CatID="34408" Quantity="1" Sideboard="true" Name="Burst Lightning" />
+  <Cards CatID="31689" Quantity="1" Sideboard="true" Name="Inkwell Leviathan" />
+  <Cards CatID="12623" Quantity="1" Sideboard="true" Name="Tinker" />
+  <Cards CatID="71530" Quantity="1" Sideboard="true" Name="Blood Crypt" />
+  <Cards CatID="38644" Quantity="1" Sideboard="true" Name="Volcanic Island" />
+  <Cards CatID="39810" Quantity="1" Sideboard="true" Name="Shrine of Burning Rage" />
+  <Cards CatID="63235" Quantity="1" Sideboard="true" Name="Rakdos Signet" />
+  <Cards CatID="53221" Quantity="1" Sideboard="true" Name="Lion's Eye Diamond" />
+  <Cards CatID="55976" Quantity="1" Sideboard="true" Name="Dragonlord Atarka" />
+  <Cards CatID="50310" Quantity="1" Sideboard="true" Name="Ashiok, Nightmare Weaver" />
+  <Cards CatID="63778" Quantity="1" Sideboard="true" Name="Dread Wanderer" />
+  <Cards CatID="67106" Quantity="1" Sideboard="true" Name="Living Death" />
+  <Cards CatID="55338" Quantity="1" Sideboard="true" Name="Tasigur, the Golden Fang" />
+  <Cards CatID="70261" Quantity="1" Sideboard="true" Name="Entomb" />
+  <Cards CatID="60547" Quantity="1" Sideboard="true" Name="Natural Order" />
+  <Cards CatID="7649" Quantity="1" Sideboard="true" Name="Necromancy" />
+  <Cards CatID="29653" Quantity="1" Sideboard="true" Name="Manamorphose" />
+</Deck>

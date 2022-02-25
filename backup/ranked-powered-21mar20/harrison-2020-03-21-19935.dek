@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="52747" Quantity="1" Sideboard="false" Name="Armageddon" />
+  <Cards CatID="60240" Quantity="1" Sideboard="false" Name="Thraben Inspector" />
+  <Cards CatID="34374" Quantity="1" Sideboard="false" Name="Goblin Guide" />
+  <Cards CatID="66651" Quantity="1" Sideboard="false" Name="Dire Fleet Daredevil" />
+  <Cards CatID="79630" Quantity="5" Sideboard="false" Name="Mountain" />
+  <Cards CatID="61855" Quantity="1" Sideboard="false" Name="Inspiring Vantage" />
+  <Cards CatID="23212" Quantity="1" Sideboard="false" Name="Char" />
+  <Cards CatID="21603" Quantity="1" Sideboard="false" Name="Umezawa's Jitte" />
+  <Cards CatID="52909" Quantity="1" Sideboard="false" Name="Swords to Plowshares" />
+  <Cards CatID="61102" Quantity="1" Sideboard="false" Name="Selfless Spirit" />
+  <Cards CatID="41611" Quantity="1" Sideboard="false" Name="Grim Lavamancer" />
+  <Cards CatID="23154" Quantity="1" Sideboard="false" Name="Lightning Helix" />
+  <Cards CatID="58317" Quantity="1" Sideboard="false" Name="Gideon, Ally of Zendikar" />
+  <Cards CatID="35559" Quantity="1" Sideboard="false" Name="Searing Blaze" />
+  <Cards CatID="7551" Quantity="1" Sideboard="false" Name="Fireblast" />
+  <Cards CatID="54108" Quantity="1" Sideboard="false" Name="Monastery Swiftspear" />
+  <Cards CatID="65054" Quantity="1" Sideboard="false" Name="Legion's Landing" />
+  <Cards CatID="53245" Quantity="1" Sideboard="false" Name="Wheel of Fortune" />
+  <Cards CatID="61308" Quantity="1" Sideboard="false" Name="Thalia, Heretic Cathar" />
+  <Cards CatID="54200" Quantity="1" Sideboard="false" Name="Wooded Foothills" />
+  <Cards CatID="53356" Quantity="1" Sideboard="false" Name="Phyrexian Revoker" />
+  <Cards CatID="34646" Quantity="1" Sideboard="false" Name="Marsh Flats" />
+  <Cards CatID="38570" Quantity="1" Sideboard="false" Name="Plateau" />
+  <Cards CatID="64650" Quantity="1" Sideboard="false" Name="Abrade" />
+  <Cards CatID="69579" Quantity="1" Sideboard="false" Name="Goblin Cratermaker" />
+  <Cards CatID="33500" Quantity="1" Sideboard="false" Name="Chain Lightning" />
+  <Cards CatID="49413" Quantity="1" Sideboard="false" Name="Young Pyromancer" />
+  <Cards CatID="79624" Quantity="5" Sideboard="false" Name="Plains" />
+  <Cards CatID="56050" Quantity="1" Sideboard="false" Name="Zurgo Bellstriker" />
+  <Cards CatID="62075" Quantity="1" Sideboard="false" Name="Bomat Courier" />
+  <Cards CatID="20535" Quantity="1" Sideboard="false" Name="Sword of Fire and Ice" />
+  <Cards CatID="35737" Quantity="1" Sideboard="false" Name="Stoneforge Mystic" />
+  <Cards CatID="41259" Quantity="1" Sideboard="true" Name="Day of Judgment" />
+  <Cards CatID="61573" Quantity="1" Sideboard="true" Name="Chandra, Torch of Defiance" />
+  <Cards CatID="59025" Quantity="1" Sideboard="true" Name="Flametongue Kavu" />
+  <Cards CatID="69511" Quantity="1" Sideboard="true" Name="Doom Whisperer" />
+  <Cards CatID="42744" Quantity="1" Sideboard="true" Name="Garruk Relentless" />
+  <Cards CatID="59417" Quantity="1" Sideboard="true" Name="Kalitas, Traitor of Ghet" />
+  <Cards CatID="67517" Quantity="1" Sideboard="true" Name="Lyra Dawnbringer" />
+  <Cards CatID="30776" Quantity="1" Sideboard="true" Name="Ravages of War" />
+  <Cards CatID="18820" Quantity="1" Sideboard="true" Name="Siege-Gang Commander" />
+  <Cards CatID="36556" Quantity="1" Sideboard="true" Name="Staggershock" />
+  <Cards CatID="36586" Quantity="1" Sideboard="true" Name="Student of Warfare" />
+  <Cards CatID="29970" Quantity="1" Sideboard="true" Name="Flickerwisp" />
+  <Cards CatID="46483" Quantity="1" Sideboard="true" Name="Supreme Verdict" />
+  <Cards CatID="63634" Quantity="1" Sideboard="true" Name="Glory-Bound Initiate" />
+  <Cards CatID="52635" Quantity="1" Sideboard="true" Name="Ankh of Mishra" />
+  <Cards CatID="79624" Quantity="3" Sideboard="true" Name="Plains" />
+  <Cards CatID="79630" Quantity="3" Sideboard="true" Name="Mountain" />
+</Deck>

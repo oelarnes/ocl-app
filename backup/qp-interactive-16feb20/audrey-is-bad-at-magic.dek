@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="35681" Quantity="1" Sideboard="false" Name="Everflowing Chalice" />
+  <Cards CatID="26926" Quantity="1" Sideboard="false" Name="Coalition Relic" />
+  <Cards CatID="41545" Quantity="1" Sideboard="false" Name="Solemn Simulacrum" />
+  <Cards CatID="60805" Quantity="1" Sideboard="false" Name="Carrion Feeder" />
+  <Cards CatID="16425" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="20856" Quantity="1" Sideboard="false" Name="Eternal Witness" />
+  <Cards CatID="56066" Quantity="1" Sideboard="false" Name="Den Protector" />
+  <Cards CatID="60300" Quantity="1" Sideboard="false" Name="Duskwatch Recruiter" />
+  <Cards CatID="72774" Quantity="1" Sideboard="false" Name="Good-Fortune Unicorn" />
+  <Cards CatID="41307" Quantity="1" Sideboard="false" Name="Primeval Titan" />
+  <Cards CatID="36408" Quantity="1" Sideboard="false" Name="Joraga Treespeaker" />
+  <Cards CatID="29329" Quantity="1" Sideboard="false" Name="Kitchen Finks" />
+  <Cards CatID="61849" Quantity="1" Sideboard="false" Name="Blooming Marsh" />
+  <Cards CatID="18253" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="72604" Quantity="1" Sideboard="false" Name="Yawgmoth, Thran Physician" />
+  <Cards CatID="38307" Quantity="1" Sideboard="false" Name="Myr Battlesphere" />
+  <Cards CatID="45286" Quantity="1" Sideboard="false" Name="Acidic Slime" />
+  <Cards CatID="44105" Quantity="1" Sideboard="false" Name="Blood Artist" />
+  <Cards CatID="39734" Quantity="1" Sideboard="false" Name="Phyrexian Metamorph" />
+  <Cards CatID="31745" Quantity="1" Sideboard="false" Name="Noble Hierarch" />
+  <Cards CatID="50256" Quantity="1" Sideboard="false" Name="Thoughtseize" />
+  <Cards CatID="58401" Quantity="1" Sideboard="false" Name="Zulaport Cutthroat" />
+  <Cards CatID="36360" Quantity="1" Sideboard="false" Name="Inquisition of Kozilek" />
+  <Cards CatID="69919" Quantity="1" Sideboard="false" Name="Overgrown Tomb" />
+  <Cards CatID="39688" Quantity="1" Sideboard="false" Name="Melira, Sylvok Outcast" />
+  <Cards CatID="38480" Quantity="1" Sideboard="false" Name="Bayou" />
+  <Cards CatID="9691" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="7345" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="9695" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="6993" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="18305" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="49159" Quantity="1" Sideboard="false" Name="Doom Blade" />
+  <Cards CatID="28597" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="14733" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="269" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="26081" Quantity="1" Sideboard="false" Name="Wall of Roots" />
+  <Cards CatID="11797" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="12427" Quantity="1" Sideboard="false" Name="Forest" />
+  <Cards CatID="265" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="64038" Quantity="1" Sideboard="false" Name="Never/Return" />
+  <Cards CatID="38620" Quantity="1" Sideboard="true" Name="Tundra" />
+  <Cards CatID="36362" Quantity="1" Sideboard="true" Name="Artisan of Kozilek" />
+  <Cards CatID="65376" Quantity="1" Sideboard="true" Name="Carnage Tyrant" />
+  <Cards CatID="55107" Quantity="1" Sideboard="true" Name="Feldon of the Third Path" />
+  <Cards CatID="30226" Quantity="1" Sideboard="true" Name="Glen Elendra Archmage" />
+  <Cards CatID="53181" Quantity="1" Sideboard="true" Name="Council's Judgment" />
+  <Cards CatID="7649" Quantity="1" Sideboard="true" Name="Necromancy" />
+  <Cards CatID="49569" Quantity="1" Sideboard="true" Name="Banisher Priest" />
+  <Cards CatID="64991" Quantity="1" Sideboard="true" Name="Ramunap Excavator" />
+  <Cards CatID="53472" Quantity="1" Sideboard="true" Name="Satyr Wayfinder" />
+  <Cards CatID="34688" Quantity="1" Sideboard="true" Name="Bloodghast" />
+  <Cards CatID="17205" Quantity="1" Sideboard="true" Name="Chainer's Edict" />
+  <Cards CatID="65176" Quantity="1" Sideboard="true" Name="Spell Pierce" />
+  <Cards CatID="60889" Quantity="1" Sideboard="true" Name="Enlightened Tutor" />
+  <Cards CatID="66749" Quantity="1" Sideboard="true" Name="Thrashing Brontodon" />
+  <Cards CatID="56868" Quantity="1" Sideboard="true" Name="Wall of Blossoms" />
+  <Cards CatID="31125" Quantity="1" Sideboard="true" Name="Tidehollow Sculler" />
+  <Cards CatID="79132" Quantity="1" Sideboard="true" Name="Banishing Light" />
+</Deck>

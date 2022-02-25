@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="59131" Quantity="1" Sideboard="false" Name="Mystic Confluence" />
+  <Cards CatID="34861" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="39974" Quantity="1" Sideboard="false" Name="Batterskull" />
+  <Cards CatID="38279" Quantity="1" Sideboard="false" Name="Sword of Body and Mind" />
+  <Cards CatID="12551" Quantity="1" Sideboard="false" Name="Grim Monolith" />
+  <Cards CatID="39734" Quantity="1" Sideboard="false" Name="Phyrexian Metamorph" />
+  <Cards CatID="26511" Quantity="1" Sideboard="false" Name="Mana Tithe" />
+  <Cards CatID="45256" Quantity="1" Sideboard="false" Name="Oblivion Ring" />
+  <Cards CatID="53067" Quantity="1" Sideboard="false" Name="Control Magic" />
+  <Cards CatID="39549" Quantity="1" Sideboard="false" Name="Sword of Feast and Famine" />
+  <Cards CatID="71542" Quantity="1" Sideboard="false" Name="Hallowed Fountain" />
+  <Cards CatID="28946" Quantity="1" Sideboard="false" Name="Vendilion Clique" />
+  <Cards CatID="28707" Quantity="1" Sideboard="false" Name="Shelldock Isle" />
+  <Cards CatID="67006" Quantity="1" Sideboard="false" Name="Brainstorm" />
+  <Cards CatID="61917" Quantity="1" Sideboard="false" Name="Torrential Gearhulk" />
+  <Cards CatID="60871" Quantity="1" Sideboard="false" Name="Mother of Runes" />
+  <Cards CatID="23568" Quantity="1" Sideboard="false" Name="Selesnya Signet" />
+  <Cards CatID="44009" Quantity="1" Sideboard="false" Name="Restoration Angel" />
+  <Cards CatID="58812" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="51739" Quantity="1" Sideboard="false" Name="Brimaz, King of Oreskos" />
+  <Cards CatID="34875" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="67467" Quantity="1" Sideboard="false" Name="Karn, Scion of Urza" />
+  <Cards CatID="25609" Quantity="1" Sideboard="false" Name="Ancestral Vision" />
+  <Cards CatID="18245" Quantity="1" Sideboard="false" Name="Flooded Strand" />
+  <Cards CatID="38261" Quantity="1" Sideboard="false" Name="Mindslaver" />
+  <Cards CatID="25739" Quantity="1" Sideboard="false" Name="Academy Ruins" />
+  <Cards CatID="12607" Quantity="1" Sideboard="false" Name="Miscalculation" />
+  <Cards CatID="37686" Quantity="1" Sideboard="false" Name="Journey to Nowhere" />
+  <Cards CatID="53177" Quantity="1" Sideboard="false" Name="Ancestral Recall" />
+  <Cards CatID="50304" Quantity="1" Sideboard="false" Name="Elspeth, Sun's Champion" />
+  <Cards CatID="26099" Quantity="1" Sideboard="false" Name="Gemstone Mine" />
+  <Cards CatID="58808" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="58814" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="58824" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="34849" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="34843" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="31429" Quantity="1" Sideboard="false" Name="Remand" />
+  <Cards CatID="58830" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="58810" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="58789" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="9739" Quantity="1" Sideboard="true" Name="Cursed Scroll" />
+  <Cards CatID="30238" Quantity="1" Sideboard="true" Name="Figure of Destiny" />
+  <Cards CatID="68345" Quantity="1" Sideboard="true" Name="Diregraf Ghoul" />
+  <Cards CatID="21409" Quantity="1" Sideboard="true" Name="Isamaru, Hound of Konda" />
+  <Cards CatID="23669" Quantity="1" Sideboard="true" Name="Gruul Signet" />
+  <Cards CatID="44832" Quantity="1" Sideboard="true" Name="Shardless Agent" />
+  <Cards CatID="67338" Quantity="1" Sideboard="true" Name="Pernicious Deed" />
+  <Cards CatID="31391" Quantity="1" Sideboard="true" Name="Vindicate" />
+  <Cards CatID="67895" Quantity="1" Sideboard="true" Name="Gilded Lotus" />
+  <Cards CatID="34614" Quantity="1" Sideboard="true" Name="Iona, Shield of Emeria" />
+  <Cards CatID="10175" Quantity="1" Sideboard="true" Name="Dream Halls" />
+  <Cards CatID="69929" Quantity="1" Sideboard="true" Name="Temple Garden" />
+  <Cards CatID="61859" Quantity="1" Sideboard="true" Name="Concealed Courtyard" />
+  <Cards CatID="71532" Quantity="1" Sideboard="true" Name="Breeding Pool" />
+  <Cards CatID="62271" Quantity="1" Sideboard="true" Name="Recruiter of the Guard" />
+  <Cards CatID="52839" Quantity="1" Sideboard="true" Name="Parallax Wave" />
+</Deck>

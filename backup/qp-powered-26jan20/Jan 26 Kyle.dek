@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="31745" Quantity="1" Sideboard="false" Name="Noble Hierarch" />
+  <Cards CatID="27935" Quantity="1" Sideboard="false" Name="Sylvan Library" />
+  <Cards CatID="41605" Quantity="1" Sideboard="false" Name="Llanowar Elves" />
+  <Cards CatID="23568" Quantity="1" Sideboard="false" Name="Selesnya Signet" />
+  <Cards CatID="43921" Quantity="1" Sideboard="false" Name="Craterhoof Behemoth" />
+  <Cards CatID="53105" Quantity="1" Sideboard="false" Name="Fyndhorn Elves" />
+  <Cards CatID="62489" Quantity="1" Sideboard="false" Name="Primal Command" />
+  <Cards CatID="42744" Quantity="1" Sideboard="false" Name="Garruk Relentless" />
+  <Cards CatID="20551" Quantity="1" Sideboard="false" Name="Skullclamp" />
+  <Cards CatID="59335" Quantity="1" Sideboard="false" Name="Nissa, Voice of Zendikar" />
+  <Cards CatID="37576" Quantity="1" Sideboard="false" Name="Birds of Paradise" />
+  <Cards CatID="72694" Quantity="1" Sideboard="false" Name="Deep Forest Hermit" />
+  <Cards CatID="53364" Quantity="1" Sideboard="false" Name="Hornet Queen" />
+  <Cards CatID="36408" Quantity="1" Sideboard="false" Name="Joraga Treespeaker" />
+  <Cards CatID="52793" Quantity="1" Sideboard="false" Name="Deranged Hermit" />
+  <Cards CatID="26249" Quantity="1" Sideboard="false" Name="Harmonize" />
+  <Cards CatID="61567" Quantity="1" Sideboard="false" Name="Grim Monolith" />
+  <Cards CatID="35629" Quantity="1" Sideboard="false" Name="Terastodon" />
+  <Cards CatID="53941" Quantity="1" Sideboard="false" Name="Smokestack" />
+  <Cards CatID="53155" Quantity="1" Sideboard="false" Name="Black Lotus" />
+  <Cards CatID="63952" Quantity="1" Sideboard="false" Name="Manglehorn" />
+  <Cards CatID="72708" Quantity="1" Sideboard="false" Name="Hexdrinker" />
+  <Cards CatID="20305" Quantity="1" Sideboard="false" Name="Sundering Titan" />
+  <Cards CatID="37132" Quantity="1" Sideboard="false" Name="Garruk Wildspeaker" />
+  <Cards CatID="73293" Quantity="1" Sideboard="false" Name="Thrashing Brontodon" />
+  <Cards CatID="11867" Quantity="1" Sideboard="false" Name="Gaea's Cradle" />
+  <Cards CatID="34838" Quantity="14" Sideboard="false" Name="Forest" />
+  <Cards CatID="53097" Quantity="1" Sideboard="true" Name="Underground Sea" />
+  <Cards CatID="34590" Quantity="1" Sideboard="true" Name="Scalding Tarn" />
+  <Cards CatID="59255" Quantity="1" Sideboard="true" Name="Hissing Quagmire" />
+  <Cards CatID="26099" Quantity="1" Sideboard="true" Name="Gemstone Mine" />
+  <Cards CatID="38301" Quantity="1" Sideboard="true" Name="Copperline Gorge" />
+  <Cards CatID="55976" Quantity="1" Sideboard="true" Name="Dragonlord Atarka" />
+  <Cards CatID="57990" Quantity="1" Sideboard="true" Name="Pia and Kiran Nalaar" />
+  <Cards CatID="23212" Quantity="1" Sideboard="true" Name="Char" />
+  <Cards CatID="67338" Quantity="1" Sideboard="true" Name="Pernicious Deed" />
+  <Cards CatID="50310" Quantity="1" Sideboard="true" Name="Ashiok, Nightmare Weaver" />
+  <Cards CatID="35401" Quantity="1" Sideboard="true" Name="Bone Shredder" />
+  <Cards CatID="23084" Quantity="1" Sideboard="true" Name="Dark Confidant" />
+  <Cards CatID="35559" Quantity="1" Sideboard="true" Name="Searing Blaze" />
+  <Cards CatID="29653" Quantity="1" Sideboard="true" Name="Manamorphose" />
+  <Cards CatID="56592" Quantity="1" Sideboard="true" Name="Cursed Scroll" />
+  <Cards CatID="32833" Quantity="1" Sideboard="true" Name="Master of the Wild Hunt" />
+  <Cards CatID="37456" Quantity="1" Sideboard="true" Name="Fauna Shaman" />
+  <Cards CatID="49271" Quantity="1" Sideboard="true" Name="Scavenging Ooze" />
+  <Cards CatID="50628" Quantity="1" Sideboard="true" Name="Polukranos, World Eater" />
+</Deck>

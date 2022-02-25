@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="52695" Quantity="1" Sideboard="false" Name="Reanimate" />
+  <Cards CatID="53159" Quantity="1" Sideboard="false" Name="Library of Alexandria" />
+  <Cards CatID="35657" Quantity="1" Sideboard="false" Name="Creeping Tar Pit" />
+  <Cards CatID="23562" Quantity="1" Sideboard="false" Name="Dimir Signet" />
+  <Cards CatID="26926" Quantity="1" Sideboard="false" Name="Coalition Relic" />
+  <Cards CatID="23681" Quantity="1" Sideboard="false" Name="Orzhov Signet" />
+  <Cards CatID="23294" Quantity="1" Sideboard="false" Name="Compulsive Research" />
+  <Cards CatID="20305" Quantity="1" Sideboard="false" Name="Sundering Titan" />
+  <Cards CatID="23564" Quantity="1" Sideboard="false" Name="Golgari Signet" />
+  <Cards CatID="60981" Quantity="1" Sideboard="false" Name="Balance" />
+  <Cards CatID="58128" Quantity="1" Sideboard="false" Name="Hangarback Walker" />
+  <Cards CatID="54198" Quantity="1" Sideboard="false" Name="Bloodstained Mire" />
+  <Cards CatID="27444" Quantity="1" Sideboard="false" Name="Wrath of God" />
+  <Cards CatID="39624" Quantity="1" Sideboard="false" Name="Wall of Omens" />
+  <Cards CatID="41545" Quantity="1" Sideboard="false" Name="Solemn Simulacrum" />
+  <Cards CatID="60751" Quantity="1" Sideboard="false" Name="Baleful Strix" />
+  <Cards CatID="46737" Quantity="1" Sideboard="false" Name="Pack Rat" />
+  <Cards CatID="28245" Quantity="1" Sideboard="false" Name="Mulldrifter" />
+  <Cards CatID="38191" Quantity="1" Sideboard="false" Name="Mimic Vat" />
+  <Cards CatID="71536" Quantity="1" Sideboard="false" Name="Godless Shrine" />
+  <Cards CatID="67971" Quantity="2" Sideboard="false" Name="Plains" />
+  <Cards CatID="67108" Quantity="1" Sideboard="false" Name="Mesmeric Fiend" />
+  <Cards CatID="67969" Quantity="1" Sideboard="false" Name="Plains" />
+  <Cards CatID="38588" Quantity="1" Sideboard="false" Name="Scrubland" />
+  <Cards CatID="60889" Quantity="1" Sideboard="false" Name="Enlightened Tutor" />
+  <Cards CatID="68701" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="68703" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="68707" Quantity="1" Sideboard="false" Name="Swamp" />
+  <Cards CatID="66617" Quantity="1" Sideboard="false" Name="Ravenous Chupacabra" />
+  <Cards CatID="40609" Quantity="1" Sideboard="false" Name="Sol Ring" />
+  <Cards CatID="41295" Quantity="1" Sideboard="false" Name="Grave Titan" />
+  <Cards CatID="44125" Quantity="1" Sideboard="false" Name="Griselbrand" />
+  <Cards CatID="32474" Quantity="1" Sideboard="false" Name="Sphinx of the Steel Wind" />
+  <Cards CatID="72860" Quantity="1" Sideboard="false" Name="Prismatic Vista" />
+  <Cards CatID="9135" Quantity="1" Sideboard="false" Name="Mind Stone" />
+  <Cards CatID="11931" Quantity="1" Sideboard="false" Name="Tolarian Academy" />
+  <Cards CatID="68699" Quantity="1" Sideboard="false" Name="Island" />
+  <Cards CatID="54196" Quantity="1" Sideboard="false" Name="Polluted Delta" />
+  <Cards CatID="69927" Quantity="1" Sideboard="false" Name="Steam Vents" />
+  <Cards CatID="55472" Quantity="1" Sideboard="true" Name="Gurmag Angler" />
+  <Cards CatID="68621" Quantity="1" Sideboard="true" Name="Crucible of Worlds" />
+  <Cards CatID="43102" Quantity="1" Sideboard="true" Name="Exhume" />
+  <Cards CatID="49575" Quantity="1" Sideboard="true" Name="Imposing Sovereign" />
+  <Cards CatID="71778" Quantity="1" Sideboard="true" Name="Dreadhorde Invasion" />
+  <Cards CatID="67493" Quantity="1" Sideboard="true" Name="Dauntless Bodyguard" />
+  <Cards CatID="43175" Quantity="1" Sideboard="true" Name="Gravecrawler" />
+  <Cards CatID="57990" Quantity="1" Sideboard="true" Name="Pia and Kiran Nalaar" />
+  <Cards CatID="36346" Quantity="1" Sideboard="true" Name="Gideon Jura" />
+  <Cards CatID="68705" Quantity="1" Sideboard="true" Name="Swamp" />
+  <Cards CatID="59259" Quantity="1" Sideboard="true" Name="Wandering Fumarole" />
+  <Cards CatID="35675" Quantity="1" Sideboard="true" Name="Raging Ravine" />
+  <Cards CatID="68687" Quantity="1" Sideboard="true" Name="Plains" />
+  <Cards CatID="31125" Quantity="1" Sideboard="true" Name="Tidehollow Sculler" />
+</Deck>

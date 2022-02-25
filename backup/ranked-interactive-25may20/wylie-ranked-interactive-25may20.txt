@@ -1,0 +1,51 @@
+7 Swamp
+1 Legion Warboss
+6 Mountain
+1 Phyrexian Metamorph
+1 Blood Crypt
+1 Dread Wanderer
+1 Mesmeric Fiend
+1 Fiery Temper
+1 Gravecrawler
+1 Heir of Falkenrath
+1 Figure of Destiny
+1 Bomat Courier
+1 Cast Down
+1 Stromkirk Noble
+1 Goblin Rabblemaster
+1 Bonesplitter
+1 Dark Confidant
+1 Dreadbore
+1 Goblin Instigator
+1 Kari Zev, Skyship Raider
+1 Drana, Liberator of Malakir
+1 Dreadhorde Invasion
+1 Oona's Prowler
+1 Burst Lightning
+1 Lodestone Golem
+1 Carrion Feeder
+1 Scalding Tarn
+1 Gurmag Angler
+1 Wasteland
+
+1 Inspiring Vantage
+1 Hissing Quagmire
+1 Mindslaver
+1 Crucible of Worlds
+1 Ajani Vengeant
+1 Shriekmaw
+1 Lyra Dawnbringer
+1 Cloudgoat Ranger
+1 Baneslayer Angel
+1 Day of Judgment
+1 Ravages of War
+1 Armageddon
+1 Strangleroot Geist
+1 Brimaz, King of Oreskos
+1 Mardu Woe-Reaper
+3 Swamp
+4 Mountain
+4 Plains
+1 Dance of the Dead
+1 Smallpox
+1 Never/Return

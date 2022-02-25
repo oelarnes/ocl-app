@@ -1,0 +1,51 @@
+1 Lightning Bolt
+1 Sneak Attack
+1 Hornet Queen
+1 Mimic Vat
+1 Goblin Bombardment
+1 Faithless Looting
+1 Primal Command
+1 Melira, Sylvok Outcast
+1 Murderous Redcap
+1 Feldon of the Third Path
+1 Fauna Shaman
+1 Deep Forest Hermit
+1 Taiga
+1 Pashalik Mons
+1 Myr Battlesphere
+1 Goblin Cratermaker
+1 Raging Ravine
+1 Avacyn's Pilgrim
+1 Mountain Valley
+1 Fabled Passage
+1 Dragonlord Atarka
+1 Solemn Simulacrum
+1 Mox Diamond
+1 Birds of Paradise
+1 Sakura-Tribe Elder
+1 Garruk Wildspeaker
+1 Greater Gargadon
+1 Stomping Ground
+1 Emrakul, the Promised End
+6 Forest
+5 Mountain
+
+5 Forest
+1 Artisan of Kozilek
+4 Mountain
+1 Blooming Marsh
+1 Academy Ruins
+1 Tasigur, the Golden Fang
+1 Kalitas, Traitor of Ghet
+1 Asylum Visitor
+1 Collective Brutality
+1 Relic Seeker
+1 Cryptbreaker
+1 Assassin's Trophy
+1 Tidehollow Sculler
+1 Nullhide Ferox
+1 Necromancy
+8 Swamp
+1 Nissa, Voice of Zendikar
+1 Ulamog, the Ceaseless Hunger
+1 Bloodbraid Elf

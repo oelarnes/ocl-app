@@ -11,9 +11,7 @@ cp -r backup/events ocl-app/data
 cp backup/ocl.ini ocl-app/config
 sudo service mongod start
 cp backup/owned* ocl-app/data
-cp backup/wishlist* ocl-
-app/data
-
+cp backup/wishlist* ocl-app/data
 cd ocl-app
 export OCL_ENV=prod
 sudo npm install
@@ -49,3 +47,6 @@ scp data/events/<eventId>/* ocl:~/backup/events/<eventId>
 scp data/events/<eventId>/* ocl:~/ocl-app/data/events/<eventId>
 
 mutation{syncData}
+
+# ocl-discord
+git clone https://github.com/oelarnes/ocl-discord

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deck xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetDeckID>0</NetDeckID>
+  <PreconstructedDeckID>0</PreconstructedDeckID>
+  <Cards CatID="53157" Quantity="1" Sideboard="false" Name="Mana Drain" />
+  <Cards CatID="51356" Quantity="1" Sideboard="false" Name="True-Name Nemesis" />
+  <Cards CatID="7127" Quantity="1" Sideboard="false" Name="Memory Lapse" />
+  <Cards CatID="60320" Quantity="1" Sideboard="false" Name="Tireless Tracker" />
+  <Cards CatID="10459" Quantity="1" Sideboard="false" Name="Forbid" />
+  <Cards CatID="72694" Quantity="1" Sideboard="false" Name="Deep Forest Hermit" />
+  <Cards CatID="29305" Quantity="1" Sideboard="false" Name="Devoted Druid" />
+  <Cards CatID="20856" Quantity="1" Sideboard="false" Name="Eternal Witness" />
+  <Cards CatID="12821" Quantity="1" Sideboard="false" Name="Opposition" />
+  <Cards CatID="53155" Quantity="1" Sideboard="false" Name="Black Lotus" />
+  <Cards CatID="41289" Quantity="1" Sideboard="false" Name="Mana Leak" />
+  <Cards CatID="35591" Quantity="1" Sideboard="false" Name="Jace, the Mind Sculptor" />
+  <Cards CatID="42512" Quantity="1" Sideboard="false" Name="Snapcaster Mage" />
+  <Cards CatID="68553" Quantity="1" Sideboard="false" Name="Reclamation Sage" />
+  <Cards CatID="52793" Quantity="1" Sideboard="false" Name="Deranged Hermit" />
+  <Cards CatID="39944" Quantity="1" Sideboard="false" Name="Dismember" />
+  <Cards CatID="56818" Quantity="1" Sideboard="false" Name="Mox Diamond" />
+  <Cards CatID="41369" Quantity="1" Sideboard="false" Name="Phantasmal Image" />
+  <Cards CatID="59041" Quantity="1" Sideboard="false" Name="Edric, Spymaster of Trest" />
+  <Cards CatID="49271" Quantity="1" Sideboard="false" Name="Scavenging Ooze" />
+  <Cards CatID="72708" Quantity="1" Sideboard="false" Name="Hexdrinker" />
+  <Cards CatID="34622" Quantity="1" Sideboard="false" Name="Misty Rainforest" />
+  <Cards CatID="54202" Quantity="1" Sideboard="false" Name="Windswept Heath" />
+  <Cards CatID="38616" Quantity="1" Sideboard="false" Name="Tropical Island" />
+  <Cards CatID="52120" Quantity="1" Sideboard="false" Name="Mana Confluence" />
+  <Cards CatID="19301" Quantity="1" Sideboard="false" Name="City of Brass" />
+  <Cards CatID="42678" Quantity="1" Sideboard="false" Name="Avacyn's Pilgrim" />
+  <Cards CatID="33520" Quantity="1" Sideboard="false" Name="Force Spike" />
+  <Cards CatID="38301" Quantity="1" Sideboard="true" Name="Copperline Gorge" />
+  <Cards CatID="38582" Quantity="1" Sideboard="true" Name="Savannah" />
+  <Cards CatID="62087" Quantity="1" Sideboard="true" Name="Scrapheap Scrounger" />
+  <Cards CatID="65160" Quantity="1" Sideboard="true" Name="Search for Azcanta" />
+  <Cards CatID="29038" Quantity="1" Sideboard="true" Name="Bitterblossom" />
+  <Cards CatID="12641" Quantity="1" Sideboard="true" Name="Bone Shredder" />
+  <Cards CatID="51344" Quantity="1" Sideboard="true" Name="Ophiomancer" />
+  <Cards CatID="63952" Quantity="1" Sideboard="true" Name="Manglehorn" />
+  <Cards CatID="59335" Quantity="1" Sideboard="true" Name="Nissa, Voice of Zendikar" />
+  <Cards CatID="39517" Quantity="1" Sideboard="true" Name="Thrun, the Last Troll" />
+  <Cards CatID="32833" Quantity="1" Sideboard="true" Name="Master of the Wild Hunt" />
+  <Cards CatID="60769" Quantity="1" Sideboard="true" Name="Sneak Attack" />
+  <Cards CatID="21021" Quantity="1" Sideboard="true" Name="Kiki-Jiki, Mirror Breaker" />
+  <Cards CatID="45286" Quantity="1" Sideboard="true" Name="Acidic Slime" />
+  <Cards CatID="19599" Quantity="1" Sideboard="true" Name="Plow Under" />
+  <Cards CatID="41315" Quantity="1" Sideboard="true" Name="Inferno Titan" />
+  <Cards CatID="41309" Quantity="1" Sideboard="true" Name="Sun Titan" />
+</Deck>

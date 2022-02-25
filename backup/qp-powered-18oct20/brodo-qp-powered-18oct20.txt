@@ -1,0 +1,54 @@
+1 Demonic Tutor
+1 Ponder
+1 Liliana, the Last Hope
+1 Forest
+1 Baleful Strix
+1 Narset, Parter of Veils
+1 Cryptic Command
+1 Impulse
+1 Toxic Deluge
+1 Mox Emerald
+1 Mystic Confluence
+1 Oko, Thief of Crowns
+1 Mulldrifter
+1 Ketria Triome
+1 Creeping Tar Pit
+1 Prismatic Vista
+1 Tasigur, the Golden Fang
+1 Mox Ruby
+1 Vendilion Clique
+1 Gitaxian Probe
+1 Glen Elendra Archmage
+1 Watery Grave
+1 Counterspell
+1 Brain Maggot
+1 Compulsive Research
+1 Hymn to Tourach
+1 Phantasmal Image
+5 Swamp
+1 Duress
+1 Dreadhorde Invasion
+6 Island
+
+1 Scrubland
+1 Fireblast
+1 Living Death
+1 Copperline Gorge
+1 Turnabout
+1 Empty the Warrens
+1 Phyrexian Arena
+1 Pestermite
+1 Young Pyromancer
+1 Godless Shrine
+1 Faithless Looting
+1 Languish
+4 Swamp
+4 Island
+3 Forest
+4 Mountain
+1 Arc Trail
+1 Lightning Bolt
+1 Stomping Ground
+1 Zealous Conscripts
+1 Steam Vents
+
