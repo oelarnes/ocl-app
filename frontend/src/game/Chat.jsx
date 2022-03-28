@@ -11,22 +11,7 @@ const chatClassMap = {
   magicflea: "dw",
   jrp: "sower",
   lasersloths: "sc",
-  lipingpong: "qb",
-  steamedfish: "qb",
-  Mort: "qb",
-  borkenedd: "qb",
   brodo: "sower",
-  erik: "qb",
-  GermanGaryOak: "qb",
-  hipdadip: "qb",
-  audreyflew: "qb",
-  jnqt: "qb",
-  kauffj: "qb",
-  raj: "qb",
-  Tobes: "qb",
-  TravisFrankMTG: "qb",
-  wylie: "cop",
-  rollpanda: "qb",
 };
 
 export default class Chat extends Component {
