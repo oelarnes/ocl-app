@@ -52,7 +52,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@hapi/joi": "^17.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "babel-loader": "^8.1.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
