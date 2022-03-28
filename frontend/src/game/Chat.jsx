@@ -9,13 +9,13 @@ import "vanilla-toast/vanilla-toast.css";
 const chatClassMap = {
   cmustewart: "sower",
   magicflea: "dw",
-  jrp: "sc",
-  lasersloths: "sower",
-  lipingpong: "cop",
-  steamedfish: "fod",
-  Mort: "cop",
+  jrp: "sower",
+  lasersloths: "sc",
+  lipingpong: "qb",
+  steamedfish: "qb",
+  Mort: "qb",
   borkenedd: "qb",
-  brodo: "qb",
+  brodo: "sower",
   erik: "qb",
   GermanGaryOak: "qb",
   hipdadip: "qb",
@@ -25,7 +25,7 @@ const chatClassMap = {
   raj: "qb",
   Tobes: "qb",
   TravisFrankMTG: "qb",
-  wylie: "qb",
+  wylie: "cop",
   rollpanda: "qb",
 };
 
