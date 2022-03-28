@@ -71,8 +71,10 @@ export OCL_ENV=prod
 sudo npm install
 npm run build
 node scripts/initialize_ocl.js
+npm run update_database
 sudo npm run start
 ```
+Then detatch from screen before exit
 
 # new dek files
 * correct, up-to-date `data/owned*`, `data/wishlist*` and `config/ocl.ini` files locally

@@ -16,7 +16,8 @@ const updateDatabase = async () => {
     "EVE", "SOM", "CMD", "DDF", "CON", "INV", "DOM", "XLN", "MIR", "AVR", "JUD", "SHM", "TD2", "TOR", "PZ1", "GTC", "SOI", "BBD", "PLS", "RTR",
     "APC", "ORI", "IMA", "PC2", "LRW", "7ED", "M15", "M11", "KLD", "C14", "C19", "MBS", "ELD", "TD0", "ONS", "GRN", "AKH", "OGW", "WAR", "THB",
     "M12", "C13", "MH1", "10E", "NPH", "STH", "GPT", "WTH", "PLC", "M20", "KTK", "A25", "ALA", "ODY", "ULG", "EXP", "HOU", "NEM", "ISD", "TSP",
-    "ARB", "MM2", "DTK", "TPR", "CHK", "M14", "ME3", "TSB", "VMA", "BOK", "LEA", "DKA", "PRM", "JOU", "MMQ", "EMN", "FRF", "CSP"
+    "ARB", "MM2", "DTK", "TPR", "CHK", "M14", "ME3", "TSB", "VMA", "BOK", "LEA", "DKA", "PRM", "JOU", "MMQ", "EMN", "FRF", "CSP",
+    "M21", "ZNR"
   ];
 
   const setsDataDir = path.join(getDataDir(), "sets");
