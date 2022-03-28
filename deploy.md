@@ -37,14 +37,30 @@ screen
 sudo /opt/bitnami/ctlscript.sh stop apache
 sudo /opt/bitnami/ctlscript.sh stop redis
 sudo service mongod start
+
+```
+
+* local build steps
+```
+mkdir ~/projects/ocl-app # or whatever you like
+cd ~/projects/ocl-app
+
+mkdir backup
+mkdir backup/config
+scp -r ocl:~/ocl-app/data backup
+scp -r ocl:~/ocl-app/google-auth backup
+scp ocl:~/ocl-app/config/ocl.ini backup/config
+# make sure mongo is accessible at default localhost IP
 ```
 
 * general steps, from ocl:~ or ocl-app project folder
 ```
+# if needed
 cp -r ocl-app/data backup
 cp -r ocl-app/google-auth backup
 cp ocl-app/config/ocl.ini backup/config
 sudo rm -rf ocl-app
+
 git clone https://github.com/oelarnes/ocl-app
 mkdir ocl-app/data
 cp -r backup/google-auth ocl-app
