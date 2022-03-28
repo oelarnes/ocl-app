@@ -1,25 +1,36 @@
-# redeploy ocl-app
+## push new event
+cd ~/Projects/ocl-app/backup/config
+scp ocl:~/ocl-app/config/ocl.ini .
+code ocl.ini
 
+# add {event id}={sheets id} under [eventSheets] and save
+scp ocl.ini ocl:~/ocl-app/config
+
+# goto onlinecubeleage.com/api/data and execute mutation{syncData}
+
+## redeploy ocl-app
+
+ssh ocl
 sudo reboot
 
 ssh ocl
+cp -r ocl-app/data backup
+cp -r ocl-app/google-auth backup
+cp ocl-app/config/ocl.ini backup/config
 sudo rm -rf ocl-app
 git clone https://github.com/oelarnes/ocl-app
 mkdir ocl-app/data
 cp -r backup/google-auth ocl-app
-cp -r backup/events ocl-app/data
-cp backup/ocl.ini ocl-app/config
+cp -r backup/data ocl-app
+cp backup/config/ocl.ini ocl-app/config
 sudo service mongod start
-cp backup/owned* ocl-app/data
-cp backup/wishlist* ocl-
-app/data
-
 cd ocl-app
 export OCL_ENV=prod
 sudo npm install
 npm run build
-npm run download_allsets
+
 node scripts/initialize_ocl.js
+
 sudo /opt/bitnami/ctlscript.sh stop apache
 sudo /opt/bitnami/ctlscript.sh stop redis
 
