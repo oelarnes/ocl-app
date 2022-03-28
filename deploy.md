@@ -71,7 +71,7 @@ export OCL_ENV=prod
 sudo npm install
 npm run build
 node scripts/initialize_ocl.js
-npm run update_database
+npm run update_database # usually skippable, unless new cards/sets
 sudo npm run start
 ```
 Then detatch from screen before exit
@@ -103,3 +103,10 @@ ssh ocl 'cp -r ~/ocl-app/data/events/<eventId> ~/backup/data/events'
 ```
 
 * execute `mutation{syncData}` against onlinecubeleage.com/api/data
+
+# deploy discord bot
+```
+screen
+cd ocl-discord
+node index.js
+```
